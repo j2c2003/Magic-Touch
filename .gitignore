@@ -1,0 +1,953 @@
+assets/ovr_MainScreen.png
+MagicTouch Slot/MagicTouchScreenShot.jpg
+MagicTouch Slot/MagicTouchScreenShot.png
+MagicTouch Slot/winningIconExample.png
+MagicTouch Slot/Graphics/.DS_Store
+MagicTouch Slot/Graphics/GraphicInfo.xls
+MagicTouch Slot/Graphics/anim_MagicPoof.png
+MagicTouch Slot/Graphics/anim_Magician.png
+MagicTouch Slot/Graphics/anim_Magician_Blink.png
+MagicTouch Slot/Graphics/anim_Magician_Close.png
+MagicTouch Slot/Graphics/anim_Magician_Dance_1.png
+MagicTouch Slot/Graphics/anim_Magician_Dance_2.png
+MagicTouch Slot/Graphics/anim_Magician_Dance_3.png
+MagicTouch Slot/Graphics/anim_Magician_Dance_4.png
+MagicTouch Slot/Graphics/anim_Magician_Knock.png
+MagicTouch Slot/Graphics/anim_Magician_Open.png
+MagicTouch Slot/Graphics/anim_Magician_Spin.png
+MagicTouch Slot/Graphics/anim_MiniLogo.png
+MagicTouch Slot/Graphics/anim_Reveal.png
+MagicTouch Slot/Graphics/anim_WholeTabPull_Small.png
+MagicTouch Slot/Graphics/anim_Win_1.png
+MagicTouch Slot/Graphics/anim_Win_10.png
+MagicTouch Slot/Graphics/anim_Win_11.png
+MagicTouch Slot/Graphics/anim_Win_2.png
+MagicTouch Slot/Graphics/anim_Win_3.png
+MagicTouch Slot/Graphics/anim_Win_4.png
+MagicTouch Slot/Graphics/anim_Win_5.png
+MagicTouch Slot/Graphics/anim_Win_6.png
+MagicTouch Slot/Graphics/anim_Win_7.png
+MagicTouch Slot/Graphics/anim_Win_8.png
+MagicTouch Slot/Graphics/anim_Win_9.png
+MagicTouch Slot/Graphics/bg_Help.png
+MagicTouch Slot/Graphics/bg_IntroScreen.png
+MagicTouch Slot/Graphics/bg_MainScreen.png
+MagicTouch Slot/Graphics/bg_MainScreen_ExtraSpins.png
+MagicTouch Slot/Graphics/bg_Pays.png
+MagicTouch Slot/Graphics/bg_StartScreen.png
+MagicTouch Slot/Graphics/bg_WinningPatterns.png
+MagicTouch Slot/Graphics/btn_Back.png
+MagicTouch Slot/Graphics/btn_BetDown.png
+MagicTouch Slot/Graphics/btn_BetUp.png
+MagicTouch Slot/Graphics/btn_Cashout.png
+MagicTouch Slot/Graphics/btn_Continue.png
+MagicTouch Slot/Graphics/btn_Denomination.png
+MagicTouch Slot/Graphics/btn_Denomination_1.png
+MagicTouch Slot/Graphics/btn_Denomination_10.png
+MagicTouch Slot/Graphics/btn_Denomination_2.png
+MagicTouch Slot/Graphics/btn_Denomination_20.png
+MagicTouch Slot/Graphics/btn_Denomination_5.png
+MagicTouch Slot/Graphics/btn_Exit.png
+MagicTouch Slot/Graphics/btn_FreeReveals.png
+MagicTouch Slot/Graphics/btn_GameIcon.png
+MagicTouch Slot/Graphics/btn_Help.png
+MagicTouch Slot/Graphics/btn_HelpOptions.png
+MagicTouch Slot/Graphics/btn_Payouts.png
+MagicTouch Slot/Graphics/btn_RevealAll.png
+MagicTouch Slot/Graphics/btn_SelectLines.png
+MagicTouch Slot/Graphics/btn_Spin.png
+MagicTouch Slot/Graphics/btn_WinningPatterns.png
+MagicTouch Slot/Graphics/gameIcon.png
+MagicTouch Slot/Graphics/gameIcon.psd
+MagicTouch Slot/Graphics/ovr_AuditPattern_1.png
+MagicTouch Slot/Graphics/ovr_AuditPattern_10.png
+MagicTouch Slot/Graphics/ovr_AuditPattern_11.png
+MagicTouch Slot/Graphics/ovr_AuditPattern_12.png
+MagicTouch Slot/Graphics/ovr_AuditPattern_13.png
+MagicTouch Slot/Graphics/ovr_AuditPattern_14.png
+MagicTouch Slot/Graphics/ovr_AuditPattern_15.png
+MagicTouch Slot/Graphics/ovr_AuditPattern_16.png
+MagicTouch Slot/Graphics/ovr_AuditPattern_17.png
+MagicTouch Slot/Graphics/ovr_AuditPattern_18.png
+MagicTouch Slot/Graphics/ovr_AuditPattern_19.png
+MagicTouch Slot/Graphics/ovr_AuditPattern_2.png
+MagicTouch Slot/Graphics/ovr_AuditPattern_20.png
+MagicTouch Slot/Graphics/ovr_AuditPattern_21.png
+MagicTouch Slot/Graphics/ovr_AuditPattern_22.png
+MagicTouch Slot/Graphics/ovr_AuditPattern_23.png
+MagicTouch Slot/Graphics/ovr_AuditPattern_24.png
+MagicTouch Slot/Graphics/ovr_AuditPattern_25.png
+MagicTouch Slot/Graphics/ovr_AuditPattern_3.png
+MagicTouch Slot/Graphics/ovr_AuditPattern_4.png
+MagicTouch Slot/Graphics/ovr_AuditPattern_5.png
+MagicTouch Slot/Graphics/ovr_AuditPattern_6.png
+MagicTouch Slot/Graphics/ovr_AuditPattern_7.png
+MagicTouch Slot/Graphics/ovr_AuditPattern_8.png
+MagicTouch Slot/Graphics/ovr_AuditPattern_9.png
+MagicTouch Slot/Graphics/ovr_AuditSlot_1.png
+MagicTouch Slot/Graphics/ovr_AuditSlot_10.png
+MagicTouch Slot/Graphics/ovr_AuditSlot_11.png
+MagicTouch Slot/Graphics/ovr_AuditSlot_2.png
+MagicTouch Slot/Graphics/ovr_AuditSlot_3.png
+MagicTouch Slot/Graphics/ovr_AuditSlot_4.png
+MagicTouch Slot/Graphics/ovr_AuditSlot_5.png
+MagicTouch Slot/Graphics/ovr_AuditSlot_6.png
+MagicTouch Slot/Graphics/ovr_AuditSlot_7.png
+MagicTouch Slot/Graphics/ovr_AuditSlot_8.png
+MagicTouch Slot/Graphics/ovr_AuditSlot_9.png
+MagicTouch Slot/Graphics/ovr_BigWin.png
+MagicTouch Slot/Graphics/ovr_FreeTabsSign.png
+MagicTouch Slot/Graphics/ovr_LineLights.png
+MagicTouch Slot/Graphics/ovr_Line_1.png
+MagicTouch Slot/Graphics/ovr_Line_10_Box.png
+MagicTouch Slot/Graphics/ovr_Line_11_Box.png
+MagicTouch Slot/Graphics/ovr_Line_12_Box.png
+MagicTouch Slot/Graphics/ovr_Line_13_Box.png
+MagicTouch Slot/Graphics/ovr_Line_14_Box.png
+MagicTouch Slot/Graphics/ovr_Line_15_Box.png
+MagicTouch Slot/Graphics/ovr_Line_16_Box.png
+MagicTouch Slot/Graphics/ovr_Line_17_Box.png
+MagicTouch Slot/Graphics/ovr_Line_18_Box.png
+MagicTouch Slot/Graphics/ovr_Line_19_Box.png
+MagicTouch Slot/Graphics/ovr_Line_1_Box.png
+MagicTouch Slot/Graphics/ovr_Line_2.png
+MagicTouch Slot/Graphics/ovr_Line_20_Box.png
+MagicTouch Slot/Graphics/ovr_Line_21_Box.png
+MagicTouch Slot/Graphics/ovr_Line_22_Box.png
+MagicTouch Slot/Graphics/ovr_Line_23_Box.png
+MagicTouch Slot/Graphics/ovr_Line_24_Box.png
+MagicTouch Slot/Graphics/ovr_Line_25_Box.png
+MagicTouch Slot/Graphics/ovr_Line_2_Box.png
+MagicTouch Slot/Graphics/ovr_Line_3.png
+MagicTouch Slot/Graphics/ovr_Line_3_Box.png
+MagicTouch Slot/Graphics/ovr_Line_4.png
+MagicTouch Slot/Graphics/ovr_Line_4_Box.png
+MagicTouch Slot/Graphics/ovr_Line_5.png
+MagicTouch Slot/Graphics/ovr_Line_5_Box.png
+MagicTouch Slot/Graphics/ovr_Line_6.png
+MagicTouch Slot/Graphics/ovr_Line_6_Box.png
+MagicTouch Slot/Graphics/ovr_Line_7.png
+MagicTouch Slot/Graphics/ovr_Line_7_Box.png
+MagicTouch Slot/Graphics/ovr_Line_8.png
+MagicTouch Slot/Graphics/ovr_Line_8_Box.png
+MagicTouch Slot/Graphics/ovr_Line_9.png
+MagicTouch Slot/Graphics/ovr_Line_9_Box.png
+MagicTouch Slot/Graphics/ovr_Line_Null_Box.png
+MagicTouch Slot/Graphics/ovr_MainScreen.png
+MagicTouch Slot/Graphics/ovr_MainScreen_ExtraSpins.png
+MagicTouch Slot/Graphics/ovr_SlotIcons.png
+MagicTouch Slot/Graphics/ovr_SlotIcons_Win.png
+MagicTouch Slot/Graphics/ovr_Smoke.png
+MagicTouch Slot/Graphics/ovr_TotalWon.png
+MagicTouch Slot/Source/.DS_Store
+MagicTouch Slot/Source/BackGround_4.psd
+MagicTouch Slot/Source/BackGround_5.psd
+MagicTouch Slot/Source/BackGround_Back.psd
+MagicTouch Slot/Source/BackGround_Back_ExtraSpins.psd
+MagicTouch Slot/Source/BackGround_Bare.psd
+MagicTouch Slot/Source/BackGround_Bare_Foreground.psd
+MagicTouch Slot/Source/BackGround_Bare_Foreground_ExtraSpins.psd
+MagicTouch Slot/Source/BackGround_Bare_Foreground_ExtraSpins_Tabs.psd
+MagicTouch Slot/Source/BackGround_Bare_Foreground_Revision.psd
+MagicTouch Slot/Source/BackGround_Bare_Tabs.psd
+MagicTouch Slot/Source/BackGround_ForWeb.psd
+MagicTouch Slot/Source/BackGround_Help.psd
+MagicTouch Slot/Source/BackGround_HelpOptions.psd
+MagicTouch Slot/Source/BackGround_HelpOptions_Tabs.psd
+MagicTouch Slot/Source/BackGround_HelpOptions_Tabs_Flare.psd
+MagicTouch Slot/Source/BackGround_HelpOptions_Tabs_Flare[EDITED].psd
+MagicTouch Slot/Source/BackGround_HelpOptions_Tabs_Flare[EDITED]_Revision.psd
+MagicTouch Slot/Source/BackGround_Help_Revison.psd
+MagicTouch Slot/Source/BackGround_IntroScreen.psd
+MagicTouch Slot/Source/BackGround_IntroScreen_Tabs.psd
+MagicTouch Slot/Source/BackGround_WinningPatterns.psd
+MagicTouch Slot/Source/Denomination2.psd
+MagicTouch Slot/Source/DenominationButton.psd
+MagicTouch Slot/Source/MagicianClosingScroll.psd
+MagicTouch Slot/Source/MagicianEgyptDance.psd
+MagicTouch Slot/Source/MagicianKnock.psd
+MagicTouch Slot/Source/MagicianOpeningAScroll.psd
+MagicTouch Slot/Source/MagicianOpeningScroll.psd
+MagicTouch Slot/Source/MagicianRap.psd
+MagicTouch Slot/Source/PullTabTear_Revision_Layout.psd
+MagicTouch Slot/Source/ScreenShotSetUp.psd
+MagicTouch Slot/Source/SignLogo_MagicTabs.png
+MagicTouch Slot/Source/SignLogo_MagicTabs.psd
+MagicTouch Slot/Source/animLayoutMagicianKnock.psd
+MagicTouch Slot/Source/animMagician.psd
+MagicTouch Slot/Source/anim_MagicPoof.psd
+MagicTouch Slot/Source/anim_Magician.psd
+MagicTouch Slot/Source/anim_Magician_Blink.psd
+MagicTouch Slot/Source/anim_Magician_Dance_1.psd
+MagicTouch Slot/Source/anim_Magician_Spin.psd
+MagicTouch Slot/Source/anim_MiniLogo.psd
+MagicTouch Slot/Source/anim_MiniLogo_Tabs.psd
+MagicTouch Slot/Source/anim_Reveal.psd
+MagicTouch Slot/Source/anim_Reveal_Ver2.psd
+MagicTouch Slot/Source/anim_Win_10.psd
+MagicTouch Slot/Source/anim_Win_11.psd
+MagicTouch Slot/Source/anim_Win_Ace.psd
+MagicTouch Slot/Source/anim_Win_FreeSpins.psd
+MagicTouch Slot/Source/anim_Win_FreeSpins_Tabs.psd
+MagicTouch Slot/Source/anim_Win_FreeSpins_Tabs_Revision.psd
+MagicTouch Slot/Source/anim_Win_Hat.psd
+MagicTouch Slot/Source/anim_Win_Jack.psd
+MagicTouch Slot/Source/anim_Win_King.psd
+MagicTouch Slot/Source/anim_Win_Knife.psd
+MagicTouch Slot/Source/anim_Win_MagicBall.psd
+MagicTouch Slot/Source/anim_Win_MagicBox.psd
+MagicTouch Slot/Source/anim_Win_Magician.psd
+MagicTouch Slot/Source/anim_Win_Queen.psd
+MagicTouch Slot/Source/animationTestMagicBox.psd
+MagicTouch Slot/Source/animationTest_10.psd
+MagicTouch Slot/Source/animationTest_Ace.psd
+MagicTouch Slot/Source/animationTest_FreeSpins.psd
+MagicTouch Slot/Source/animationTest_FreeSpins_Tabs.psd
+MagicTouch Slot/Source/animationTest_FreeSpins_Tabs_Revision.psd
+MagicTouch Slot/Source/animationTest_Jack.psd
+MagicTouch Slot/Source/animationTest_King.psd
+MagicTouch Slot/Source/animationTest_Knife.psd
+MagicTouch Slot/Source/animationTest_MagicBall.psd
+MagicTouch Slot/Source/animationTest_MagicBox.psd
+MagicTouch Slot/Source/animationTest_Magician.psd
+MagicTouch Slot/Source/btn_Audio.png
+MagicTouch Slot/Source/btn_Back.psd
+MagicTouch Slot/Source/btn_BetIncreaseDecrease.psd
+MagicTouch Slot/Source/btn_Cashout.psd
+MagicTouch Slot/Source/btn_Continue.psd
+MagicTouch Slot/Source/btn_Denomination.psd
+MagicTouch Slot/Source/btn_Denomination_Ver2.psd
+MagicTouch Slot/Source/btn_Denomination_Ver3.psd
+MagicTouch Slot/Source/btn_Exit.psd
+MagicTouch Slot/Source/btn_FreeReveals.psd
+MagicTouch Slot/Source/btn_Help.psd
+MagicTouch Slot/Source/btn_HelpOptions.psd
+MagicTouch Slot/Source/btn_Help_Options.psd
+MagicTouch Slot/Source/btn_Payouts.psd
+MagicTouch Slot/Source/btn_RevealAll.psd
+MagicTouch Slot/Source/btn_SelectLines.psd
+MagicTouch Slot/Source/btn_Spin.psd
+MagicTouch Slot/Source/btn_WinningPatterns.psd
+MagicTouch Slot/Source/magicianTurningButter.psd
+MagicTouch Slot/Source/ovr_AuditPattern_4.psd
+MagicTouch Slot/Source/ovr_AuditSlot.psd
+MagicTouch Slot/Source/ovr_BigWin.psd
+MagicTouch Slot/Source/ovr_BonusSpins.png
+MagicTouch Slot/Source/ovr_BonusSpins.psd
+MagicTouch Slot/Source/ovr_FreeTabsSign.psd
+MagicTouch Slot/Source/ovr_FreeTabsSign_Revision.psd
+MagicTouch Slot/Source/ovr_LineLights.psd
+MagicTouch Slot/Source/ovr_LineLightsVER2.psd
+MagicTouch Slot/Source/ovr_LineLightsVER3.psd
+MagicTouch Slot/Source/ovr_LineLights_Increments.psd
+MagicTouch Slot/Source/ovr_Line_21_Box.psd
+MagicTouch Slot/Source/ovr_Line_Boxes.psd
+MagicTouch Slot/Source/ovr_Lines.psd
+MagicTouch Slot/Source/ovr_SlotIcons.psd
+MagicTouch Slot/Source/ovr_SlotIcons_Tabs.psd
+MagicTouch Slot/Source/ovr_SlotIcons_Tabs_Revision.psd
+MagicTouch Slot/Source/ovr_SlotIcons_Win.psd
+MagicTouch Slot/Source/ovr_SlotIcons_Win_Tabs.psd
+MagicTouch Slot/Source/ovr_SlotIcons_Win_Tabs_Revision.psd
+MagicTouch Slot/Source/ovr_Smoke.psd
+MagicTouch Slot/Source/ovr_Smoke_2.psd
+MagicTouch Slot/Source/ovr_TotalWin.psd
+MagicTouch Slot/Source/ovr_smallSign.psd
+MagicTouch Slot/Source/smokeTest.psd
+MagicTouch Slot/Source/10Anim/anim_100000.png
+MagicTouch Slot/Source/10Anim/anim_100001.png
+MagicTouch Slot/Source/10Anim/anim_100002.png
+MagicTouch Slot/Source/10Anim/anim_100003.png
+MagicTouch Slot/Source/10Anim/anim_100004.png
+MagicTouch Slot/Source/10Anim/anim_100005.png
+MagicTouch Slot/Source/10Anim/anim_100006.png
+MagicTouch Slot/Source/10Anim/anim_100007.png
+MagicTouch Slot/Source/10Anim/anim_100008.png
+MagicTouch Slot/Source/10Anim/anim_100009.png
+MagicTouch Slot/Source/10Anim/anim_100010.png
+MagicTouch Slot/Source/10Anim/anim_100011.png
+MagicTouch Slot/Source/10Anim/anim_100012.png
+MagicTouch Slot/Source/10Anim/anim_100013.png
+MagicTouch Slot/Source/10Anim/anim_100014.png
+MagicTouch Slot/Source/10Anim/anim_100015.png
+MagicTouch Slot/Source/10Anim/anim_100016.png
+MagicTouch Slot/Source/10Anim/anim_100017.png
+MagicTouch Slot/Source/10Anim/anim_100018.png
+MagicTouch Slot/Source/10Anim/anim_100019.png
+MagicTouch Slot/Source/10Anim/anim_100020.png
+MagicTouch Slot/Source/10Anim/anim_100021.png
+MagicTouch Slot/Source/AceAnim/Ace0000.png
+MagicTouch Slot/Source/AceAnim/Ace0001.png
+MagicTouch Slot/Source/AceAnim/Ace0002.png
+MagicTouch Slot/Source/AceAnim/Ace0003.png
+MagicTouch Slot/Source/AceAnim/Ace0004.png
+MagicTouch Slot/Source/AceAnim/Ace0005.png
+MagicTouch Slot/Source/AceAnim/Ace0006.png
+MagicTouch Slot/Source/AceAnim/Ace0007.png
+MagicTouch Slot/Source/AceAnim/Ace0008.png
+MagicTouch Slot/Source/AceAnim/Ace0009.png
+MagicTouch Slot/Source/AceAnim/Ace0010.png
+MagicTouch Slot/Source/AceAnim/Ace0011.png
+MagicTouch Slot/Source/AceAnim/Ace0012.png
+MagicTouch Slot/Source/AceAnim/Ace0013.png
+MagicTouch Slot/Source/AceAnim/Ace0014.png
+MagicTouch Slot/Source/AceAnim/Ace0015.png
+MagicTouch Slot/Source/AceAnim/Ace0016.png
+MagicTouch Slot/Source/AceAnim/Ace0017.png
+MagicTouch Slot/Source/AceAnim/Ace0018.png
+MagicTouch Slot/Source/AceAnim/Ace0019.png
+MagicTouch Slot/Source/BonusTabs_Anim/animationTest_FreeSpins_Tabs_Revision0000.png
+MagicTouch Slot/Source/BonusTabs_Anim/animationTest_FreeSpins_Tabs_Revision0001.png
+MagicTouch Slot/Source/BonusTabs_Anim/animationTest_FreeSpins_Tabs_Revision0002.png
+MagicTouch Slot/Source/BonusTabs_Anim/animationTest_FreeSpins_Tabs_Revision0003.png
+MagicTouch Slot/Source/BonusTabs_Anim/animationTest_FreeSpins_Tabs_Revision0004.png
+MagicTouch Slot/Source/BonusTabs_Anim/animationTest_FreeSpins_Tabs_Revision0005.png
+MagicTouch Slot/Source/BonusTabs_Anim/animationTest_FreeSpins_Tabs_Revision0006.png
+MagicTouch Slot/Source/BonusTabs_Anim/animationTest_FreeSpins_Tabs_Revision0007.png
+MagicTouch Slot/Source/BonusTabs_Anim/animationTest_FreeSpins_Tabs_Revision0008.png
+MagicTouch Slot/Source/BonusTabs_Anim/animationTest_FreeSpins_Tabs_Revision0009.png
+MagicTouch Slot/Source/BonusTabs_Anim/animationTest_FreeSpins_Tabs_Revision0010.png
+MagicTouch Slot/Source/BonusTabs_Anim/animationTest_FreeSpins_Tabs_Revision0011.png
+MagicTouch Slot/Source/BonusTabs_Anim/animationTest_FreeSpins_Tabs_Revision0012.png
+MagicTouch Slot/Source/BonusTabs_Anim/animationTest_FreeSpins_Tabs_Revision0013.png
+MagicTouch Slot/Source/BonusTabs_Anim/animationTest_FreeSpins_Tabs_Revision0014.png
+MagicTouch Slot/Source/BonusTabs_Anim/animationTest_FreeSpins_Tabs_Revision0015.png
+MagicTouch Slot/Source/BonusTabs_Anim/animationTest_FreeSpins_Tabs_Revision0016.png
+MagicTouch Slot/Source/BonusTabs_Anim/animationTest_FreeSpins_Tabs_Revision0017.png
+MagicTouch Slot/Source/BonusTabs_Anim/animationTest_FreeSpins_Tabs_Revision0018.png
+MagicTouch Slot/Source/BonusTabs_Anim/animationTest_FreeSpins_Tabs_Revision0019.png
+MagicTouch Slot/Source/BonusTabs_Anim/animationTest_FreeSpins_Tabs_Revision0020.png
+MagicTouch Slot/Source/BonusTabs_Anim/animationTest_FreeSpins_Tabs_Revision0021.png
+MagicTouch Slot/Source/BonusTabs_Anim/animationTest_FreeSpins_Tabs_Revision0022.png
+MagicTouch Slot/Source/BonusTabs_Anim/animationTest_FreeSpins_Tabs_Revision0023.png
+MagicTouch Slot/Source/BonusTabs_Anim/animationTest_FreeSpins_Tabs_Revision0024.png
+MagicTouch Slot/Source/BonusTabs_Anim/animationTest_FreeSpins_Tabs_Revision0025.png
+MagicTouch Slot/Source/BonusTabs_Anim/animationTest_FreeSpins_Tabs_Revision0026.png
+MagicTouch Slot/Source/EgyptianDance/MagicianEgyptDance0000.png
+MagicTouch Slot/Source/EgyptianDance/MagicianEgyptDance0001.png
+MagicTouch Slot/Source/EgyptianDance/MagicianEgyptDance0002.png
+MagicTouch Slot/Source/EgyptianDance/MagicianEgyptDance0003.png
+MagicTouch Slot/Source/EgyptianDance/MagicianEgyptDance0004.png
+MagicTouch Slot/Source/EgyptianDance/MagicianEgyptDance0005.png
+MagicTouch Slot/Source/EgyptianDance/MagicianEgyptDance0006.png
+MagicTouch Slot/Source/EgyptianDance/MagicianEgyptDance0007.png
+MagicTouch Slot/Source/EgyptianDance/MagicianEgyptDance0008.png
+MagicTouch Slot/Source/EgyptianDance/MagicianEgyptDance0009.png
+MagicTouch Slot/Source/EgyptianDance/MagicianEgyptDance0010.png
+MagicTouch Slot/Source/EgyptianDance/MagicianEgyptDance0011.png
+MagicTouch Slot/Source/EgyptianDance/MagicianEgyptDance0012.png
+MagicTouch Slot/Source/EgyptianDance/MagicianEgyptDance0013.png
+MagicTouch Slot/Source/EgyptianDance/MagicianEgyptDance0014.png
+MagicTouch Slot/Source/EgyptianDance/MagicianEgyptDance0015.png
+MagicTouch Slot/Source/EgyptianDance/MagicianEgyptDance0016.png
+MagicTouch Slot/Source/EgyptianDance/MagicianEgyptDance0017.png
+MagicTouch Slot/Source/EgyptianDance/MagicianEgyptDance0018.png
+MagicTouch Slot/Source/EgyptianDance/MagicianEgyptDance0019.png
+MagicTouch Slot/Source/EgyptianDance/MagicianEgyptDance0020.png
+MagicTouch Slot/Source/EgyptianDance/MagicianEgyptDance0021.png
+MagicTouch Slot/Source/EgyptianDance/MagicianEgyptDance0022.png
+MagicTouch Slot/Source/EgyptianDance/MagicianEgyptDance0023.png
+MagicTouch Slot/Source/EgyptianDance/MagicianEgyptDance0024.png
+MagicTouch Slot/Source/EgyptianDance/MagicianEgyptDance0025.png
+MagicTouch Slot/Source/EgyptianDance/MagicianEgyptDance0026.png
+MagicTouch Slot/Source/EgyptianDance/MagicianEgyptDance0027.png
+MagicTouch Slot/Source/EgyptianDance/MagicianEgyptDance0028.png
+MagicTouch Slot/Source/EgyptianDance/MagicianEgyptDance0029.png
+MagicTouch Slot/Source/EgyptianDance/MagicianEgyptDance0030.png
+MagicTouch Slot/Source/EgyptianDance/MagicianEgyptDance0031.png
+MagicTouch Slot/Source/EgyptianDance/MagicianEgyptDance0032.png
+MagicTouch Slot/Source/EgyptianDance/MagicianEgyptDance0033.png
+MagicTouch Slot/Source/EgyptianDance/MagicianEgyptDance0034.png
+MagicTouch Slot/Source/FreeSpins_Tabs/animationTest_FreeSpins_Tabs0000.png
+MagicTouch Slot/Source/FreeSpins_Tabs/animationTest_FreeSpins_Tabs0001.png
+MagicTouch Slot/Source/FreeSpins_Tabs/animationTest_FreeSpins_Tabs0002.png
+MagicTouch Slot/Source/FreeSpins_Tabs/animationTest_FreeSpins_Tabs0003.png
+MagicTouch Slot/Source/FreeSpins_Tabs/animationTest_FreeSpins_Tabs0004.png
+MagicTouch Slot/Source/FreeSpins_Tabs/animationTest_FreeSpins_Tabs0005.png
+MagicTouch Slot/Source/FreeSpins_Tabs/animationTest_FreeSpins_Tabs0006.png
+MagicTouch Slot/Source/FreeSpins_Tabs/animationTest_FreeSpins_Tabs0007.png
+MagicTouch Slot/Source/FreeSpins_Tabs/animationTest_FreeSpins_Tabs0008.png
+MagicTouch Slot/Source/FreeSpins_Tabs/animationTest_FreeSpins_Tabs0009.png
+MagicTouch Slot/Source/FreeSpins_Tabs/animationTest_FreeSpins_Tabs0010.png
+MagicTouch Slot/Source/FreeSpins_Tabs/animationTest_FreeSpins_Tabs0011.png
+MagicTouch Slot/Source/FreeSpins_Tabs/animationTest_FreeSpins_Tabs0012.png
+MagicTouch Slot/Source/FreeSpins_Tabs/animationTest_FreeSpins_Tabs0013.png
+MagicTouch Slot/Source/FreeSpins_Tabs/animationTest_FreeSpins_Tabs0014.png
+MagicTouch Slot/Source/FreeSpins_Tabs/animationTest_FreeSpins_Tabs0015.png
+MagicTouch Slot/Source/FreeSpins_Tabs/animationTest_FreeSpins_Tabs0016.png
+MagicTouch Slot/Source/FreeSpins_Tabs/animationTest_FreeSpins_Tabs0017.png
+MagicTouch Slot/Source/FreeSpins_Tabs/animationTest_FreeSpins_Tabs0018.png
+MagicTouch Slot/Source/FreeSpins_Tabs/animationTest_FreeSpins_Tabs0019.png
+MagicTouch Slot/Source/FreeSpins_Tabs/animationTest_FreeSpins_Tabs0020.png
+MagicTouch Slot/Source/FreeSpins_Tabs/animationTest_FreeSpins_Tabs0021.png
+MagicTouch Slot/Source/FreeSpins_Tabs/animationTest_FreeSpins_Tabs0022.png
+MagicTouch Slot/Source/FreeSpins_Tabs/animationTest_FreeSpins_Tabs0023.png
+MagicTouch Slot/Source/FreeSpins_Tabs/animationTest_FreeSpins_Tabs0024.png
+MagicTouch Slot/Source/FreeSpins_Tabs/animationTest_FreeSpins_Tabs0025.png
+MagicTouch Slot/Source/FreeSpins_Tabs/animationTest_FreeSpins_Tabs0026.png
+MagicTouch Slot/Source/FreeTabs/animationTest_FreeTabs0000.png
+MagicTouch Slot/Source/FreeTabs/animationTest_FreeTabs0001.png
+MagicTouch Slot/Source/FreeTabs/animationTest_FreeTabs0002.png
+MagicTouch Slot/Source/FreeTabs/animationTest_FreeTabs0003.png
+MagicTouch Slot/Source/FreeTabs/animationTest_FreeTabs0004.png
+MagicTouch Slot/Source/FreeTabs/animationTest_FreeTabs0005.png
+MagicTouch Slot/Source/FreeTabs/animationTest_FreeTabs0006.png
+MagicTouch Slot/Source/FreeTabs/animationTest_FreeTabs0007.png
+MagicTouch Slot/Source/FreeTabs/animationTest_FreeTabs0008.png
+MagicTouch Slot/Source/FreeTabs/animationTest_FreeTabs0009.png
+MagicTouch Slot/Source/FreeTabs/animationTest_FreeTabs0010.png
+MagicTouch Slot/Source/FreeTabs/animationTest_FreeTabs0011.png
+MagicTouch Slot/Source/FreeTabs/animationTest_FreeTabs0012.png
+MagicTouch Slot/Source/FreeTabs/animationTest_FreeTabs0013.png
+MagicTouch Slot/Source/FreeTabs/animationTest_FreeTabs0014.png
+MagicTouch Slot/Source/FreeTabs/animationTest_FreeTabs0015.png
+MagicTouch Slot/Source/FreeTabs/animationTest_FreeTabs0016.png
+MagicTouch Slot/Source/FreeTabs/animationTest_FreeTabs0017.png
+MagicTouch Slot/Source/FreeTabs/animationTest_FreeTabs0018.png
+MagicTouch Slot/Source/FreeTabs/animationTest_FreeTabs0019.png
+MagicTouch Slot/Source/FreeTabs/animationTest_FreeTabs0020.png
+MagicTouch Slot/Source/FreeTabs/animationTest_FreeTabs0021.png
+MagicTouch Slot/Source/FreeTabs/animationTest_FreeTabs0022.png
+MagicTouch Slot/Source/FreeTabs/animationTest_FreeTabs0023.png
+MagicTouch Slot/Source/FreeTabs/animationTest_FreeTabs0024.png
+MagicTouch Slot/Source/FreeTabs/animationTest_FreeTabs0025.png
+MagicTouch Slot/Source/FreeTabs/animationTest_FreeTabs0026.png
+MagicTouch Slot/Source/JackAnim/JAck0000.png
+MagicTouch Slot/Source/JackAnim/JAck0001.png
+MagicTouch Slot/Source/JackAnim/JAck0002.png
+MagicTouch Slot/Source/JackAnim/JAck0003.png
+MagicTouch Slot/Source/JackAnim/JAck0004.png
+MagicTouch Slot/Source/JackAnim/JAck0005.png
+MagicTouch Slot/Source/JackAnim/JAck0006.png
+MagicTouch Slot/Source/JackAnim/JAck0007.png
+MagicTouch Slot/Source/JackAnim/JAck0008.png
+MagicTouch Slot/Source/JackAnim/JAck0009.png
+MagicTouch Slot/Source/JackAnim/JAck0010.png
+MagicTouch Slot/Source/JackAnim/JAck0011.png
+MagicTouch Slot/Source/JackAnim/JAck0012.png
+MagicTouch Slot/Source/JackAnim/JAck0013.png
+MagicTouch Slot/Source/JackAnim/JAck0014.png
+MagicTouch Slot/Source/JackAnim/JAck0015.png
+MagicTouch Slot/Source/JackAnim/JAck0016.png
+MagicTouch Slot/Source/JackAnim/JAck0017.png
+MagicTouch Slot/Source/JackAnim/JAck0018.png
+MagicTouch Slot/Source/JackAnim/JAck0019.png
+MagicTouch Slot/Source/JackAnim/JAck0020.png
+MagicTouch Slot/Source/JackAnim/JAck0021.png
+MagicTouch Slot/Source/KingAnimation/animationTest_King0000.png
+MagicTouch Slot/Source/KingAnimation/animationTest_King0001.png
+MagicTouch Slot/Source/KingAnimation/animationTest_King0002.png
+MagicTouch Slot/Source/KingAnimation/animationTest_King0003.png
+MagicTouch Slot/Source/KingAnimation/animationTest_King0004.png
+MagicTouch Slot/Source/KingAnimation/animationTest_King0005.png
+MagicTouch Slot/Source/KingAnimation/animationTest_King0006.png
+MagicTouch Slot/Source/KingAnimation/animationTest_King0007.png
+MagicTouch Slot/Source/KingAnimation/animationTest_King0008.png
+MagicTouch Slot/Source/KingAnimation/animationTest_King0009.png
+MagicTouch Slot/Source/KingAnimation/animationTest_King0010.png
+MagicTouch Slot/Source/KingAnimation/animationTest_King0011.png
+MagicTouch Slot/Source/KingAnimation/animationTest_King0012.png
+MagicTouch Slot/Source/KingAnimation/animationTest_King0013.png
+MagicTouch Slot/Source/KingAnimation/animationTest_King0014.png
+MagicTouch Slot/Source/KingAnimation/animationTest_King0015.png
+MagicTouch Slot/Source/KingAnimation/animationTest_King0016.png
+MagicTouch Slot/Source/KingAnimation/animationTest_King0017.png
+MagicTouch Slot/Source/KingAnimation/animationTest_King0018.png
+MagicTouch Slot/Source/KingAnimation/animationTest_King0019.png
+MagicTouch Slot/Source/KingAnimation/animationTest_King0020.png
+MagicTouch Slot/Source/KingAnimation/animationTest_King0021.png
+MagicTouch Slot/Source/KnifeAnim/.DS_Store
+MagicTouch Slot/Source/KnifeAnim/animationTest_Knife0000.png
+MagicTouch Slot/Source/KnifeAnim/animationTest_Knife0001.png
+MagicTouch Slot/Source/KnifeAnim/animationTest_Knife0002.png
+MagicTouch Slot/Source/KnifeAnim/animationTest_Knife0003.png
+MagicTouch Slot/Source/KnifeAnim/animationTest_Knife0004.png
+MagicTouch Slot/Source/KnifeAnim/animationTest_Knife0005.png
+MagicTouch Slot/Source/KnifeAnim/animationTest_Knife0006.png
+MagicTouch Slot/Source/KnifeAnim/animationTest_Knife0007.png
+MagicTouch Slot/Source/KnifeAnim/animationTest_Knife0008.png
+MagicTouch Slot/Source/KnifeAnim/animationTest_Knife0009.png
+MagicTouch Slot/Source/KnifeAnim/animationTest_Knife0010.png
+MagicTouch Slot/Source/KnifeAnim/animationTest_Knife0011.png
+MagicTouch Slot/Source/KnifeAnim/animationTest_Knife0012.png
+MagicTouch Slot/Source/KnifeAnim/animationTest_Knife0013.png
+MagicTouch Slot/Source/KnifeAnim/animationTest_Knife0014.png
+MagicTouch Slot/Source/KnifeAnim/animationTest_Knife0015.png
+MagicTouch Slot/Source/KnifeAnim/animationTest_Knife0016.png
+MagicTouch Slot/Source/KnifeAnim/animationTest_Knife0017.png
+MagicTouch Slot/Source/KnifeAnim/animationTest_Knife0018.png
+MagicTouch Slot/Source/KnifeAnim/animationTest_Knife0019.png
+MagicTouch Slot/Source/KnifeAnim/animationTest_Knife0020.png
+MagicTouch Slot/Source/KnifeAnim/animationTest_Knife0021.png
+MagicTouch Slot/Source/MagicBallAnim/magicBall0000.png
+MagicTouch Slot/Source/MagicBallAnim/magicBall0001.png
+MagicTouch Slot/Source/MagicBallAnim/magicBall0002.png
+MagicTouch Slot/Source/MagicBallAnim/magicBall0003.png
+MagicTouch Slot/Source/MagicBallAnim/magicBall0004.png
+MagicTouch Slot/Source/MagicBallAnim/magicBall0005.png
+MagicTouch Slot/Source/MagicBallAnim/magicBall0006.png
+MagicTouch Slot/Source/MagicBallAnim/magicBall0007.png
+MagicTouch Slot/Source/MagicBallAnim/magicBall0008.png
+MagicTouch Slot/Source/MagicBallAnim/magicBall0009.png
+MagicTouch Slot/Source/MagicBallAnim/magicBall0010.png
+MagicTouch Slot/Source/MagicBallAnim/magicBall0011.png
+MagicTouch Slot/Source/MagicBallAnim/magicBall0012.png
+MagicTouch Slot/Source/MagicBallAnim/magicBall0013.png
+MagicTouch Slot/Source/MagicBallAnim/magicBall0014.png
+MagicTouch Slot/Source/MagicBallAnim/magicBall0015.png
+MagicTouch Slot/Source/MagicBallAnim/magicBall0016.png
+MagicTouch Slot/Source/MagicBallAnim/magicBall0017.png
+MagicTouch Slot/Source/MagicBallAnim/magicBall0018.png
+MagicTouch Slot/Source/MagicBallAnim/magicBall0019.png
+MagicTouch Slot/Source/MagicBallAnim/magicBall0020.png
+MagicTouch Slot/Source/MagicBallAnim/magicBall0021.png
+MagicTouch Slot/Source/MagicBallAnim/magicBall0022.png
+MagicTouch Slot/Source/MagicBallAnim/magicBall0023.png
+MagicTouch Slot/Source/MagicBallAnim/magicBall0024.png
+MagicTouch Slot/Source/MagicBoxAnim/MagicBox0000.png
+MagicTouch Slot/Source/MagicBoxAnim/MagicBox0001.png
+MagicTouch Slot/Source/MagicBoxAnim/MagicBox0002.png
+MagicTouch Slot/Source/MagicBoxAnim/MagicBox0003.png
+MagicTouch Slot/Source/MagicBoxAnim/MagicBox0004.png
+MagicTouch Slot/Source/MagicBoxAnim/MagicBox0005.png
+MagicTouch Slot/Source/MagicBoxAnim/MagicBox0006.png
+MagicTouch Slot/Source/MagicBoxAnim/MagicBox0007.png
+MagicTouch Slot/Source/MagicBoxAnim/MagicBox0008.png
+MagicTouch Slot/Source/MagicBoxAnim/MagicBox0009.png
+MagicTouch Slot/Source/MagicBoxAnim/MagicBox0010.png
+MagicTouch Slot/Source/MagicBoxAnim/MagicBox0011.png
+MagicTouch Slot/Source/MagicBoxAnim/MagicBox0012.png
+MagicTouch Slot/Source/MagicBoxAnim/MagicBox0013.png
+MagicTouch Slot/Source/MagicBoxAnim/MagicBox0014.png
+MagicTouch Slot/Source/MagicBoxAnim/MagicBox0015.png
+MagicTouch Slot/Source/MagicBoxAnim/MagicBox0016.png
+MagicTouch Slot/Source/MagicBoxAnim/MagicBox0017.png
+MagicTouch Slot/Source/MagicBoxAnim/MagicBox0018.png
+MagicTouch Slot/Source/MagicBoxAnim/MagicBox0019.png
+MagicTouch Slot/Source/MagicBoxAnim/MagicBox0020.png
+MagicTouch Slot/Source/MagicBoxAnim/MagicBox0021.png
+MagicTouch Slot/Source/MagicBoxAnim/MagicBox0022.png
+MagicTouch Slot/Source/MagicBoxAnim/MagicBox0023.png
+MagicTouch Slot/Source/MagicianKnock/magicianKnock0000.png
+MagicTouch Slot/Source/MagicianKnock/magicianKnock0001.png
+MagicTouch Slot/Source/MagicianKnock/magicianKnock0002.png
+MagicTouch Slot/Source/MagicianKnock/magicianKnock0003.png
+MagicTouch Slot/Source/MagicianKnock/magicianKnock0004.png
+MagicTouch Slot/Source/MagicianKnock/magicianKnock0005.png
+MagicTouch Slot/Source/MagicianKnock/magicianKnock0006.png
+MagicTouch Slot/Source/MagicianKnock/magicianKnock0007.png
+MagicTouch Slot/Source/MagicianKnock/magicianKnock0008.png
+MagicTouch Slot/Source/MagicianKnock/magicianKnock0009.png
+MagicTouch Slot/Source/MagicianKnock/magicianKnock0010.png
+MagicTouch Slot/Source/MagicianKnock/magicianKnock0011.png
+MagicTouch Slot/Source/MagicianKnock/magicianKnock0012.png
+MagicTouch Slot/Source/MagicianKnock/magicianKnock0013.png
+MagicTouch Slot/Source/MagicianKnock/magicianKnock0014.png
+MagicTouch Slot/Source/MagicianKnock/magicianKnock0015.png
+MagicTouch Slot/Source/MagicianKnock/magicianKnock0016.png
+MagicTouch Slot/Source/MagicianKnock/magicianKnock0017.png
+MagicTouch Slot/Source/MagicianKnock/magicianKnock0018.png
+MagicTouch Slot/Source/MagicianKnock/magicianKnock0019.png
+MagicTouch Slot/Source/MagicianKnock/magicianKnock0020.png
+MagicTouch Slot/Source/MagicianKnock/magicianKnock0021.png
+MagicTouch Slot/Source/MagicianKnock/magicianKnock0022.png
+MagicTouch Slot/Source/MagicianKnock/magicianKnock0023.png
+MagicTouch Slot/Source/MagicianKnock/magicianKnock0024.png
+MagicTouch Slot/Source/MagicianKnock/magicianKnock0025.png
+MagicTouch Slot/Source/MagicianKnock/magicianKnock0026.png
+MagicTouch Slot/Source/MagicianKnock/magicianKnock0027.png
+MagicTouch Slot/Source/MagicianRap/MagicianRap0000.png
+MagicTouch Slot/Source/MagicianRap/MagicianRap0001.png
+MagicTouch Slot/Source/MagicianRap/MagicianRap0002.png
+MagicTouch Slot/Source/MagicianRap/MagicianRap0003.png
+MagicTouch Slot/Source/MagicianRap/MagicianRap0004.png
+MagicTouch Slot/Source/MagicianRap/MagicianRap0005.png
+MagicTouch Slot/Source/MagicianRap/MagicianRap0006.png
+MagicTouch Slot/Source/MagicianRap/MagicianRap0007.png
+MagicTouch Slot/Source/MagicianRap/MagicianRap0008.png
+MagicTouch Slot/Source/MagicianRap/MagicianRap0009.png
+MagicTouch Slot/Source/MagicianRap/MagicianRap0010.png
+MagicTouch Slot/Source/MagicianRap/MagicianRap0011.png
+MagicTouch Slot/Source/MagicianRap/MagicianRap0012.png
+MagicTouch Slot/Source/MagicianRap/MagicianRap0013.png
+MagicTouch Slot/Source/MagicianRap/MagicianRap0014.png
+MagicTouch Slot/Source/MagicianRap/MagicianRap0015.png
+MagicTouch Slot/Source/MagicianRap/MagicianRap0016.png
+MagicTouch Slot/Source/MagicianRap/MagicianRap0017.png
+MagicTouch Slot/Source/MagicianRap/MagicianRap0018.png
+MagicTouch Slot/Source/MagicianRap/MagicianRap0019.png
+MagicTouch Slot/Source/MagicianRap/MagicianRap0020.png
+MagicTouch Slot/Source/MagicianRap/MagicianRap0021.png
+MagicTouch Slot/Source/MagicianRap/MagicianRap0022.png
+MagicTouch Slot/Source/MagicianRap/MagicianRap0023.png
+MagicTouch Slot/Source/MagicianRap/MagicianRap0024.png
+MagicTouch Slot/Source/MagicianRap/MagicianRap0025.png
+MagicTouch Slot/Source/MagicianRap/MagicianRap0026.png
+MagicTouch Slot/Source/MagicianRap/MagicianRap0027.png
+MagicTouch Slot/Source/MagicianRap/MagicianRap0028.png
+MagicTouch Slot/Source/MagicianRap/MagicianRap0029.png
+MagicTouch Slot/Source/MagicianRap/MagicianRap0030.png
+MagicTouch Slot/Source/MagicianRap/MagicianRap0031.png
+MagicTouch Slot/Source/MagicianRap/MagicianRap0032.png
+MagicTouch Slot/Source/MagicianRap/MagicianRap0033.png
+MagicTouch Slot/Source/MagicianRap/MagicianRap0034.png
+MagicTouch Slot/Source/MagicianRap/MagicianRap0035.png
+MagicTouch Slot/Source/MagicianRap/MagicianRap0036.png
+MagicTouch Slot/Source/MagicianRap/MagicianRap0037.png
+MagicTouch Slot/Source/MagicianRap/MagicianRap0038.png
+MagicTouch Slot/Source/MagicianRap/MagicianRap0039.png
+MagicTouch Slot/Source/MagicianRap/MagicianRap0040.png
+MagicTouch Slot/Source/MagicianRap/MagicianRap0041.png
+MagicTouch Slot/Source/MagicianRap/MagicianRap0042.png
+MagicTouch Slot/Source/MagicianRap/MagicianRap0043.png
+MagicTouch Slot/Source/MagicianScroll/MagicianOpeningAScroll0000.png
+MagicTouch Slot/Source/MagicianScroll/MagicianOpeningAScroll0001.png
+MagicTouch Slot/Source/MagicianScroll/MagicianOpeningAScroll0002.png
+MagicTouch Slot/Source/MagicianScroll/MagicianOpeningAScroll0003.png
+MagicTouch Slot/Source/MagicianScroll/MagicianOpeningAScroll0004.png
+MagicTouch Slot/Source/MagicianScroll/MagicianOpeningAScroll0005.png
+MagicTouch Slot/Source/MagicianSpinAnim/animMagicianSpin0000.png
+MagicTouch Slot/Source/MagicianSpinAnim/animMagicianSpin0001.png
+MagicTouch Slot/Source/MagicianSpinAnim/animMagicianSpin0002.png
+MagicTouch Slot/Source/MagicianSpinAnim/animMagicianSpin0003.png
+MagicTouch Slot/Source/MagicianSpinAnim/animMagicianSpin0004.png
+MagicTouch Slot/Source/MagicianSpinAnim/animMagicianSpin0005.png
+MagicTouch Slot/Source/MagicianSpinAnim/animMagicianSpin0006.png
+MagicTouch Slot/Source/MagicianSpinAnim/animMagicianSpin0007.png
+MagicTouch Slot/Source/MagicianSpinAnim/animMagicianSpin0008.png
+MagicTouch Slot/Source/MagicianSpinAnim/animMagicianSpin0009.png
+MagicTouch Slot/Source/MagicianSpinAnim/animMagicianSpin0010.png
+MagicTouch Slot/Source/MagicianSpinAnim/animMagicianSpin0011.png
+MagicTouch Slot/Source/MagicianSpinAnim/animMagicianSpin0012.png
+MagicTouch Slot/Source/MagicianSpinAnim/animMagicianSpin0013.png
+MagicTouch Slot/Source/MagicianSpinAnim/animMagicianSpin0014.png
+MagicTouch Slot/Source/MagicianSpinAnim/animMagicianSpin0015.png
+MagicTouch Slot/Source/MagicianSpinAnim/animMagicianSpin0016.png
+MagicTouch Slot/Source/MagicianSpinAnim/animMagicianSpin0017.png
+MagicTouch Slot/Source/MagicianSpinAnim/animMagicianSpin0018.png
+MagicTouch Slot/Source/MagicianSpinAnim/animMagicianSpin0019.png
+MagicTouch Slot/Source/MagicianSpinAnim/animMagicianSpin0020.png
+MagicTouch Slot/Source/MagicianSpinAnim/animMagicianSpin0021.png
+MagicTouch Slot/Source/MagicianSpinAnim/animMagicianSpin0022.png
+MagicTouch Slot/Source/MagicianSpinAnim/animMagicianSpin0023.png
+MagicTouch Slot/Source/MagicianSpinAnim/animMagicianSpin0024.png
+MagicTouch Slot/Source/MagicianSpinAnim/animMagicianSpin0025.png
+MagicTouch Slot/Source/MagicianSpinAnim/animMagicianSpin0026.png
+MagicTouch Slot/Source/MagicianSpinAnim/animMagicianSpin0027.png
+MagicTouch Slot/Source/MagicianSpinAnim/animMagicianSpin0028.png
+MagicTouch Slot/Source/MagicianSpinAnim/animMagicianSpin0029.png
+MagicTouch Slot/Source/MagicianSpinAnim/animMagicianSpin0030.png
+MagicTouch Slot/Source/MagicianSpinAnim/animMagicianSpin0031.png
+MagicTouch Slot/Source/MagicianSpinAnim/animMagicianSpin0032.png
+MagicTouch Slot/Source/MagicianSpinAnim/animMagicianSpin0033.png
+MagicTouch Slot/Source/MagicianSpinAnim/animMagicianSpin0034.png
+MagicTouch Slot/Source/MagicianSpinAnim/animMagicianSpin0035.png
+MagicTouch Slot/Source/MagicianSpinAnim/animMagicianSpin0036.png
+MagicTouch Slot/Source/MagicianSpinAnim/animMagicianSpin0037.png
+MagicTouch Slot/Source/MagicianSpinAnim/animMagicianSpin0038.png
+MagicTouch Slot/Source/MagicianSpinAnim/animMagicianSpin0039.png
+MagicTouch Slot/Source/MagicianSpinAnim/animMagicianSpin0040.png
+MagicTouch Slot/Source/MagicianSpinAnim/animMagicianSpin0041.png
+MagicTouch Slot/Source/MagicianSpinAnim/animMagicianSpin0042.png
+MagicTouch Slot/Source/MagicianSpinAnim/animMagicianSpin0043.png
+MagicTouch Slot/Source/MagicianSpinAnim/animMagicianSpin0044.png
+MagicTouch Slot/Source/MagicianSpinAnim/animMagicianSpin0045.png
+MagicTouch Slot/Source/MagicianSpinAnim/animMagicianSpin0046.png
+MagicTouch Slot/Source/MagicianSpinAnim/animMagicianSpin0047.png
+MagicTouch Slot/Source/MagicianSpinAnim/animMagicianSpin0048.png
+MagicTouch Slot/Source/MagicianSpinAnim/animMagicianSpin0049.png
+MagicTouch Slot/Source/MagicianSpinAnim/animMagicianSpin0050.png
+MagicTouch Slot/Source/MagicianTurningButter/magicianTurningButter0000.png
+MagicTouch Slot/Source/MagicianTurningButter/magicianTurningButter0001.png
+MagicTouch Slot/Source/MagicianTurningButter/magicianTurningButter0002.png
+MagicTouch Slot/Source/MagicianTurningButter/magicianTurningButter0003.png
+MagicTouch Slot/Source/MagicianTurningButter/magicianTurningButter0004.png
+MagicTouch Slot/Source/MagicianTurningButter/magicianTurningButter0005.png
+MagicTouch Slot/Source/MagicianTurningButter/magicianTurningButter0006.png
+MagicTouch Slot/Source/MagicianTurningButter/magicianTurningButter0007.png
+MagicTouch Slot/Source/MagicianTurningButter/magicianTurningButter0008.png
+MagicTouch Slot/Source/MagicianTurningButter/magicianTurningButter0009.png
+MagicTouch Slot/Source/MagicianTurningButter/magicianTurningButter0010.png
+MagicTouch Slot/Source/MagicianTurningButter/magicianTurningButter0011.png
+MagicTouch Slot/Source/MagicianTurningButter/magicianTurningButter0012.png
+MagicTouch Slot/Source/MagicianTurningButter/magicianTurningButter0013.png
+MagicTouch Slot/Source/MagicianTurningButter/magicianTurningButter0014.png
+MagicTouch Slot/Source/MagicianTurningButter/magicianTurningButter0015.png
+MagicTouch Slot/Source/MagicianTurningButter/magicianTurningButter0016.png
+MagicTouch Slot/Source/MagicianTurningButter/magicianTurningButter0017.png
+MagicTouch Slot/Source/MagicianTurningButter/magicianTurningButter0018.png
+MagicTouch Slot/Source/MagicianTurningButter/magicianTurningButter0019.png
+MagicTouch Slot/Source/MagicianTurningButter/magicianTurningButter0020.png
+MagicTouch Slot/Source/MagicianTurningButter/magicianTurningButter0021.png
+MagicTouch Slot/Source/MagicianTurningButter/magicianTurningButter0022.png
+MagicTouch Slot/Source/MagicianTurningButter/magicianTurningButter0023.png
+MagicTouch Slot/Source/MagicianTurningButter/magicianTurningButter0024.png
+MagicTouch Slot/Source/MagicianTurningButter/magicianTurningButter0025.png
+MagicTouch Slot/Source/MagicianTurningButter/magicianTurningButter0026.png
+MagicTouch Slot/Source/MagicianTurningButter/magicianTurningButter0027.png
+MagicTouch Slot/Source/MagicianTurningButter/magicianTurningButter0028.png
+MagicTouch Slot/Source/MagicianTurningButter/magicianTurningButter0029.png
+MagicTouch Slot/Source/QueenAnim/animationTest_Queen.psd
+MagicTouch Slot/Source/QueenAnim/queen0000.png
+MagicTouch Slot/Source/QueenAnim/queen0001.png
+MagicTouch Slot/Source/QueenAnim/queen0002.png
+MagicTouch Slot/Source/QueenAnim/queen0003.png
+MagicTouch Slot/Source/QueenAnim/queen0004.png
+MagicTouch Slot/Source/QueenAnim/queen0005.png
+MagicTouch Slot/Source/QueenAnim/queen0006.png
+MagicTouch Slot/Source/QueenAnim/queen0007.png
+MagicTouch Slot/Source/QueenAnim/queen0008.png
+MagicTouch Slot/Source/QueenAnim/queen0009.png
+MagicTouch Slot/Source/QueenAnim/queen0010.png
+MagicTouch Slot/Source/QueenAnim/queen0011.png
+MagicTouch Slot/Source/QueenAnim/queen0012.png
+MagicTouch Slot/Source/QueenAnim/queen0013.png
+MagicTouch Slot/Source/QueenAnim/queen0014.png
+MagicTouch Slot/Source/QueenAnim/queen0015.png
+MagicTouch Slot/Source/QueenAnim/queen0016.png
+MagicTouch Slot/Source/QueenAnim/queen0017.png
+MagicTouch Slot/Source/QueenAnim/queen0018.png
+MagicTouch Slot/Source/QueenAnim/queen0019.png
+MagicTouch Slot/Source/QueenAnim/queen0020.png
+MagicTouch Slot/Source/QueenAnim/queen0021.png
+MagicTouch Slot/Source/anim_Magician_Blink/Untitled1.psd
+MagicTouch Slot/Source/freeSpinsAnim/animationTest_FreeSpins0000.png
+MagicTouch Slot/Source/freeSpinsAnim/animationTest_FreeSpins0001.png
+MagicTouch Slot/Source/freeSpinsAnim/animationTest_FreeSpins0002.png
+MagicTouch Slot/Source/freeSpinsAnim/animationTest_FreeSpins0003.png
+MagicTouch Slot/Source/freeSpinsAnim/animationTest_FreeSpins0004.png
+MagicTouch Slot/Source/freeSpinsAnim/animationTest_FreeSpins0005.png
+MagicTouch Slot/Source/freeSpinsAnim/animationTest_FreeSpins0006.png
+MagicTouch Slot/Source/freeSpinsAnim/animationTest_FreeSpins0007.png
+MagicTouch Slot/Source/freeSpinsAnim/animationTest_FreeSpins0008.png
+MagicTouch Slot/Source/freeSpinsAnim/animationTest_FreeSpins0009.png
+MagicTouch Slot/Source/freeSpinsAnim/animationTest_FreeSpins0010.png
+MagicTouch Slot/Source/freeSpinsAnim/animationTest_FreeSpins0011.png
+MagicTouch Slot/Source/freeSpinsAnim/animationTest_FreeSpins0012.png
+MagicTouch Slot/Source/freeSpinsAnim/animationTest_FreeSpins0013.png
+MagicTouch Slot/Source/freeSpinsAnim/animationTest_FreeSpins0014.png
+MagicTouch Slot/Source/freeSpinsAnim/animationTest_FreeSpins0015.png
+MagicTouch Slot/Source/freeSpinsAnim/animationTest_FreeSpins0016.png
+MagicTouch Slot/Source/freeSpinsAnim/animationTest_FreeSpins0017.png
+MagicTouch Slot/Source/freeSpinsAnim/animationTest_FreeSpins0018.png
+MagicTouch Slot/Source/freeSpinsAnim/animationTest_FreeSpins0019.png
+MagicTouch Slot/Source/freeSpinsAnim/animationTest_FreeSpins0020.png
+MagicTouch Slot/Source/freeSpinsAnim/animationTest_FreeSpins0021.png
+MagicTouch Slot/Source/freeSpinsAnim/animationTest_FreeSpins0022.png
+MagicTouch Slot/Source/freeSpinsAnim/animationTest_FreeSpins0023.png
+assets/btn_Play.png
+assets/btn_RevealAll.png
+node_modules/phaser/src/utils/object/MergeRight.js
+MagicTouch Slot/.DS_Store
+MagicTouch Slot/Source/BackGround_HelpOptions_Tabs_Flare[EDITED].psd
+MagicTouch Slot/Source/BackGround_HelpOptions_Tabs_Flare[EDITED]_Revision.psd
+assets/btn_RevealAll.png
+assets/ovr_MainScreen.png
+node_modules/phaser/webpack.config.js
+node_modules/phaser/webpack.dist.config.js
+node_modules/phaser/webpack.fb.config.js
+node_modules/phaser/webpack.fb.dist.config.js
+node_modules/phaser/yarn.lock
+node_modules/phaser/src/sound/noaudio/NoAudioSound.js
+node_modules/phaser/src/sound/noaudio/NoAudioSoundManager.js
+node_modules/phaser/src/sound/webaudio/WebAudioSound.js
+node_modules/phaser/src/sound/webaudio/WebAudioSoundManager.js
+node_modules/phaser/src/structs/List.js
+node_modules/phaser/src/structs/Map.js
+node_modules/phaser/src/structs/ProcessQueue.js
+node_modules/phaser/src/structs/RTree.js
+node_modules/phaser/src/structs/Set.js
+node_modules/phaser/src/structs/index.js
+node_modules/phaser/src/textures/CanvasTexture.js
+node_modules/phaser/src/textures/Frame.js
+node_modules/phaser/src/textures/Texture.js
+node_modules/phaser/src/textures/TextureManager.js
+node_modules/phaser/src/textures/TextureSource.js
+node_modules/phaser/src/textures/const.js
+node_modules/phaser/src/textures/index.js
+node_modules/phaser/src/textures/parsers/AtlasXML.js
+node_modules/phaser/src/textures/parsers/Canvas.js
+node_modules/phaser/src/textures/parsers/Image.js
+node_modules/phaser/src/textures/parsers/JSONArray.js
+node_modules/phaser/src/textures/parsers/JSONHash.js
+node_modules/phaser/src/textures/parsers/SpriteSheet.js
+node_modules/phaser/src/textures/parsers/SpriteSheetFromAtlas.js
+node_modules/phaser/src/textures/parsers/UnityYAML.js
+node_modules/phaser/src/textures/parsers/index.js
+node_modules/phaser/src/tilemaps/Formats.js
+node_modules/phaser/src/tilemaps/ImageCollection.js
+node_modules/phaser/src/tilemaps/ParseToTilemap.js
+node_modules/phaser/src/tilemaps/Tile.js
+node_modules/phaser/src/tilemaps/Tilemap.js
+node_modules/phaser/src/tilemaps/TilemapCreator.js
+node_modules/phaser/src/tilemaps/TilemapFactory.js
+node_modules/phaser/src/tilemaps/Tileset.js
+node_modules/phaser/src/tilemaps/index.js
+node_modules/phaser/src/tilemaps/components/CalculateFacesAt.js
+node_modules/phaser/src/tilemaps/components/CalculateFacesWithin.js
+node_modules/phaser/src/tilemaps/components/Copy.js
+node_modules/phaser/src/tilemaps/components/CreateFromTiles.js
+node_modules/phaser/src/tilemaps/components/CullTiles.js
+node_modules/phaser/src/tilemaps/components/Fill.js
+node_modules/phaser/src/tilemaps/components/FilterTiles.js
+node_modules/phaser/src/tilemaps/components/FindByIndex.js
+node_modules/phaser/src/tilemaps/components/FindTile.js
+node_modules/phaser/src/tilemaps/components/ForEachTile.js
+node_modules/phaser/src/tilemaps/components/GetTileAt.js
+node_modules/phaser/src/tilemaps/components/GetTileAtWorldXY.js
+node_modules/phaser/src/tilemaps/components/GetTilesWithin.js
+node_modules/phaser/src/tilemaps/components/GetTilesWithinShape.js
+node_modules/phaser/src/tilemaps/components/GetTilesWithinWorldXY.js
+node_modules/phaser/src/tilemaps/components/HasTileAt.js
+node_modules/phaser/src/tilemaps/components/HasTileAtWorldXY.js
+node_modules/phaser/src/tilemaps/components/IsInLayerBounds.js
+node_modules/phaser/src/tilemaps/components/PutTileAt.js
+node_modules/phaser/src/tilemaps/components/PutTileAtWorldXY.js
+node_modules/phaser/src/tilemaps/components/PutTilesAt.js
+node_modules/phaser/src/tilemaps/components/Randomize.js
+node_modules/phaser/src/tilemaps/components/RemoveTileAt.js
+node_modules/phaser/src/tilemaps/components/RemoveTileAtWorldXY.js
+node_modules/phaser/src/tilemaps/components/RenderDebug.js
+node_modules/phaser/src/tilemaps/components/ReplaceByIndex.js
+node_modules/phaser/src/tilemaps/components/SetCollision.js
+node_modules/phaser/src/tilemaps/components/SetCollisionBetween.js
+node_modules/phaser/src/tilemaps/components/SetCollisionByExclusion.js
+node_modules/phaser/src/tilemaps/components/SetCollisionByProperty.js
+node_modules/phaser/src/tilemaps/components/SetCollisionFromCollisionGroup.js
+node_modules/phaser/src/tilemaps/components/SetLayerCollisionIndex.js
+node_modules/phaser/src/tilemaps/components/SetTileCollision.js
+node_modules/phaser/src/tilemaps/components/SetTileIndexCallback.js
+node_modules/phaser/src/tilemaps/components/SetTileLocationCallback.js
+node_modules/phaser/src/tilemaps/components/Shuffle.js
+node_modules/phaser/src/tilemaps/components/SwapByIndex.js
+node_modules/phaser/src/tilemaps/components/TileToWorldX.js
+node_modules/phaser/src/tilemaps/components/TileToWorldXY.js
+node_modules/phaser/src/tilemaps/components/TileToWorldY.js
+node_modules/phaser/src/tilemaps/components/WeightedRandomize.js
+node_modules/phaser/src/tilemaps/components/WorldToTileX.js
+node_modules/phaser/src/tilemaps/components/WorldToTileXY.js
+node_modules/phaser/src/tilemaps/components/WorldToTileY.js
+node_modules/phaser/src/tilemaps/components/index.js
+node_modules/phaser/src/tilemaps/dynamiclayer/DynamicTilemapLayer.js
+node_modules/phaser/src/tilemaps/dynamiclayer/DynamicTilemapLayerCanvasRenderer.js
+node_modules/phaser/src/tilemaps/dynamiclayer/DynamicTilemapLayerRender.js
+node_modules/phaser/src/tilemaps/dynamiclayer/DynamicTilemapLayerWebGLRenderer.js
+node_modules/phaser/src/tilemaps/mapdata/LayerData.js
+node_modules/phaser/src/tilemaps/mapdata/MapData.js
+node_modules/phaser/src/tilemaps/mapdata/ObjectLayer.js
+node_modules/phaser/src/tilemaps/parsers/Parse.js
+node_modules/phaser/src/tilemaps/parsers/Parse2DArray.js
+node_modules/phaser/src/tilemaps/parsers/ParseCSV.js
+node_modules/phaser/src/tilemaps/parsers/index.js
+node_modules/phaser/src/tilemaps/parsers/impact/ParseTileLayers.js
+node_modules/phaser/src/tilemaps/parsers/impact/ParseTilesets.js
+node_modules/phaser/src/tilemaps/parsers/impact/ParseWeltmeister.js
+node_modules/phaser/src/tilemaps/parsers/tiled/AssignTileProperties.js
+node_modules/phaser/src/tilemaps/parsers/tiled/Base64Decode.js
+node_modules/phaser/src/tilemaps/parsers/tiled/BuildTilesetIndex.js
+node_modules/phaser/src/tilemaps/parsers/tiled/ParseGID.js
+node_modules/phaser/src/tilemaps/parsers/tiled/ParseImageLayers.js
+node_modules/phaser/src/tilemaps/parsers/tiled/ParseJSONTiled.js
+node_modules/phaser/src/tilemaps/parsers/tiled/ParseObject.js
+node_modules/phaser/src/tilemaps/parsers/tiled/ParseObjectLayers.js
+node_modules/phaser/src/tilemaps/parsers/tiled/ParseTileLayers.js
+node_modules/phaser/src/tilemaps/parsers/tiled/ParseTilesets.js
+node_modules/phaser/src/tilemaps/parsers/tiled/Pick.js
+node_modules/phaser/src/tilemaps/staticlayer/StaticTilemapLayer.js
+node_modules/phaser/src/tilemaps/staticlayer/StaticTilemapLayerCanvasRenderer.js
+node_modules/phaser/src/tilemaps/staticlayer/StaticTilemapLayerRender.js
+node_modules/phaser/src/tilemaps/staticlayer/StaticTilemapLayerWebGLRenderer.js
+node_modules/phaser/src/time/Clock.js
+node_modules/phaser/src/time/TimerEvent.js
+node_modules/phaser/src/time/index.js
+node_modules/phaser/src/tweens/Timeline.js
+node_modules/phaser/src/tweens/TweenManager.js
+node_modules/phaser/src/tweens/index.js
+node_modules/phaser/src/tweens/builders/GetBoolean.js
+node_modules/phaser/src/tweens/builders/GetEaseFunction.js
+node_modules/phaser/src/tweens/builders/GetNewValue.js
+node_modules/phaser/src/tweens/builders/GetProps.js
+node_modules/phaser/src/tweens/builders/GetTargets.js
+node_modules/phaser/src/tweens/builders/GetTweens.js
+node_modules/phaser/src/tweens/builders/GetValueOp.js
+node_modules/phaser/src/tweens/builders/NumberTweenBuilder.js
+node_modules/phaser/src/tweens/builders/TimelineBuilder.js
+node_modules/phaser/src/tweens/builders/TweenBuilder.js
+node_modules/phaser/src/tweens/builders/index.js
+node_modules/phaser/src/tweens/tween/Defaults.js
+node_modules/phaser/src/tweens/tween/ReservedProps.js
+node_modules/phaser/src/tweens/tween/Tween.js
+node_modules/phaser/src/tweens/tween/TweenData.js
+node_modules/phaser/src/tweens/tween/const.js
+node_modules/phaser/src/utils/Class.js
+node_modules/phaser/src/utils/NOOP.js
+node_modules/phaser/src/utils/index.js
+node_modules/phaser/src/utils/array/Add.js
+node_modules/phaser/src/utils/array/AddAt.js
+node_modules/phaser/src/utils/array/BringToTop.js
+node_modules/phaser/src/utils/array/CountAllMatching.js
+node_modules/phaser/src/utils/array/Each.js
+node_modules/phaser/src/utils/array/EachInRange.js
+node_modules/phaser/src/utils/array/FindClosestInSorted.js
+node_modules/phaser/src/utils/array/GetAll.js
+node_modules/phaser/src/utils/array/GetFirst.js
+node_modules/phaser/src/utils/array/GetRandom.js
+node_modules/phaser/src/utils/array/MoveDown.js
+node_modules/phaser/src/utils/array/MoveTo.js
+node_modules/phaser/src/utils/array/MoveUp.js
+node_modules/phaser/src/utils/array/NumberArray.js
+node_modules/phaser/src/utils/array/NumberArrayStep.js
+node_modules/phaser/src/utils/array/QuickSelect.js
+node_modules/phaser/src/utils/array/Range.js
+node_modules/phaser/src/utils/array/Remove.js
+node_modules/phaser/src/utils/array/RemoveAt.js
+node_modules/phaser/src/utils/array/RemoveBetween.js
+node_modules/phaser/src/utils/array/RemoveRandomElement.js
+node_modules/phaser/src/utils/array/Replace.js
+node_modules/phaser/src/utils/array/RotateLeft.js
+node_modules/phaser/src/utils/array/RotateRight.js
+node_modules/phaser/src/utils/array/SafeRange.js
+node_modules/phaser/src/utils/array/SendToBack.js
+node_modules/phaser/src/utils/array/SetAll.js
+node_modules/phaser/src/utils/array/Shuffle.js
+node_modules/phaser/src/utils/array/SpliceOne.js
+node_modules/phaser/src/utils/array/StableSort.js
+node_modules/phaser/src/utils/array/Swap.js
+node_modules/phaser/src/utils/array/index.js
+node_modules/phaser/src/utils/array/matrix/CheckMatrix.js
+node_modules/phaser/src/utils/array/matrix/MatrixToString.js
+node_modules/phaser/src/utils/array/matrix/ReverseColumns.js
+node_modules/phaser/src/utils/array/matrix/ReverseRows.js
+node_modules/phaser/src/utils/array/matrix/Rotate180.js
+node_modules/phaser/src/utils/array/matrix/RotateLeft.js
+node_modules/phaser/src/utils/array/matrix/RotateMatrix.js
+node_modules/phaser/src/utils/array/matrix/RotateRight.js
+node_modules/phaser/src/utils/array/matrix/TransposeMatrix.js
+node_modules/phaser/src/utils/array/matrix/index.js
+node_modules/phaser/src/utils/object/Clone.js
+node_modules/phaser/src/utils/object/Extend.js
+node_modules/phaser/src/utils/object/GetAdvancedValue.js
+node_modules/phaser/src/utils/object/GetFastValue.js
+node_modules/phaser/src/utils/object/GetMinMaxValue.js
+node_modules/phaser/src/utils/object/GetValue.js
+node_modules/phaser/src/utils/object/HasAll.js
+node_modules/phaser/src/utils/object/HasAny.js
+node_modules/phaser/src/utils/object/HasValue.js
+node_modules/phaser/src/utils/object/IsPlainObject.js
+node_modules/phaser/src/utils/object/Merge.js
+node_modules/phaser/src/utils/object/index.js
+node_modules/phaser/src/utils/string/Format.js
+node_modules/phaser/src/utils/string/Pad.js
+node_modules/phaser/src/utils/string/Reverse.js
+node_modules/phaser/src/utils/string/UUID.js
+node_modules/phaser/src/utils/string/UppercaseFirst.js
+node_modules/phaser/src/utils/string/index.js
+MagicTouch Slot/Source/BackGround_HelpOptions_Tabs_Flare[EDITED]_Revision.psd
+MagicTouch Slot/Source/BackGround_HelpOptions_Tabs_Flare[EDITED].psd
+assets/btn_RevealAll.png
+assets/ovr_MainScreen.png
+.DS_Store
+MagicTouch Slot/Source/BackGround_HelpOptions_Tabs_Flare[EDITED]_Revision.psd
+MagicTouch Slot/Source/BackGround_HelpOptions_Tabs_Flare[EDITED].psd
+assets/btn_RevealAll.png
+assets/ovr_MainScreen.png

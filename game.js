@@ -1,3 +1,4 @@
+
 console.log("Game Is Starting");
 let reelIndex = [];
 let selectedGroup = [];
@@ -22,6 +23,8 @@ let winList = [];
 let last10Wins = [];
 let payoutArray = [];
 let playCost = denom * paylines;
+
+
 
 
 
@@ -88,6 +91,7 @@ function getInitialSymbols(){
   }
   initialSelectedGroup = transposeArray(initialSelectedGroup, 5);
   console.log(initialSelectedGroup);
+  selectedGroup = initialSelectedGroup;
   return initialSelectedGroup;
 }
 
@@ -116,7 +120,11 @@ function displayWins(){
 function adjustBalances(){
   for (var i = 0; i < payoutArray.length; i++) {
       balance = balance + payoutArray[i][0];
+      won = won + payoutArray[i][0];
         console.log(balance);
+      }
+      if(won > 0){
+        magician.anims.play('dance');
       }
   }
 
@@ -137,135 +145,22 @@ function simulate(){
 }
 
 
-const reel_1 = {
-
-    reelPos: 0,
-    xPosition: 100,
-    yPosition: 100,
-    speed: 20,
-    stopped: false,
-    nextSymbolPos: [143,-90],
-    topSymbolPos: [143, 224],
-    middleSymbolPos: [143, 384],
-    bottomSymbolPos: [143, 544],
-    initTopSymbol: 0,
-    initMiddleSymbol: 0,
-    initBottomSymbol: 0,
-    initIndex: 0,
-    nextSymbol: 0,
-    finaleTopSymbol: 0,
-    finaleMiddle: 0,
-    finaleBottomSymbol: 0,
-    finaleIndex: 20,
-    cycles: 0,
-    spinInfo: [],
-
-get finaleSymbols(){
-
-  this.finaleIndex = reelIndex[this.reelPos];
-  let indexPos = this.finaleIndex;
-  this.nextSymbol = allReels[this.reelPos][this.finaleIndex - 2];
-  this.finaleTopSymbol = allReels[this.reelPos][this.finaleIndex - 1];
-  this.finaleMiddle = allReels[this.reelPos][this.finaleIndex];
-  this.finaleBottomSymbol = allReels[this.reelPos][this.finaleIndex[0]+1];
-},
-initialize(){
-  this.initTopSymbol = initialSelectedGroup[0][this.reelPos];
-  this.initMiddleSymbol = initialSelectedGroup[1][this.reelPos];
-  this.initBottomSymbol = initialSelectedGroup[2][this.reelPos];
-  this.initIndex = reelIndex[this.reelPos];
-},
-
-spin(){
-  this.spinInfo = [];
-  ///Determine how many iterations through reel from start to stop
-  this.finaleIndex = reelIndex[this.reelPos];
-  let stopIndex = this.finaleIndex[0];
-  let startIndex = this.initIndex[0];
-  let iterations = 0;
-  console.log(startIndex, stopIndex);
-  if (startIndex >= stopIndex) {
-    console.log('start is greater than final ', iterations, startIndex, stopIndex);
-    iterations = startIndex - stopIndex;
-    iterations = iterations + 149;
-    console.log('start is greater than final ', iterations, startIndex, stopIndex);
-  } else {
-    console.log('start is LESS than final ', iterations, startIndex, stopIndex);
-    iterations = startIndex + 149;
-    iterations = iterations - stopIndex;
-    console.log('start is LESS than final ', iterations, startIndex, stopIndex);
-  }
-
-this.spinInfo.push(this.reelPos, startIndex, iterations);
-
-
-///preventing crazyness with a while loop, comparing arrays together instead of thier values
-while (iterations < 1000) {
-
-  console.log('cycles to stop ', iterations);
-///AFTER GETTING SYMBOLS FUNCTION//////////
-  let symbolPosition = this.initIndex;
-  let topSymbol = symbolPosition - 1;
-  let bottomSymbol = topSymbol + 2; //weird issue, symbolPosition +1 is undefined
-  let middleSymbol = allReels[this.reelPos][symbolPosition];
-  let nextSymbol = symbolPosition - 2;
-  topSymbol = allReels[this.reelPos][topSymbol];
-  bottomSymbol = allReels[this.reelPos][bottomSymbol];
-  nextSymbol = allReels[this.reelPos][nextSymbol];
-  console.log(nextSymbol);
-  console.log(topSymbol);
-  console.log(middleSymbol);
-  console.log(bottomSymbol);
-  console.log(symbolPosition);
-
-  if (symbolPosition <= numIconsOnReel) {
-      for (let i = 0; i < iterations; i++) {
-        symbolPosition --;
-
-        if (symbolPosition == 0){
-          nextSymbol = allReels[this.reelPos][numIconsOnReel - 2];
-          topSymbol = allReels[this.reelPos][numIconsOnReel - 1];
-          middleSymbol = allReels[this.reelPos][symbolPosition];
-          bottomSymbol = allReels[this.reelPos][symbolPosition + 1];
-          symbolPosition = numIconsOnReel - 1;
-          console.log('index ', symbolPosition);
-        } if (symbolPosition == numIconsOnReel - 1) {
-          nextSymbol = allReels[this.reelPos][numIconsOnReel - 3];
-          topSymbol = allReels[this.reelPos][numIconsOnReel - 2];
-          middleSymbol = allReels[this.reelPos][symbolPosition];
-          bottomSymbol = allReels[this.reelPos][0];
-                  console.log('index ', symbolPosition);
-        } else {
-         nextSymbol = allReels[this.reelPos][symbolPosition - 2];
-         topSymbol = allReels[this.reelPos][symbolPosition - 1];
-         middleSymbol = allReels[this.reelPos][symbolPosition];
-         bottomSymbol = allReels[this.reelPos][symbolPosition + 1];
-        console.log('index ', symbolPosition);
-      }
-    }
-
-  }
-  this.initTopSymbol = topSymbol;
-  this.initMiddleSymbol = middleSymbol;
-  this.initBottomSymbol = bottomSymbol;
-  this.initIndex[0] = stopIndex;
-  this.cycles = iterations;
-  break;
-  }
-},
-
-}
-
+/////////////When PLAY button is pressed///////////////////////////////////////////////////////
 
 function play(){
   if (playCost <= balance && paylines >= 1) {
     winList = [];
     payoutArray = [];
+    won = 0;
     balance = balance - playCost;
     console.log(balance);
 
     getSymbols();
     reel_1.spin();
+    reel_2.spin();
+    reel_3.spin();
+    reel_4.spin();
+    reel_5.spin();
     getPaylineMatches();
     getIconPayouts();
     displayWins();
@@ -280,7 +175,13 @@ function play(){
 //All reels get thier starting symbols before play////
 function initializeReels(){
   reel_1.initialize();
+  reel_2.initialize();
+  reel_3.initialize();
+  reel_4.initialize();
+  reel_5.initialize();
 }
+
+
 
 //Start up Functions////////////
 createReels();
