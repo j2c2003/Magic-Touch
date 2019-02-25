@@ -3,7 +3,8 @@ console.log("Game Is Starting");
 let reelIndex = [];
 let selectedGroup = [];
 let initialSelectedGroup = [];
-const denom = .25;
+//-----------------------denom and pays are in cents--------------------//
+let denom = 1;
 const allReels = [];
 const numOfReels = 5;
 const icons = 11;
@@ -12,7 +13,7 @@ const iconSelectGroup = 3;
 const iconReelBuffer = 1;
 const paylines = 25;
 const symbolCycle = 50;
-let balance = 100;
+let balance = 10000;
 let minorProgressive = 0;
 let majorProgressive = 0;
 let won = 0;
@@ -143,7 +144,12 @@ function simulate(){
     }
 
 }
-
+function financial(x) {
+  return Number.parseFloat(x).toFixed(2);
+}
+function insertDecimal(num) {
+  return (num / 100).toFixed(2);
+}
 
 /////////////When PLAY button is pressed///////////////////////////////////////////////////////
 
@@ -161,6 +167,7 @@ function play(){
     reel_3.spin();
     reel_4.spin();
     reel_5.spin();
+
     getPaylineMatches();
     getIconPayouts();
     displayWins();

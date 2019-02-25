@@ -21,11 +21,21 @@ game = new Phaser.Game(config);
 function preload ()
 {
 
+    this.load.spritesheet('btn_BetUp', 'assets/btn_BetUp.png', {
+       frameWidth: 42,
+       frameHeight: 42,
+    });
+
+    this.load.spritesheet('btn_BetDown', 'assets/btn_BetDown.png', {
+       frameWidth: 42,
+       frameHeight: 42,
+    });
 
     this.load.spritesheet('btn_Play','assets/btn_Play.png', { frameWidth: 174,
                                                                       frameHeight: 139,
                                                                     });
-
+    this.load.image('reelStopBtn', 'assets/ovr_ReelStop.png');
+    this.load.image('reelStopBtnDisp', 'assets/ovr_ReelStop_Display.png');
     this.load.image('bg_MainScreen', 'assets/bg_MainScreen.png');
     this.load.image('ovr_MainScreen', 'assets/ovr_MainScreen.png');
     this.load.spritesheet('anim_Magician','assets/anim_Magician.png', { frameWidth: 323,
@@ -146,7 +156,55 @@ function create ()
    this.anims.create(btn_Play_Highlight);
    this.anims.create(btn_Play);
    this.anims.create(btn_Play_Down);
-
+   
+   var btn_BetUp = {
+      key: 'btn_BetUp_Normal',
+      frames: this.anims.generateFrameNumbers('btn_BetUp', {
+         start: 0,
+         end: 0
+      }),
+   };
+   var btn_BetUp_Highlight = {
+      key: 'btn_BetUp_Highlight',
+      frames: this.anims.generateFrameNumbers('btn_BetUp', {
+         start: 1,
+         end: 1
+      }),
+   };
+   var btn_BetUp_Down = {
+      key: 'btn_BetUp_Down',
+      frames: this.anims.generateFrameNumbers('btn_BetUp', {
+         start: 2,
+         end: 2
+      }),
+   };
+this.anims.create(btn_BetUp);
+this.anims.create(btn_BetUp_Highlight);
+this.anims.create(btn_BetUp_Down);
+var btn_BetDown = {
+   key: 'btn_BetDown_Normal',
+   frames: this.anims.generateFrameNumbers('btn_BetDown', {
+      start: 0,
+      end: 0
+   }),
+};
+var btn_BetDown_Highlight = {
+   key: 'btn_BetDown_Highlight',
+   frames: this.anims.generateFrameNumbers('btn_BetDown', {
+      start: 1,
+      end: 1
+   }),
+};
+var btn_BetDown_Down = {
+   key: 'btn_BetDown_Down',
+   frames: this.anims.generateFrameNumbers('btn_BetDown', {
+      start: 2,
+      end: 2
+   }),
+};
+this.anims.create(btn_BetDown);
+this.anims.create(btn_BetDown_Highlight);
+this.anims.create(btn_BetDown_Down);
 
 icon1.visible = false;
 icon2.visible = false;
@@ -180,14 +238,48 @@ symHolder5_1 = this.add.sprite(512, 500, 'icons');
 symHolder5_2 = this.add.sprite(512, 500, 'icons');
 symHolder5_3 = this.add.sprite(512, 500, 'icons');
 //symHolder1_0 = this.add.sprite(512, 500, 'icons');
+stopReel_1_Disp = this.add.image(140, 389, 'reelStopBtnDisp').setAlpha(0);
+stopReel_2_Disp = this.add.image(325, 389, 'reelStopBtnDisp').setAlpha(0);
+stopReel_3_Disp = this.add.image(510, 389, 'reelStopBtnDisp').setAlpha(0);
+stopReel_4_Disp = this.add.image(695, 389, 'reelStopBtnDisp').setAlpha(0);
+stopReel_5_Disp = this.add.image(885, 389, 'reelStopBtnDisp').setAlpha(0);
 
 
+btn_Stop_Reel_1 = this.add.image(140, 389, 'reelStopBtn').setInteractive();
+btn_Stop_Reel_1.on('pointerup', function (pointer) {
+   reel_1.stopped = true;
+});
 
+btn_Stop_Reel_2 = this.add.image(325, 389, 'reelStopBtn').setInteractive();
+btn_Stop_Reel_2.on('pointerup', function (pointer) {
+   reel_2.stopped = true;
+});
+btn_Stop_Reel_3 = this.add.image(510, 389, 'reelStopBtn').setInteractive();
+btn_Stop_Reel_3.on('pointerup', function (pointer) {
+   reel_3.stopped = true;
+});
+btn_Stop_Reel_4 = this.add.image(695, 389, 'reelStopBtn').setInteractive();
+btn_Stop_Reel_4.on('pointerup', function (pointer) {
+   reel_4.stopped = true;
+});
+btn_Stop_Reel_5 = this.add.image(885, 389, 'reelStopBtn').setInteractive();
+btn_Stop_Reel_5.on('pointerup', function (pointer) {
+   reel_5.stopped = true;
+});
 
-
-
-
-//displayReel_1();
+this.tweens.add({
+   targets: [stopReel_1_Disp, stopReel_2_Disp, stopReel_3_Disp, stopReel_4_Disp, stopReel_5_Disp],
+   alpha: {
+      value: 1,
+      duration: 200,
+      ease: 'Bounce.easeInOut'
+   },
+   yoyo: true,
+   loop: 2,
+   delay: function (i, total, target) {
+      return i * 100;
+   }
+});
 
 
 ///OVERLAY//////////////////////////////////////////////////////////////
@@ -208,12 +300,50 @@ btn_Play.anims.play('btn_Play_Normal');
 
     btn_Play.on('pointerup', function (pointer) {
         btn_Play.anims.play('btn_Play_Normal');
+        if(reel_1.stopped && reel_2.stopped && reel_3.stopped && reel_4.stopped && reel_5.stopped){
         magician.anims.play('spin');
             play();
+        } else{
+           reel_1.stopped = true;
+           reel_2.stopped = true;
+           reel_3.stopped = true;
+           reel_4.stopped = true;
+           reel_5.stopped = true;
+           console.log('reels still spinning');           
+        }
     });
     btn_Play.on('pointerdown', function (pointer){
         btn_Play.anims.play('btn_Play_Down');
     });
+
+btn_BetDown = this.add.sprite(800, 750, 'btn_BetDown').setInteractive();
+btn_BetDown.anims.play('btn_BetDown_Normal');
+btn_BetDown.on('pointerup', function (pointer) {
+   if (denom > 1){
+      denom--;
+      playCost = denom * paylines;
+            
+   } 
+   btn_BetDown.anims.play('btn_BetDown_Normal');
+});
+btn_BetDown.on('pointerdown', function (pointer){
+   btn_BetDown.anims.play('btn_BetDown_Down');
+});
+
+btn_BetUp = this.add.sprite(800, 699, 'btn_BetUp').setInteractive();
+btn_BetUp.anims.play('btn_BetUp_Normal');
+btn_BetUp.on('pointerup', function (pointer) {
+   if (playCost < balance ) {
+      denom++;
+      playCost = denom * paylines;
+      
+   }
+   btn_BetUp.anims.play('btn_BetUp_Normal');
+});
+btn_BetUp.on('pointerdown', function (pointer) {
+   btn_BetUp.anims.play('btn_BetUp_Down');
+});
+
 
 
     this.anims.create({key: 'spin',
@@ -330,12 +460,14 @@ function update ()
 displaySymbolTime();
 
 
+    
+    this.data.set('balance', '$'+ insertDecimal(balance));
     balanceText.setText([this.data.get('balance')]);
-    this.data.set('balance', '$'+ balance);
-    balanceText.setText([this.data.get('balance')]);
-    this.data.set('won', '$' + won);
+
+    this.data.set('won', '$' + insertDecimal(won));
     wonText.setText([this.data.get('won')]);
-    this.data.set('cost', '$' + playCost);
+
+    this.data.set('cost', '$' + insertDecimal(playCost));
     costText.setText([this.data.get('cost')]);
 
 }

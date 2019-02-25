@@ -1,4 +1,3 @@
-
 const reel_1 = {
 
     reelPos: 0,
@@ -42,6 +41,7 @@ const reel_1 = {
     },
 
     spin() {
+        this.stopped = false;
         this.spinInfo = [];
         ///Determine how many iterations through reel from start to stop
         this.finaleIndex = reelIndex[this.reelPos];
@@ -93,7 +93,7 @@ const reel_1 = {
   ////////     Removed from display.js    /////////////////////////////
 animate(){
 
-            if (this.currentIndex <= numIconsOnReel) {
+            if (this.stopped == false) {
 
                 if ( this.counter < this.cycles ) {
                   this.counter++;
@@ -131,10 +131,41 @@ animate(){
             // this.initTopSymbol = topSymbol;
             // this.initMiddleSymbol = middleSymbol;
             // this.initBottomSymbol = bottomSymbol;
-
+            this.stopped = true;
             return;
             //break;
             }
+/////--------------------When the reel is stopped--------------------------/////
+        } else {
+            this.currentIndex = this.initIndex[0]
+            if (this.currentIndex == 0) {
+                nextSymbol = allReels[this.reelPos][numIconsOnReel - 2];
+                topSymbol = allReels[this.reelPos][numIconsOnReel - 1];
+                middleSymbol = allReels[this.reelPos][this.currentIndex];
+                bottomSymbol = allReels[this.reelPos][this.currentIndex + 1];
+                this.currentIndex = numIconsOnReel - 1;
+                //console.log('index ', this.currentIndex);
+            }
+            if (this.currentIndex == numIconsOnReel - 1) {
+                nextSymbol = allReels[this.reelPos][numIconsOnReel - 3];
+                topSymbol = allReels[this.reelPos][numIconsOnReel - 2];
+                middleSymbol = allReels[this.reelPos][this.currentIndex];
+                bottomSymbol = allReels[this.reelPos][0];
+                //console.log('index ', this.currentIndex);
+            } else {
+                nextSymbol = allReels[this.reelPos][this.currentIndex - 2];
+                topSymbol = allReels[this.reelPos][this.currentIndex - 1];
+                middleSymbol = allReels[this.reelPos][this.currentIndex];
+                bottomSymbol = allReels[this.reelPos][this.currentIndex + 1];
+                //console.log('index ', this.currentIndex);
+            }
+
+            symHolder1_1.anims.play(iconReturn(topSymbol));
+
+            symHolder1_2.anims.play(iconReturn(middleSymbol));
+
+            symHolder1_3.anims.play(iconReturn(bottomSymbol));
+
         }
     },
 
@@ -183,6 +214,7 @@ const reel_2 = {
     },
 
     spin() {
+        this.stopped = false;
         this.spinInfo = [];
         ///Determine how many iterations through reel from start to stop
         this.finaleIndex = reelIndex[this.reelPos];
@@ -234,7 +266,7 @@ const reel_2 = {
   ////////     Removed from display.js    /////////////////////////////
 animate(){
 
-            if (this.currentIndex <= numIconsOnReel) {
+            if (this.stopped == false) {
 
                 if ( this.counter < this.cycles ) {
                   this.counter++;
@@ -272,10 +304,40 @@ animate(){
             // this.initTopSymbol = topSymbol;
             // this.initMiddleSymbol = middleSymbol;
             // this.initBottomSymbol = bottomSymbol;
-
+            this.stopped = true;
             return;
             //break;
             }
+        } else {
+            this.currentIndex = this.initIndex[0]
+            if (this.currentIndex == 0) {
+                nextSymbol = allReels[this.reelPos][numIconsOnReel - 2];
+                topSymbol = allReels[this.reelPos][numIconsOnReel - 1];
+                middleSymbol = allReels[this.reelPos][this.currentIndex];
+                bottomSymbol = allReels[this.reelPos][this.currentIndex + 1];
+                this.currentIndex = numIconsOnReel - 1;
+                //console.log('index ', this.currentIndex);
+            }
+            if (this.currentIndex == numIconsOnReel - 1) {
+                nextSymbol = allReels[this.reelPos][numIconsOnReel - 3];
+                topSymbol = allReels[this.reelPos][numIconsOnReel - 2];
+                middleSymbol = allReels[this.reelPos][this.currentIndex];
+                bottomSymbol = allReels[this.reelPos][0];
+                //console.log('index ', this.currentIndex);
+            } else {
+                nextSymbol = allReels[this.reelPos][this.currentIndex - 2];
+                topSymbol = allReels[this.reelPos][this.currentIndex - 1];
+                middleSymbol = allReels[this.reelPos][this.currentIndex];
+                bottomSymbol = allReels[this.reelPos][this.currentIndex + 1];
+                //console.log('index ', this.currentIndex);
+            }
+
+            symHolder2_1.anims.play(iconReturn(topSymbol));
+
+            symHolder2_2.anims.play(iconReturn(middleSymbol));
+
+            symHolder2_3.anims.play(iconReturn(bottomSymbol));
+
         }
     },
 
@@ -324,6 +386,7 @@ const reel_3 = {
     },
 
     spin() {
+        this.stopped = false;
         this.spinInfo = [];
         ///Determine how many iterations through reel from start to stop
         this.finaleIndex = reelIndex[this.reelPos];
@@ -375,7 +438,7 @@ const reel_3 = {
   ////////     Removed from display.js    /////////////////////////////
 animate(){
 
-            if (this.currentIndex <= numIconsOnReel) {
+            if (this.stopped == false) {
 
                 if ( this.counter < this.cycles ) {
                   this.counter++;
@@ -413,10 +476,40 @@ animate(){
             // this.initTopSymbol = topSymbol;
             // this.initMiddleSymbol = middleSymbol;
             // this.initBottomSymbol = bottomSymbol;
-
+            this.stopped = true;
             return;
             //break;
             }
+        } else {
+            this.currentIndex = this.initIndex[0]
+            if (this.currentIndex == 0) {
+                nextSymbol = allReels[this.reelPos][numIconsOnReel - 2];
+                topSymbol = allReels[this.reelPos][numIconsOnReel - 1];
+                middleSymbol = allReels[this.reelPos][this.currentIndex];
+                bottomSymbol = allReels[this.reelPos][this.currentIndex + 1];
+                this.currentIndex = numIconsOnReel - 1;
+                //console.log('index ', this.currentIndex);
+            }
+            if (this.currentIndex == numIconsOnReel - 1) {
+                nextSymbol = allReels[this.reelPos][numIconsOnReel - 3];
+                topSymbol = allReels[this.reelPos][numIconsOnReel - 2];
+                middleSymbol = allReels[this.reelPos][this.currentIndex];
+                bottomSymbol = allReels[this.reelPos][0];
+                //console.log('index ', this.currentIndex);
+            } else {
+                nextSymbol = allReels[this.reelPos][this.currentIndex - 2];
+                topSymbol = allReels[this.reelPos][this.currentIndex - 1];
+                middleSymbol = allReels[this.reelPos][this.currentIndex];
+                bottomSymbol = allReels[this.reelPos][this.currentIndex + 1];
+                //console.log('index ', this.currentIndex);
+            }
+
+            symHolder3_1.anims.play(iconReturn(topSymbol));
+
+            symHolder3_2.anims.play(iconReturn(middleSymbol));
+
+            symHolder3_3.anims.play(iconReturn(bottomSymbol));
+
         }
     },
 }
@@ -463,6 +556,7 @@ const reel_4 = {
     },
 
     spin() {
+        this.stopped = false;
         this.spinInfo = [];
         ///Determine how many iterations through reel from start to stop
         this.finaleIndex = reelIndex[this.reelPos];
@@ -514,7 +608,7 @@ const reel_4 = {
   ////////     Removed from display.js    /////////////////////////////
 animate(){
 
-            if (this.currentIndex <= numIconsOnReel) {
+            if (this.stopped == false) {
 
                 if ( this.counter < this.cycles ) {
                   this.counter++;
@@ -552,10 +646,40 @@ animate(){
             // this.initTopSymbol = topSymbol;
             // this.initMiddleSymbol = middleSymbol;
             // this.initBottomSymbol = bottomSymbol;
-
+            this.stopped = true;
             return;
             //break;
             }
+        } else {
+            this.currentIndex = this.initIndex[0]
+            if (this.currentIndex == 0) {
+                nextSymbol = allReels[this.reelPos][numIconsOnReel - 2];
+                topSymbol = allReels[this.reelPos][numIconsOnReel - 1];
+                middleSymbol = allReels[this.reelPos][this.currentIndex];
+                bottomSymbol = allReels[this.reelPos][this.currentIndex + 1];
+                this.currentIndex = numIconsOnReel - 1;
+                //console.log('index ', this.currentIndex);
+            }
+            if (this.currentIndex == numIconsOnReel - 1) {
+                nextSymbol = allReels[this.reelPos][numIconsOnReel - 3];
+                topSymbol = allReels[this.reelPos][numIconsOnReel - 2];
+                middleSymbol = allReels[this.reelPos][this.currentIndex];
+                bottomSymbol = allReels[this.reelPos][0];
+                //console.log('index ', this.currentIndex);
+            } else {
+                nextSymbol = allReels[this.reelPos][this.currentIndex - 2];
+                topSymbol = allReels[this.reelPos][this.currentIndex - 1];
+                middleSymbol = allReels[this.reelPos][this.currentIndex];
+                bottomSymbol = allReels[this.reelPos][this.currentIndex + 1];
+                //console.log('index ', this.currentIndex);
+            }
+
+            symHolder4_1.anims.play(iconReturn(topSymbol));
+
+            symHolder4_2.anims.play(iconReturn(middleSymbol));
+
+            symHolder4_3.anims.play(iconReturn(bottomSymbol));
+
         }
     },
 }
@@ -604,6 +728,7 @@ const reel_5 = {
     },
 
     spin() {
+        this.stopped = false;
         this.spinInfo = [];
         ///Determine how many iterations through reel from start to stop
         this.finaleIndex = reelIndex[this.reelPos];
@@ -655,7 +780,7 @@ const reel_5 = {
   ////////     Removed from display.js    /////////////////////////////
 animate(){
 
-            if (this.currentIndex <= numIconsOnReel) {
+            if (this.stopped == false) {
 
                 if ( this.counter < this.cycles ) {
                   this.counter++;
@@ -693,10 +818,40 @@ animate(){
             // this.initTopSymbol = topSymbol;
             // this.initMiddleSymbol = middleSymbol;
             // this.initBottomSymbol = bottomSymbol;
-
+            this.stopped = true;
             return;
             //break;
             }
+        } else {
+            this.currentIndex = this.initIndex[0]
+            if (this.currentIndex == 0) {
+                nextSymbol = allReels[this.reelPos][numIconsOnReel - 2];
+                topSymbol = allReels[this.reelPos][numIconsOnReel - 1];
+                middleSymbol = allReels[this.reelPos][this.currentIndex];
+                bottomSymbol = allReels[this.reelPos][this.currentIndex + 1];
+                this.currentIndex = numIconsOnReel - 1;
+                //console.log('index ', this.currentIndex);
+            }
+            if (this.currentIndex == numIconsOnReel - 1) {
+                nextSymbol = allReels[this.reelPos][numIconsOnReel - 3];
+                topSymbol = allReels[this.reelPos][numIconsOnReel - 2];
+                middleSymbol = allReels[this.reelPos][this.currentIndex];
+                bottomSymbol = allReels[this.reelPos][0];
+                //console.log('index ', this.currentIndex);
+            } else {
+                nextSymbol = allReels[this.reelPos][this.currentIndex - 2];
+                topSymbol = allReels[this.reelPos][this.currentIndex - 1];
+                middleSymbol = allReels[this.reelPos][this.currentIndex];
+                bottomSymbol = allReels[this.reelPos][this.currentIndex + 1];
+                //console.log('index ', this.currentIndex);
+            }
+
+            symHolder5_1.anims.play(iconReturn(topSymbol));
+
+            symHolder5_2.anims.play(iconReturn(middleSymbol));
+
+            symHolder5_3.anims.play(iconReturn(bottomSymbol));
+
         }
     },
 }

@@ -1,22 +1,19 @@
 canvas{
-  margin: 1em auto;
+  max-height: 100vh;
   width: 100% !important;
   height: 100% !important;
 }
 
 #game-container{
   display: flex;
-  margin-left: .5em;
-  margin-right: 3em;
-}
+ }
 
-img{
+/* img{
   object-fit: cover;
-}
+} */
 
 footer{
-  margin-top: 1000px;
-
+  display: none;
 }
 
 body{
