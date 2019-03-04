@@ -121,11 +121,11 @@ animate(){
                         //console.log('index ', this.currentIndex);
                     }
 
-                symHolder1_1.anims.play(iconReturn(topSymbol));
+                symHolder1_1.anims.play(iconReturn(topSymbol)).setAlpha(1);
 
-                symHolder1_2.anims.play(iconReturn(middleSymbol));
+                symHolder1_2.anims.play(iconReturn(middleSymbol)).setAlpha(1);
 
-                symHolder1_3.anims.play(iconReturn(bottomSymbol));
+                symHolder1_3.anims.play(iconReturn(bottomSymbol)).setAlpha(1);
 
             } else {
             // this.initTopSymbol = topSymbol;
@@ -159,12 +159,23 @@ animate(){
                 bottomSymbol = allReels[this.reelPos][this.currentIndex + 1];
                 //console.log('index ', this.currentIndex);
             }
-
-            symHolder1_1.anims.play(iconReturn(topSymbol));
-
-            symHolder1_2.anims.play(iconReturn(middleSymbol));
-
-            symHolder1_3.anims.play(iconReturn(bottomSymbol));
+        //// if a win do this -----
+        if (anim_1_1_Active) {
+            //console.log('its running active');
+            symHolder1_1.anims.play(iconReturn(topSymbol)).setAlpha(0);
+        } else { /////// --------- else play normal ------///////
+            symHolder1_1.anims.play(iconReturn(topSymbol)).setAlpha(1);
+        }
+        if (anim_1_2_Active) {
+            symHolder1_2.anims.play(iconReturn(middleSymbol)).setAlpha(0);
+        } else {
+            symHolder1_2.anims.play(iconReturn(middleSymbol)).setAlpha(1);
+        }
+        if (anim_1_3_Active) {
+            symHolder1_3.anims.play(iconReturn(bottomSymbol)).setAlpha(0);
+        } else {
+            symHolder1_3.anims.play(iconReturn(bottomSymbol)).setAlpha(1);
+        }    
 
         }
     },
@@ -178,10 +189,10 @@ const reel_2 = {
     yPosition: 100,
     speed: 20,
     stopped: false,
-    nextSymbolPos: [323, -90],
-    topSymbolPos: [323, 224],
-    middleSymbolPos: [323, 384],
-    bottomSymbolPos: [323, 544],
+    nextSymbolPos: [325, -90],
+    topSymbolPos: [325, 224],
+    middleSymbolPos: [325, 384],
+    bottomSymbolPos: [325, 544],
     initTopSymbol: 0,
     initMiddleSymbol: 0,
     initBottomSymbol: 0,
@@ -294,11 +305,11 @@ animate(){
                         //console.log('index ', this.currentIndex);
                     }
 
-                symHolder2_1.anims.play(iconReturn(topSymbol));
+                symHolder2_1.anims.play(iconReturn(topSymbol)).setAlpha(1);
 
-                symHolder2_2.anims.play(iconReturn(middleSymbol));
+                symHolder2_2.anims.play(iconReturn(middleSymbol)).setAlpha(1);
 
-                symHolder2_3.anims.play(iconReturn(bottomSymbol));
+                symHolder2_3.anims.play(iconReturn(bottomSymbol)).setAlpha(1);
 
             } else {
             // this.initTopSymbol = topSymbol;
@@ -331,12 +342,23 @@ animate(){
                 bottomSymbol = allReels[this.reelPos][this.currentIndex + 1];
                 //console.log('index ', this.currentIndex);
             }
-
-            symHolder2_1.anims.play(iconReturn(topSymbol));
-
-            symHolder2_2.anims.play(iconReturn(middleSymbol));
-
-            symHolder2_3.anims.play(iconReturn(bottomSymbol));
+            //// if a win do this -----
+            if (anim_2_1_Active) {
+                //console.log('its running active');
+                symHolder2_1.anims.play(iconReturn(topSymbol)).setAlpha(0);
+            } else { /////// --------- else play normal ------///////
+                symHolder2_1.anims.play(iconReturn(topSymbol)).setAlpha(1);
+            }
+            if (anim_2_2_Active) {
+                symHolder2_2.anims.play(iconReturn(middleSymbol)).setAlpha(0);
+            } else {
+                symHolder2_2.anims.play(iconReturn(middleSymbol)).setAlpha(1);
+            }
+            if (anim_2_3_Active) {
+                symHolder2_3.anims.play(iconReturn(bottomSymbol)).setAlpha(0);
+            } else {
+                symHolder2_3.anims.play(iconReturn(bottomSymbol)).setAlpha(1);
+            }
 
         }
     },
@@ -350,10 +372,10 @@ const reel_3 = {
     yPosition: 100,
     speed: 20,
     stopped: false,
-    nextSymbolPos: [512, -90],
-    topSymbolPos: [512, 224],
-    middleSymbolPos: [512, 384],
-    bottomSymbolPos: [512, 544],
+    nextSymbolPos: [510, -90],
+    topSymbolPos: [510, 224],
+    middleSymbolPos: [510, 384],
+    bottomSymbolPos: [510, 544],
     initTopSymbol: 0,
     initMiddleSymbol: 0,
     initBottomSymbol: 0,
@@ -466,11 +488,11 @@ animate(){
                         //console.log('index ', this.currentIndex);
                     }
 
-                symHolder3_1.anims.play(iconReturn(topSymbol));
+                symHolder3_1.anims.play(iconReturn(topSymbol)).setAlpha(1);
 
-                symHolder3_2.anims.play(iconReturn(middleSymbol));
+                symHolder3_2.anims.play(iconReturn(middleSymbol)).setAlpha(1);
 
-                symHolder3_3.anims.play(iconReturn(bottomSymbol));
+                symHolder3_3.anims.play(iconReturn(bottomSymbol)).setAlpha(1);
 
             } else {
             // this.initTopSymbol = topSymbol;
@@ -503,13 +525,23 @@ animate(){
                 bottomSymbol = allReels[this.reelPos][this.currentIndex + 1];
                 //console.log('index ', this.currentIndex);
             }
-
-            symHolder3_1.anims.play(iconReturn(topSymbol));
-
-            symHolder3_2.anims.play(iconReturn(middleSymbol));
-
-            symHolder3_3.anims.play(iconReturn(bottomSymbol));
-
+            //// if a win do this -----
+            if (anim_3_1_Active) {
+                //console.log('its running active');
+                symHolder3_1.anims.play(iconReturn(topSymbol)).setAlpha(0);
+            } else { /////// --------- else play normal ------///////
+                symHolder3_1.anims.play(iconReturn(topSymbol)).setAlpha(1);
+            }
+            if (anim_3_2_Active) {
+                symHolder3_2.anims.play(iconReturn(middleSymbol)).setAlpha(0);
+            } else {
+                symHolder3_2.anims.play(iconReturn(middleSymbol)).setAlpha(1);
+            }
+            if (anim_3_3_Active) {
+                symHolder3_3.anims.play(iconReturn(bottomSymbol)).setAlpha(0);
+            } else {
+                symHolder3_3.anims.play(iconReturn(bottomSymbol)).setAlpha(1);
+            }
         }
     },
 }
@@ -636,11 +668,11 @@ animate(){
                         //console.log('index ', this.currentIndex);
                     }
 
-                symHolder4_1.anims.play(iconReturn(topSymbol));
+                symHolder4_1.anims.play(iconReturn(topSymbol)).setAlpha(1);
 
-                symHolder4_2.anims.play(iconReturn(middleSymbol));
+                symHolder4_2.anims.play(iconReturn(middleSymbol)).setAlpha(1);
 
-                symHolder4_3.anims.play(iconReturn(bottomSymbol));
+                symHolder4_3.anims.play(iconReturn(bottomSymbol)).setAlpha(1);
 
             } else {
             // this.initTopSymbol = topSymbol;
@@ -674,11 +706,23 @@ animate(){
                 //console.log('index ', this.currentIndex);
             }
 
-            symHolder4_1.anims.play(iconReturn(topSymbol));
-
-            symHolder4_2.anims.play(iconReturn(middleSymbol));
-
-            symHolder4_3.anims.play(iconReturn(bottomSymbol));
+            //// if a win do this -----
+            if (anim_4_1_Active) {
+                //console.log('its running active');
+                symHolder4_1.anims.play(iconReturn(topSymbol)).setAlpha(0);
+            } else { /////// --------- else play normal ------///////
+                symHolder4_1.anims.play(iconReturn(topSymbol)).setAlpha(1);
+            }
+            if (anim_4_2_Active) {
+                symHolder4_2.anims.play(iconReturn(middleSymbol)).setAlpha(0);
+            } else {
+                symHolder4_2.anims.play(iconReturn(middleSymbol)).setAlpha(1);
+            }
+            if (anim_4_3_Active) {
+                symHolder4_3.anims.play(iconReturn(bottomSymbol)).setAlpha(0);
+            } else {
+                symHolder4_3.anims.play(iconReturn(bottomSymbol)).setAlpha(1);
+            }
 
         }
     },
@@ -808,11 +852,11 @@ animate(){
                         //console.log('index ', this.currentIndex);
                     }
 
-                symHolder5_1.anims.play(iconReturn(topSymbol));
+                symHolder5_1.anims.play(iconReturn(topSymbol)).setAlpha(1);
 
-                symHolder5_2.anims.play(iconReturn(middleSymbol));
+                symHolder5_2.anims.play(iconReturn(middleSymbol)).setAlpha(1);
 
-                symHolder5_3.anims.play(iconReturn(bottomSymbol));
+                symHolder5_3.anims.play(iconReturn(bottomSymbol)).setAlpha(1);
 
             } else {
             // this.initTopSymbol = topSymbol;
@@ -846,12 +890,29 @@ animate(){
                 //console.log('index ', this.currentIndex);
             }
 
-            symHolder5_1.anims.play(iconReturn(topSymbol));
-
-            symHolder5_2.anims.play(iconReturn(middleSymbol));
-
-            symHolder5_3.anims.play(iconReturn(bottomSymbol));
+            //// if a win do this -----
+            if (anim_5_1_Active) {
+                //console.log('its running active');
+                symHolder5_1.anims.play(iconReturn(topSymbol)).setAlpha(0);
+            } else { /////// --------- else play normal ------///////
+                symHolder5_1.anims.play(iconReturn(topSymbol)).setAlpha(1);
+            }
+            if (anim_5_2_Active) {
+                symHolder5_2.anims.play(iconReturn(middleSymbol)).setAlpha(0);
+            } else {
+                symHolder5_2.anims.play(iconReturn(middleSymbol)).setAlpha(1);
+            }
+            if (anim_5_3_Active) {
+                symHolder5_3.anims.play(iconReturn(bottomSymbol)).setAlpha(0);
+            } else {
+                symHolder5_3.anims.play(iconReturn(bottomSymbol)).setAlpha(1);
+            }
 
         }
     },
+}
+var allReelsStopped = function () {
+     if (reel_1.stopped && reel_2.stopped && reel_3.stopped && reel_4.stopped && reel_5.stopped) {
+         return true;
+     }
 }

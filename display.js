@@ -1,4 +1,14 @@
 var game;
+if ($(document).width() > $(document).height()) {
+   $widthtAdjust = $('#game-container').width();
+   $height = $(document).height();
+   $widthAdjust = Math.floor($height / .75);
+   $('#game-container').width($widthAdjust);
+   console.log($widthAdjust);
+   console.log($height);
+} else {
+   $('#game-container').removeClass('widescreen');
+}
 window.onload = function(){
 var config = {
     type: Phaser.AUTO,
@@ -35,27 +45,30 @@ function preload ()
                                                                       frameHeight: 139,
                                                                     });
     this.load.image('reelStopBtn', 'assets/ovr_ReelStop.png');
+   
     this.load.image('reelStopBtnDisp', 'assets/ovr_ReelStop_Display.png');
     this.load.image('bg_MainScreen', 'assets/bg_MainScreen.png');
     this.load.image('ovr_MainScreen', 'assets/ovr_MainScreen.png');
     this.load.spritesheet('anim_Magician','assets/anim_Magician.png', { frameWidth: 323,
                                                                         frameHeight: 135,
                                                                       });
-    this.load.spritesheet('anim_Magician_Blink','assets/anim_Magician_Blink.png', { frameWidth: 323, frameHeight: 135 });
-    this.load.spritesheet('anim_Magician_Banner','assets/anim_Magician_Close.png', { frameWidth: 323, frameHeight: 135 });
-    this.load.spritesheet('anim_Magician_Knock','assets/anim_Magician_Knock.png', { frameWidth: 323, frameHeight: 135 });
-    this.load.spritesheet('anim_MagicPoof','assets/anim_MagicPoof.png', { frameWidth: 204, frameHeight: 204 });
-    // this.load.spritesheet('anim_Win_1','assets/anim_Win_1.png', { frameWidth: 184, frameHeight: 160 });
-    // this.load.spritesheet('anim_Win_2','assets/anim_Win_2.png', { frameWidth: 184, frameHeight: 160 });
-    // this.load.spritesheet('anim_Win_3','assets/anim_Win_3.png', { frameWidth: 184, frameHeight: 160 });
-    // this.load.spritesheet('anim_Win_4','assets/anim_Win_4.png', { frameWidth: 184, frameHeight: 160 });
-    // this.load.spritesheet('anim_Win_5','assets/anim_Win_5.png', { frameWidth: 184, frameHeight: 160 });
-    // this.load.spritesheet('anim_Win_6','assets/anim_Win_6.png', { frameWidth: 184, frameHeight: 160 });
-    // this.load.spritesheet('anim_Win_7','assets/anim_Win_7.png', { frameWidth: 184, frameHeight: 160 });
-    // this.load.spritesheet('anim_Win_8','assets/anim_Win_8.png', { frameWidth: 184, frameHeight: 160 });
-    // this.load.spritesheet('anim_Win_9','assets/anim_Win_9.png', { frameWidth: 184, frameHeight: 160 });
-    // this.load.spritesheet('anim_Win_10','assets/anim_Win_10.png', { frameWidth: 184, frameHeight: 160 });
-    // this.load.spritesheet('anim_Win_11','assets/anim_Win_11.png', { frameWidth: 184, frameHeight: 160 });
+    this.load.image('line1', 'assets/ovr_Line_1_Box.png');
+
+   //  this.load.spritesheet('anim_Magician_Blink','assets/anim_Magician_Blink.png', { frameWidth: 323, frameHeight: 135 });
+   //  this.load.spritesheet('anim_Magician_Banner','assets/anim_Magician_Close.png', { frameWidth: 323, frameHeight: 135 });
+   //  this.load.spritesheet('anim_Magician_Knock','assets/anim_Magician_Knock.png', { frameWidth: 323, frameHeight: 135 });
+  
+    this.load.spritesheet('anim_Win_1','assets/anim_Win_1.png', { frameWidth: 184, frameHeight: 160 });
+    this.load.spritesheet('anim_Win_2','assets/anim_Win_2.png', { frameWidth: 184, frameHeight: 160 });
+    this.load.spritesheet('anim_Win_3','assets/anim_Win_3.png', { frameWidth: 184, frameHeight: 160 });
+    this.load.spritesheet('anim_Win_4','assets/anim_Win_4.png', { frameWidth: 184, frameHeight: 160 });
+    this.load.spritesheet('anim_Win_5','assets/anim_Win_5.png', { frameWidth: 184, frameHeight: 160 });
+    this.load.spritesheet('anim_Win_6','assets/anim_Win_6.png', { frameWidth: 184, frameHeight: 160 });
+    this.load.spritesheet('anim_Win_7','assets/anim_Win_7.png', { frameWidth: 184, frameHeight: 160 });
+    this.load.spritesheet('anim_Win_8','assets/anim_Win_8.png', { frameWidth: 184, frameHeight: 160 });
+    this.load.spritesheet('anim_Win_9','assets/anim_Win_9.png', { frameWidth: 184, frameHeight: 160 });
+    this.load.spritesheet('anim_Win_10','assets/anim_Win_10.png', { frameWidth: 184, frameHeight: 160 });
+    this.load.spritesheet('anim_Win_11','assets/anim_Win_11.png', { frameWidth: 184, frameHeight: 160 });
     this.load.spritesheet('anim_MagicPoof','assets/anim_MagicPoof.png', { frameWidth: 204, frameHeight: 204 });
     this.load.spritesheet('icons','assets/ovr_SlotIcons.png', {frameWidth: 184, frameHeight: 160, startFrame: 1, endFrame: 12});
     this.load.spritesheet('icons_Win','assets/ovr_SlotIcons_Win.png', {frameWidth: 184, frameHeight: 160});
@@ -245,28 +258,48 @@ stopReel_4_Disp = this.add.image(695, 389, 'reelStopBtnDisp').setAlpha(0);
 stopReel_5_Disp = this.add.image(885, 389, 'reelStopBtnDisp').setAlpha(0);
 
 
+
+
+
+
 btn_Stop_Reel_1 = this.add.image(140, 389, 'reelStopBtn').setInteractive();
 btn_Stop_Reel_1.on('pointerup', function (pointer) {
    reel_1.stopped = true;
 });
-
+btn_Stop_Reel_1.on('pointerdown', function (pointer) {
+   reel_1.stopped = true;
+});
 btn_Stop_Reel_2 = this.add.image(325, 389, 'reelStopBtn').setInteractive();
 btn_Stop_Reel_2.on('pointerup', function (pointer) {
+   reel_2.stopped = true;
+});
+btn_Stop_Reel_2.on('pointerdown', function (pointer) {
    reel_2.stopped = true;
 });
 btn_Stop_Reel_3 = this.add.image(510, 389, 'reelStopBtn').setInteractive();
 btn_Stop_Reel_3.on('pointerup', function (pointer) {
    reel_3.stopped = true;
 });
+btn_Stop_Reel_3.on('pointerdown', function (pointer) {
+   reel_3.stopped = true;
+});
 btn_Stop_Reel_4 = this.add.image(695, 389, 'reelStopBtn').setInteractive();
 btn_Stop_Reel_4.on('pointerup', function (pointer) {
+   reel_4.stopped = true;
+});
+btn_Stop_Reel_4.on('pointerdown', function (pointer) {
    reel_4.stopped = true;
 });
 btn_Stop_Reel_5 = this.add.image(885, 389, 'reelStopBtn').setInteractive();
 btn_Stop_Reel_5.on('pointerup', function (pointer) {
    reel_5.stopped = true;
 });
+btn_Stop_Reel_5.on('pointerdown', function (pointer) {
+   reel_5.stopped = true;
+});
 
+
+/////-----------Touch to Stop Button Flash----------------///////////
 this.tweens.add({
    targets: [stopReel_1_Disp, stopReel_2_Disp, stopReel_3_Disp, stopReel_4_Disp, stopReel_5_Disp],
    alpha: {
@@ -286,6 +319,27 @@ this.tweens.add({
 this.overlay = this.add.image(512, 384, 'ovr_MainScreen');
 /////////////////////////////////////////////////////////////////////////
 
+//////////////------------------Line Boxes-----------------------//////////////////////////
+
+lineBox1 = this.add.image(reel_1.topSymbolPos[0], reel_1.topSymbolPos[1], 'line1').setAlpha(0);
+lineBox2 = this.add.image(reel_2.topSymbolPos[0], reel_2.topSymbolPos[1], 'line1').setAlpha(0);
+lineBox3 = this.add.image(reel_3.topSymbolPos[0], reel_3.topSymbolPos[1], 'line1').setAlpha(0);
+lineBox4 = this.add.image(reel_4.topSymbolPos[0], reel_4.topSymbolPos[1], 'line1').setAlpha(0);
+lineBox5 = this.add.image(reel_5.topSymbolPos[0], reel_5.topSymbolPos[1], 'line1').setAlpha(0);
+
+lineBox6 = this.add.image(reel_1.middleSymbolPos[0], reel_1.middleSymbolPos[1], 'line1').setAlpha(0);
+lineBox7 = this.add.image(reel_2.middleSymbolPos[0], reel_2.middleSymbolPos[1], 'line1').setAlpha(0);
+lineBox8 = this.add.image(reel_3.middleSymbolPos[0], reel_3.middleSymbolPos[1], 'line1').setAlpha(0);
+lineBox9 = this.add.image(reel_4.middleSymbolPos[0], reel_4.middleSymbolPos[1], 'line1').setAlpha(0);
+lineBox10 = this.add.image(reel_5.middleSymbolPos[0], reel_5.middleSymbolPos[1], 'line1').setAlpha(0);
+
+lineBox11 = this.add.image(reel_1.bottomSymbolPos[0], reel_1.bottomSymbolPos[1], 'line1').setAlpha(0);
+lineBox12 = this.add.image(reel_2.bottomSymbolPos[0], reel_2.bottomSymbolPos[1], 'line1').setAlpha(0);
+lineBox13 = this.add.image(reel_3.bottomSymbolPos[0], reel_3.bottomSymbolPos[1], 'line1').setAlpha(0);
+lineBox14 = this.add.image(reel_4.bottomSymbolPos[0], reel_4.bottomSymbolPos[1], 'line1').setAlpha(0);
+lineBox15 = this.add.image(reel_5.bottomSymbolPos[0], reel_5.bottomSymbolPos[1], 'line1').setAlpha(0);
+
+
 /////----------Value Holder Style and Positions -------------//////////////////////
 costText = this.add.text(670, 740, '', { font: '32px Berkshire Swash', fill: '#fff' });
 costText.setOrigin(.5,.5);
@@ -293,6 +347,12 @@ wonText = this.add.text(510, 740, '', { font: '32px Berkshire Swash', fill: '#ff
 wonText.setOrigin(.5,.5);
 balanceText = this.add.text(350, 740, '', { font: '32px Berkshire Swash', fill: '#fff' });
 balanceText.setOrigin(.5,.5);
+infoText = this.add.text(510, 635, '', {
+   font: '26px Berkshire Swash',
+   fill: '#fff'
+});
+infoText.setOrigin(.5, .5);
+
 
 //////----------Buttons----------///////////////
 btn_Play = this.add.sprite(937, 699, 'btn_Play').setInteractive();
@@ -300,8 +360,9 @@ btn_Play.anims.play('btn_Play_Normal');
 
     btn_Play.on('pointerup', function (pointer) {
         btn_Play.anims.play('btn_Play_Normal');
-        if(reel_1.stopped && reel_2.stopped && reel_3.stopped && reel_4.stopped && reel_5.stopped){
-        magician.anims.play('spin');
+        if(allReelsStopped()){
+           
+        
             play();
         } else{
            reel_1.stopped = true;
@@ -309,7 +370,7 @@ btn_Play.anims.play('btn_Play_Normal');
            reel_3.stopped = true;
            reel_4.stopped = true;
            reel_5.stopped = true;
-           console.log('reels still spinning');           
+           console.log('reels force stop');           
         }
     });
     btn_Play.on('pointerdown', function (pointer){
@@ -344,7 +405,398 @@ btn_BetUp.on('pointerdown', function (pointer) {
    btn_BetUp.anims.play('btn_BetUp_Down');
 });
 
+symWin1_1 = this.add.sprite(reel_1.topSymbolPos[0], reel_1.topSymbolPos[1], 'anim_1').setAlpha(0);
+symWin1_2 = this.add.sprite(reel_1.middleSymbolPos[0], reel_1.middleSymbolPos[1], 'anim_1').setAlpha(0);
+symWin1_3 = this.add.sprite(reel_1.bottomSymbolPos[0], reel_1.bottomSymbolPos[1], 'anim_1').setAlpha(0);
 
+symWin2_1 = this.add.sprite(reel_2.topSymbolPos[0], reel_2.topSymbolPos[1], 'anim_1').setAlpha(0);
+symWin2_2 = this.add.sprite(reel_2.middleSymbolPos[0], reel_2.middleSymbolPos[1], 'anim_1').setAlpha(0);
+symWin2_3 = this.add.sprite(reel_2.bottomSymbolPos[0], reel_2.bottomSymbolPos[1], 'anim_1').setAlpha(0);
+
+symWin3_1 = this.add.sprite(reel_3.topSymbolPos[0], reel_3.topSymbolPos[1], 'anim_1').setAlpha(0);
+symWin3_2 = this.add.sprite(reel_3.middleSymbolPos[0], reel_3.middleSymbolPos[1], 'anim_1').setAlpha(0);
+symWin3_3 = this.add.sprite(reel_3.bottomSymbolPos[0], reel_3.bottomSymbolPos[1], 'anim_1').setAlpha(0);
+
+symWin4_1 = this.add.sprite(reel_4.topSymbolPos[0], reel_4.topSymbolPos[1], 'anim_1').setAlpha(0);
+symWin4_2 = this.add.sprite(reel_4.middleSymbolPos[0], reel_4.middleSymbolPos[1], 'anim_1').setAlpha(0);
+symWin4_3 = this.add.sprite(reel_4.bottomSymbolPos[0], reel_4.bottomSymbolPos[1], 'anim_1').setAlpha(0);
+
+symWin5_1 = this.add.sprite(reel_5.topSymbolPos[0], reel_5.topSymbolPos[1], 'anim_1').setAlpha(0);
+symWin5_2 = this.add.sprite(reel_5.middleSymbolPos[0], reel_5.middleSymbolPos[1], 'anim_1').setAlpha(0);
+symWin5_3 = this.add.sprite(reel_5.bottomSymbolPos[0], reel_5.bottomSymbolPos[1], 'anim_1').setAlpha(0);
+
+
+
+//////////////--------------------END OF BUTONS-----------------------//////////////////////
+
+    this.anims.create({key: 'anim_1',
+      frames: [
+                   { key: 'anim_Win_1', frame: 0 },
+                   { key: 'anim_Win_1', frame: 1 },
+                   { key: 'anim_Win_1', frame: 2 },
+                   { key: 'anim_Win_1', frame: 3 },
+                   { key: 'anim_Win_1', frame: 4 },
+                   { key: 'anim_Win_1', frame: 5 },
+                   { key: 'anim_Win_1', frame: 6 },
+                   { key: 'anim_Win_1', frame: 7 },
+                   { key: 'anim_Win_1', frame: 8 },
+                   { key: 'anim_Win_1', frame: 9 },
+                   { key: 'anim_Win_1', frame: 10 },
+                   { key: 'anim_Win_1', frame: 11 },
+                   { key: 'anim_Win_1', frame: 12 },
+                   { key: 'anim_Win_1', frame: 13 },
+                   { key: 'anim_Win_1', frame: 14 },
+                   { key: 'anim_Win_1', frame: 15 },
+                   { key: 'anim_Win_1', frame: 16 },
+                   { key: 'anim_Win_1', frame: 17 },
+                   { key: 'anim_Win_1', frame: 18 },
+                   { key: 'anim_Win_1', frame: 19 },
+                   { key: 'anim_Win_1', frame: 20 },
+                   { key: 'anim_Win_1', frame: 21 },
+                   { key: 'anim_Win_1', frame: 22 },
+                   { key: 'anim_Win_1', frame: 23 },
+                   { key: 'anim_Win_1', frame: 24 },
+                   { key: 'anim_Win_1', frame: 25 },
+                   { key: 'anim_Win_1', frame: 26 },
+      ],
+   frameRate: 19,
+      repeat: 0,
+   });
+
+   this.anims.create({key: 'anim_2',
+      frames: [
+                   { key: 'anim_Win_2', frame: 0 },
+                   { key: 'anim_Win_2', frame: 1 },
+                   { key: 'anim_Win_2', frame: 2 },
+                   { key: 'anim_Win_2', frame: 3 },
+                   { key: 'anim_Win_2', frame: 4 },
+                   { key: 'anim_Win_2', frame: 5 },
+                   { key: 'anim_Win_2', frame: 6 },
+                   { key: 'anim_Win_2', frame: 7 },
+                   { key: 'anim_Win_2', frame: 8 },
+                   { key: 'anim_Win_2', frame: 9 },
+                   { key: 'anim_Win_2', frame: 10 },
+                   { key: 'anim_Win_2', frame: 11 },
+                   { key: 'anim_Win_2', frame: 12 },
+                   { key: 'anim_Win_2', frame: 13 },
+                   { key: 'anim_Win_2', frame: 14 },
+                   { key: 'anim_Win_2', frame: 15 },
+                   { key: 'anim_Win_2', frame: 16 },
+                   { key: 'anim_Win_2', frame: 17 },
+                   { key: 'anim_Win_2', frame: 18 },
+                   { key: 'anim_Win_2', frame: 19 },
+                   { key: 'anim_Win_2', frame: 20 },
+                   { key: 'anim_Win_2', frame: 21 },
+                   { key: 'anim_Win_2', frame: 22 },
+                   { key: 'anim_Win_2', frame: 23 },
+                   { key: 'anim_Win_2', frame: 24 },
+                   { key: 'anim_Win_2', frame: 25 },
+                   { key: 'anim_Win_2', frame: 26 },
+      ],
+   frameRate: 19,
+      repeat: 0,
+   });
+   this.anims.create({key: 'anim_3',
+      frames: [
+                   { key: 'anim_Win_3', frame: 0 },
+                   { key: 'anim_Win_3', frame: 1 },
+                   { key: 'anim_Win_3', frame: 2 },
+                   { key: 'anim_Win_3', frame: 3 },
+                   { key: 'anim_Win_3', frame: 4 },
+                   { key: 'anim_Win_3', frame: 5 },
+                   { key: 'anim_Win_3', frame: 6 },
+                   { key: 'anim_Win_3', frame: 7 },
+                   { key: 'anim_Win_3', frame: 8 },
+                   { key: 'anim_Win_3', frame: 9 },
+                   { key: 'anim_Win_3', frame: 10 },
+                   { key: 'anim_Win_3', frame: 11 },
+                   { key: 'anim_Win_3', frame: 12 },
+                   { key: 'anim_Win_3', frame: 13 },
+                   { key: 'anim_Win_3', frame: 14 },
+                   { key: 'anim_Win_3', frame: 15 },
+                   { key: 'anim_Win_3', frame: 16 },
+                   { key: 'anim_Win_3', frame: 17 },
+                   { key: 'anim_Win_3', frame: 18 },
+                   { key: 'anim_Win_3', frame: 19 },
+                   { key: 'anim_Win_3', frame: 20 },
+                   { key: 'anim_Win_3', frame: 21 },
+                   { key: 'anim_Win_3', frame: 22 },
+                   { key: 'anim_Win_3', frame: 23 },
+                   { key: 'anim_Win_3', frame: 24 },
+                   { key: 'anim_Win_3', frame: 25 },
+                   { key: 'anim_Win_3', frame: 26 },
+                   { key: 'anim_Win_3', frame: 25 },
+      ],
+   frameRate: 19,
+      repeat: 0,
+   });
+   this.anims.create({key: 'anim_4',
+      frames: [
+                   { key: 'anim_Win_4', frame: 0 },
+                   { key: 'anim_Win_4', frame: 1 },
+                   { key: 'anim_Win_4', frame: 2 },
+                   { key: 'anim_Win_4', frame: 3 },
+                   { key: 'anim_Win_4', frame: 4 },
+                   { key: 'anim_Win_4', frame: 5 },
+                   { key: 'anim_Win_4', frame: 6 },
+                   { key: 'anim_Win_4', frame: 7 },
+                   { key: 'anim_Win_4', frame: 8 },
+                   { key: 'anim_Win_4', frame: 9 },
+                   { key: 'anim_Win_4', frame: 10 },
+                   { key: 'anim_Win_4', frame: 11 },
+                   { key: 'anim_Win_4', frame: 12 },
+                   { key: 'anim_Win_4', frame: 13 },
+                   { key: 'anim_Win_4', frame: 14 },
+                   { key: 'anim_Win_4', frame: 15 },
+                   { key: 'anim_Win_4', frame: 16 },
+                   { key: 'anim_Win_4', frame: 17 },
+                   { key: 'anim_Win_4', frame: 18 },
+                   { key: 'anim_Win_4', frame: 19 },
+                   { key: 'anim_Win_4', frame: 20 },
+                   { key: 'anim_Win_4', frame: 21 },
+                   { key: 'anim_Win_4', frame: 22 },
+                   { key: 'anim_Win_4', frame: 23 },
+                   { key: 'anim_Win_4', frame: 24 },
+                   { key: 'anim_Win_4', frame: 25 },
+                   { key: 'anim_Win_4', frame: 26 },
+                   { key: 'anim_Win_4', frame: 25 },
+                   { key: 'anim_Win_4', frame: 24 },
+      ],
+   frameRate: 19,
+      repeat: 0,
+   });
+   this.anims.create({key: 'anim_5',
+      frames: [
+                   { key: 'anim_Win_5', frame: 0 },
+                   { key: 'anim_Win_5', frame: 1 },
+                   { key: 'anim_Win_5', frame: 2 },
+                   { key: 'anim_Win_5', frame: 3 },
+                   { key: 'anim_Win_5', frame: 4 },
+                   { key: 'anim_Win_5', frame: 5 },
+                   { key: 'anim_Win_5', frame: 6 },
+                   { key: 'anim_Win_5', frame: 7 },
+                   { key: 'anim_Win_5', frame: 8 },
+                   { key: 'anim_Win_5', frame: 9 },
+                   { key: 'anim_Win_5', frame: 10 },
+                   { key: 'anim_Win_5', frame: 11 },
+                   { key: 'anim_Win_5', frame: 12 },
+                   { key: 'anim_Win_5', frame: 13 },
+                   { key: 'anim_Win_5', frame: 14 },
+                   { key: 'anim_Win_5', frame: 15 },
+                   { key: 'anim_Win_5', frame: 16 },
+                   { key: 'anim_Win_5', frame: 17 },
+                   { key: 'anim_Win_5', frame: 18 },
+                   { key: 'anim_Win_5', frame: 19 },
+                   { key: 'anim_Win_5', frame: 20 },
+                   { key: 'anim_Win_5', frame: 21 },
+                   { key: 'anim_Win_5', frame: 22 },
+                   { key: 'anim_Win_5', frame: 23 },
+                   { key: 'anim_Win_5', frame: 24 },
+                   { key: 'anim_Win_5', frame: 25 },
+                   { key: 'anim_Win_5', frame: 26 },
+      ],
+   frameRate: 19,
+      repeat: 0,
+   });
+   this.anims.create({key: 'anim_6',
+      frames: [
+                   { key: 'anim_Win_6', frame: 0 },
+                   { key: 'anim_Win_6', frame: 1 },
+                   { key: 'anim_Win_6', frame: 2 },
+                   { key: 'anim_Win_6', frame: 3 },
+                   { key: 'anim_Win_6', frame: 4 },
+                   { key: 'anim_Win_6', frame: 5 },
+                   { key: 'anim_Win_6', frame: 6 },
+                   { key: 'anim_Win_6', frame: 7 },
+                   { key: 'anim_Win_6', frame: 8 },
+                   { key: 'anim_Win_6', frame: 9 },
+                   { key: 'anim_Win_6', frame: 10 },
+                   { key: 'anim_Win_6', frame: 11 },
+                   { key: 'anim_Win_6', frame: 12 },
+                   { key: 'anim_Win_6', frame: 13 },
+                   { key: 'anim_Win_6', frame: 14 },
+                   { key: 'anim_Win_6', frame: 15 },
+                   { key: 'anim_Win_6', frame: 16 },
+                   { key: 'anim_Win_6', frame: 17 },
+                   { key: 'anim_Win_6', frame: 18 },
+                   { key: 'anim_Win_6', frame: 19 },
+                   { key: 'anim_Win_6', frame: 20 },
+                   { key: 'anim_Win_6', frame: 21 },
+                   { key: 'anim_Win_6', frame: 22 },
+                   { key: 'anim_Win_6', frame: 23 },
+                   { key: 'anim_Win_6', frame: 24 },
+                   { key: 'anim_Win_6', frame: 25 },
+                   { key: 'anim_Win_6', frame: 26 },
+      ],
+   frameRate: 19,
+      repeat: 0,
+   });
+
+   this.anims.create({key: 'anim_7',
+      frames: [
+                   { key: 'anim_Win_7', frame: 0 },
+                   { key: 'anim_Win_7', frame: 1 },
+                   { key: 'anim_Win_7', frame: 2 },
+                   { key: 'anim_Win_7', frame: 3 },
+                   { key: 'anim_Win_7', frame: 4 },
+                   { key: 'anim_Win_7', frame: 5 },
+                   { key: 'anim_Win_7', frame: 6 },
+                   { key: 'anim_Win_7', frame: 7 },
+                   { key: 'anim_Win_7', frame: 8 },
+                   { key: 'anim_Win_7', frame: 9 },
+                   { key: 'anim_Win_7', frame: 10 },
+                   { key: 'anim_Win_7', frame: 11 },
+                   { key: 'anim_Win_7', frame: 12 },
+                   { key: 'anim_Win_7', frame: 13 },
+                   { key: 'anim_Win_7', frame: 14 },
+                   { key: 'anim_Win_7', frame: 15 },
+                   { key: 'anim_Win_7', frame: 16 },
+                   { key: 'anim_Win_7', frame: 17 },
+                   { key: 'anim_Win_7', frame: 18 },
+                   { key: 'anim_Win_7', frame: 19 },
+                   { key: 'anim_Win_7', frame: 20 },
+                   { key: 'anim_Win_7', frame: 21 },
+                   { key: 'anim_Win_7', frame: 22 },
+                   { key: 'anim_Win_7', frame: 23 },
+                   { key: 'anim_Win_7', frame: 24 },
+                   { key: 'anim_Win_7', frame: 25 },
+                   { key: 'anim_Win_7', frame: 26 },
+      ],
+   frameRate: 19,
+      repeat: 0,
+   });
+   this.anims.create({key: 'anim_8',
+      frames: [
+                   { key: 'anim_Win_8', frame: 0 },
+                   { key: 'anim_Win_8', frame: 1 },
+                   { key: 'anim_Win_8', frame: 2 },
+                   { key: 'anim_Win_8', frame: 3 },
+                   { key: 'anim_Win_8', frame: 4 },
+                   { key: 'anim_Win_8', frame: 5 },
+                   { key: 'anim_Win_8', frame: 6 },
+                   { key: 'anim_Win_8', frame: 7 },
+                   { key: 'anim_Win_8', frame: 8 },
+                   { key: 'anim_Win_8', frame: 9 },
+                   { key: 'anim_Win_8', frame: 10 },
+                   { key: 'anim_Win_8', frame: 11 },
+                   { key: 'anim_Win_8', frame: 12 },
+                   { key: 'anim_Win_8', frame: 13 },
+                   { key: 'anim_Win_8', frame: 14 },
+                   { key: 'anim_Win_8', frame: 15 },
+                   { key: 'anim_Win_8', frame: 16 },
+                   { key: 'anim_Win_8', frame: 17 },
+                   { key: 'anim_Win_8', frame: 18 },
+                   { key: 'anim_Win_8', frame: 19 },
+                   { key: 'anim_Win_8', frame: 20 },
+                   { key: 'anim_Win_8', frame: 21 },
+                   { key: 'anim_Win_8', frame: 22 },
+                   { key: 'anim_Win_8', frame: 23 },
+                   { key: 'anim_Win_8', frame: 24 },
+                   { key: 'anim_Win_8', frame: 25 },
+                   { key: 'anim_Win_8', frame: 26 },
+      ],
+   frameRate: 19,
+      repeat: 0,
+   });
+   this.anims.create({key: 'anim_9',
+      frames: [
+                   { key: 'anim_Win_9', frame: 0 },
+                   { key: 'anim_Win_9', frame: 1 },
+                   { key: 'anim_Win_9', frame: 2 },
+                   { key: 'anim_Win_9', frame: 3 },
+                   { key: 'anim_Win_9', frame: 4 },
+                   { key: 'anim_Win_9', frame: 5 },
+                   { key: 'anim_Win_9', frame: 6 },
+                   { key: 'anim_Win_9', frame: 7 },
+                   { key: 'anim_Win_9', frame: 8 },
+                   { key: 'anim_Win_9', frame: 9 },
+                   { key: 'anim_Win_9', frame: 10 },
+                   { key: 'anim_Win_9', frame: 11 },
+                   { key: 'anim_Win_9', frame: 12 },
+                   { key: 'anim_Win_9', frame: 13 },
+                   { key: 'anim_Win_9', frame: 14 },
+                   { key: 'anim_Win_9', frame: 15 },
+                   { key: 'anim_Win_9', frame: 16 },
+                   { key: 'anim_Win_9', frame: 17 },
+                   { key: 'anim_Win_9', frame: 18 },
+                   { key: 'anim_Win_9', frame: 19 },
+                   { key: 'anim_Win_9', frame: 20 },
+                   { key: 'anim_Win_9', frame: 21 },
+                   { key: 'anim_Win_9', frame: 22 },
+                   { key: 'anim_Win_9', frame: 23 },
+                   { key: 'anim_Win_9', frame: 24 },
+                   { key: 'anim_Win_9', frame: 25 },
+                   { key: 'anim_Win_9', frame: 26 },
+      ],
+   frameRate: 19,
+      repeat: 0,
+   });
+   this.anims.create({key: 'anim_10',
+      frames: [
+                   { key: 'anim_Win_10', frame: 0 },
+                   { key: 'anim_Win_10', frame: 1 },
+                   { key: 'anim_Win_10', frame: 2 },
+                   { key: 'anim_Win_10', frame: 3 },
+                   { key: 'anim_Win_10', frame: 4 },
+                   { key: 'anim_Win_10', frame: 5 },
+                   { key: 'anim_Win_10', frame: 6 },
+                   { key: 'anim_Win_10', frame: 7 },
+                   { key: 'anim_Win_10', frame: 8 },
+                   { key: 'anim_Win_10', frame: 9 },
+                   { key: 'anim_Win_10', frame: 10 },
+                   { key: 'anim_Win_10', frame: 11 },
+                   { key: 'anim_Win_10', frame: 12 },
+                   { key: 'anim_Win_10', frame: 13 },
+                   { key: 'anim_Win_10', frame: 14 },
+                   { key: 'anim_Win_10', frame: 15 },
+                   { key: 'anim_Win_10', frame: 16 },
+                   { key: 'anim_Win_10', frame: 17 },
+                   { key: 'anim_Win_10', frame: 18 },
+                   { key: 'anim_Win_10', frame: 19 },
+                   { key: 'anim_Win_10', frame: 20 },
+                   { key: 'anim_Win_10', frame: 21 },
+                   { key: 'anim_Win_10', frame: 22 },
+                   { key: 'anim_Win_10', frame: 23 },
+                   { key: 'anim_Win_10', frame: 24 },
+                   { key: 'anim_Win_10', frame: 25 },
+                   { key: 'anim_Win_10', frame: 26 },
+      ],
+   frameRate: 19,
+      repeat: 0,
+   });
+this.anims.create({key: 'anim_11',
+      frames: [
+                   { key: 'anim_Win_11', frame: 0 },
+                   { key: 'anim_Win_11', frame: 1 },
+                   { key: 'anim_Win_11', frame: 2 },
+                   { key: 'anim_Win_11', frame: 3 },
+                   { key: 'anim_Win_11', frame: 4 },
+                   { key: 'anim_Win_11', frame: 5 },
+                   { key: 'anim_Win_11', frame: 6 },
+                   { key: 'anim_Win_11', frame: 7 },
+                   { key: 'anim_Win_11', frame: 8 },
+                   { key: 'anim_Win_11', frame: 9 },
+                   { key: 'anim_Win_11', frame: 10 },
+                   { key: 'anim_Win_11', frame: 11 },
+                   { key: 'anim_Win_11', frame: 12 },
+                   { key: 'anim_Win_11', frame: 13 },
+                   { key: 'anim_Win_11', frame: 14 },
+                   { key: 'anim_Win_11', frame: 15 },
+                   { key: 'anim_Win_11', frame: 16 },
+                   { key: 'anim_Win_11', frame: 17 },
+                   { key: 'anim_Win_11', frame: 18 },
+                   { key: 'anim_Win_11', frame: 19 },
+                   { key: 'anim_Win_11', frame: 20 },
+                   { key: 'anim_Win_11', frame: 21 },
+                   { key: 'anim_Win_11', frame: 22 },
+                   { key: 'anim_Win_11', frame: 23 },
+                   { key: 'anim_Win_11', frame: 24 },
+                   { key: 'anim_Win_11', frame: 25 },
+                   { key: 'anim_Win_11', frame: 26 },
+      ],
+   frameRate: 19,
+      repeat: 0,
+   });
 
     this.anims.create({key: 'spin',
                  frames: [
@@ -407,7 +859,7 @@ btn_BetUp.on('pointerdown', function (pointer) {
                    { key: 'anim_Magician', frame: 56 },
                  ],
                  frameRate: 19,
-                 repeat: 2,
+                 repeat: 0,
                    });
 
    this.anims.create({key: 'dance',
@@ -446,11 +898,15 @@ btn_BetUp.on('pointerdown', function (pointer) {
                   { key: 'anim_Magician', frame: 88 },
                   { key: 'anim_Magician', frame: 89 },
                 ],
-                frameRate: 10,
-                repeat: 1,
+                frameRate: 19,
+                repeat: 0,
                   });
 
 magician = this.add.sprite(512, 72, 'anim_Magician');
+
+
+
+
 
 }
 
@@ -459,23 +915,107 @@ function update ()
 {
 displaySymbolTime();
 
-
-    
+   ///////////////////////////------Value Holder Text------------////////////  
     this.data.set('balance', '$'+ insertDecimal(balance));
     balanceText.setText([this.data.get('balance')]);
 
-    this.data.set('won', '$' + insertDecimal(won));
-    wonText.setText([this.data.get('won')]);
+      if (won > 0 && allReelsStopped()) {
+            
+            wonText.setAlpha(1);
+            this.data.set('won', '$' + insertDecimal(won));
+            wonText.setText([this.data.get('won')]);
+            incrementBalance();
+      }else{
+         wonText.setAlpha(0);
+      }
+
+
 
     this.data.set('cost', '$' + insertDecimal(playCost));
     costText.setText([this.data.get('cost')]);
+
+    /////////////////////////Win Info and Text Cycle Function // Play Animations ///////////////////////////////  
+    infoText.setText([this.data.get('infoText')]);
+
+      if (won > 0 && allReelsStopped()) {
+         ///---------------counter for cycle timing--------------////
+         infoCount++;
+         if (infoIterate < payoutArray.length && infoCount == 60 || infoCount == 1 && infoIterate < payoutArray.length) {
+            infoCount = 1;
+            infoText.setAlpha(1);
+            
+            magician.anims.play('dance');
+            this.data.set('infoText', `$${insertDecimal(payoutArray[infoIterate][0])} on line ${payoutArray[infoIterate][1]} `);
+             
+            //console.log(infoIterate + 'the count is' + infoCount);
+            showLineBoxes(paylineReturn(payoutArray[infoIterate][1]), payoutArray[infoIterate][3], payoutArray[infoIterate][2]);
+            
+            
+            infoIterate++;
+         } else if (infoIterate >= payoutArray.length) {
+            infoIterate = 0;
+            infoCount = 1;
+            
+         }
+      }else{
+         ///turn off animations // Line Boxes //text info// counters
+         this.data.set('infoText', '');
+         infoText.setAlpha(0);
+         infoIterate = 0;
+         infoCount = 0;
+         lineBox1.setAlpha(0);
+         lineBox2.setAlpha(0);
+         lineBox3.setAlpha(0);
+         lineBox4.setAlpha(0);
+         lineBox5.setAlpha(0);
+         lineBox6.setAlpha(0);
+         lineBox7.setAlpha(0);
+         lineBox8.setAlpha(0);
+         lineBox9.setAlpha(0);
+         lineBox10.setAlpha(0);
+         lineBox11.setAlpha(0);
+         lineBox12.setAlpha(0);
+         lineBox13.setAlpha(0);
+         lineBox14.setAlpha(0);
+         lineBox15.setAlpha(0);
+         anim_1_1_Active = false;
+         anim_1_2_Active = false;
+         anim_1_3_Active = false;
+         anim_2_1_Active = false;
+         anim_2_2_Active = false;
+         anim_2_3_Active = false;
+         anim_3_1_Active = false;
+         anim_3_2_Active = false;
+         anim_3_3_Active = false;
+         anim_4_1_Active = false;
+         anim_4_2_Active = false;
+         anim_4_3_Active = false;
+         anim_5_1_Active = false;
+         anim_5_2_Active = false;
+         anim_5_3_Active = false;
+         symWin1_1.setAlpha(0);
+         symWin1_2.setAlpha(0);
+         symWin1_3.setAlpha(0);
+         symWin2_1.setAlpha(0);
+         symWin2_2.setAlpha(0);
+         symWin2_3.setAlpha(0);
+         symWin3_1.setAlpha(0);
+         symWin3_2.setAlpha(0);
+         symWin3_3.setAlpha(0);
+         symWin4_1.setAlpha(0);
+         symWin4_2.setAlpha(0);
+         symWin4_3.setAlpha(0);
+         symWin5_1.setAlpha(0);
+         symWin5_2.setAlpha(0);
+         symWin5_3.setAlpha(0);
+      }
+    //////////////////////////------END OF VALUE HOLDERS-----------////////////////
+
 
 }
 
 function custom ()
 {
-
-
 }
 
 
@@ -523,9 +1063,264 @@ function iconReturn(num) {
          return 'icon12';
       default:
          //console.log(num);
-         return 'icon1'
+         return 'icon1';
    }
 }
+
+function iconNameReturn(num) {
+
+   switch (num) {
+      case 0:
+         return 'Magician';
+      case 1:
+         return 'Hat';
+      case 2:
+
+         return 'Crystal Ball';
+      case 3:
+
+         return 'Magic Box';
+      case 4:
+
+         return 'Knife';
+      case 5:
+
+         return 'Ace';
+      case 6:
+
+         return 'King';
+      case 7:
+
+         return 'Queen';
+      case 8:
+
+         return 'Jack';
+      case 9:
+
+         return '10';
+      case 10:
+
+         return 'Bonus';
+      case 11:
+
+         return 'not yet a symbol';
+      default:
+         //console.log(num);
+         return 'not a symbol';
+   }
+}
+
+function animReturn(num) {
+
+   switch (num) {
+      case 0:
+
+         return 'anim_1';
+      case 1:
+
+         return 'anim_2';
+      case 2:
+
+         return 'anim_3';
+      case 3:
+
+         return 'anim_4';
+      case 4:
+
+         return 'anim_5';
+      case 5:
+
+         return 'anim_6';
+      case 6:
+
+         return 'anim_7';
+      case 7:
+
+         return 'anim_8';
+      case 8:
+
+         return 'anim_9';
+      case 9:
+
+         return 'anim_10';
+      case 10:
+
+         return 'anim_11';
+      case 11:
+
+         return 'anim_12';
+      default:
+         //console.log(num);
+         return 'anim_12';
+   }
+}
+
+function iconNameReturn(num) {
+
+   switch (num) {
+      case 0:
+         return 'Magician';
+      case 1:
+         return 'Hat';
+      case 2:
+
+         return 'Crystal Ball';
+      case 3:
+
+         return 'Magic Box';
+      case 4:
+
+         return 'Knife';
+      case 5:
+
+         return 'Ace';
+      case 6:
+
+         return 'King';
+      case 7:
+
+         return 'Queen';
+      case 8:
+
+         return 'Jack';
+      case 9:
+
+         return '10';
+      case 10:
+
+         return 'Bonus';
+      case 11:
+
+         return 'not yet a symbol';
+      default:
+         //console.log(num);
+         return 'not a symbol';
+   }
+}
+
+
+function paylineReturn(num) {
+
+   switch (num) {
+      case 0:
+         return payline1;
+      case 1:
+         return payline1;
+      case 2:
+         return payline2;
+      case 3:
+         return payline3;
+      case 4:
+         return payline4;
+      case 5:
+         return payline5;
+      case 6:
+         return payline6;
+      case 7:
+         return payline7;
+      case 8:
+         return payline8;
+      case 9:
+         return payline9;
+      case 10:
+         return payline10;
+      case 11:
+         return payline11;
+      case 12:
+         return payline12;
+      case 13:
+         return payline13;
+      case 14:
+         return payline14;
+      case 15:
+         return payline15;
+      case 16:
+         return payline16;
+      case 17:
+         return payline17;
+      case 18:
+         return payline18;
+      case 19:
+         return payline19;
+      case 20:
+         return payline20;
+      case 21:
+         return payline21;
+      case 22:
+         return payline22;
+      case 23:
+         return payline23;
+      case 24:
+         return payline24;
+      case 25:
+         return payline25;
+      default:
+         //console.log(num);
+         return 'not a line';
+   }
+}
+
+function lineReturn(payline) {
+
+   switch (payline) {
+      case 0:
+         return 'not a payline';
+      case payline1:
+         return 0X12ff00;
+      case payline2:
+         return 0Xfffc00;
+      case payline3:
+         return 0Xff0000;
+      case payline4:
+         return 0Xc000ff;
+      case payline5:
+         return 0X00fff6;
+      case payline6:
+         return 0Xffc000;
+      case payline7:
+         return 0Xff00f0;
+      case payline8:
+         return 0X0072ff;
+      case payline9:
+         return 0Xbaff00;
+      case payline10:
+         return 0Xffd200;
+      case payline11:
+         return 0X00ffba;
+      case payline12:
+         return 0X0096ff;
+      case payline13:
+         return 0Xff8383;
+      case payline14:
+         return 0X009163;
+      case payline15:
+         return 0Xfeff98;
+      case payline16:
+         return 0X8a9bff;
+      case payline17:
+         return 0X9e0000;
+      case payline18:
+         return 0X9c4200;
+      case payline19:
+         return 0X81009d;
+      case payline20:
+         return 0Xc9c9c9;
+      case payline21:
+         return 0X00ce91;
+      case payline22:
+         return 0Xc48100;
+      case payline23:
+         return 0X00299f;
+      case payline24:
+         return 0X00c1ba;
+      case payline25:
+         return 0Xc7c500;
+      default:
+         //console.log(num);
+         return 'not a payline';
+   }
+}
+
 
 // function resize (width, height)
 // {

@@ -5,7 +5,9 @@ function getPaylineMatches(){
   payline4.matches;
   payline5.matches;
   payline6.matches;
+  payline7.matches;
   payline8.matches;
+  payline9.matches;
   payline10.matches;
   payline11.matches;
   payline12.matches;
@@ -69,14 +71,14 @@ const payline1 = {
                 //console.log(selectedGroup);
                 if(hits > 2 && this.active == true){
                   this.iconWinnerId = newSymbol;
-                  winList.push([this.iconWinnerId, this.lineId, hits])
+                  winList.push([this.iconWinnerId, this.lineId, hits]);
                   console.log(newSymbol + ' on ' + this.lineId + 'is the winning icon');
                   console.log(selectedGroup);
                 }
                 matches = hits;
                 return matches;
                 },
-}
+};
 const payline2 = {
     array: [
            [1,1,1,1,1],
@@ -122,14 +124,14 @@ const payline2 = {
                 //console.log(selectedGroup);
                 if(hits > 2 && this.active == true){
                   this.iconWinnerId = newSymbol;
-                  winList.push([this.iconWinnerId, this.lineId, hits])
+                  winList.push([this.iconWinnerId, this.lineId, hits]);
                   console.log(newSymbol + ' on ' + this.lineId + 'is the winning icon');
                   console.log(selectedGroup);
                 }
                 matches = hits;
                 return matches;
                 },
-}
+};
 const payline3 = {
     array: [
            [0,0,0,0,0],
@@ -175,14 +177,14 @@ const payline3 = {
                 //console.log(selectedGroup);
                 if(hits > 2 && this.active == true){
                   this.iconWinnerId = newSymbol;
-                  winList.push([this.iconWinnerId, this.lineId, hits])
+                  winList.push([this.iconWinnerId, this.lineId, hits]);
                   console.log(newSymbol + ' on ' + this.lineId + 'is the winning icon');
                   console.log(selectedGroup);
                 }
                 matches = hits;
                 return matches;
                 },
-}
+};
 const payline4 = {
     array: [
            [1,0,0,0,1],
@@ -197,45 +199,45 @@ const payline4 = {
                 let hits = 0;
                 let symbol = 99;
                 let newSymbol = 98;
-                for(let i = 0; i < 3; i++){
-                  for(let j = 0; j < 5; j++){
-                    symbol = selectedGroup[i][j];
-                    if(symbol == newSymbol && this.array[i][j] == 1 && j == 1){
-                          //console.log(symbol + ' match on line on reel' + j);
-                        hits = 2;
+                for (let i = 0; i < 5; i++) {
+                  for (let j = 0; j < 3; j++) {
+                    symbol = selectedGroup[j][i];
+                    if (symbol == newSymbol && this.array[j][i] == 1 && i == 1) {
+                      // console.log(iconNameReturn(symbol) + ' is 2nd match line on reel ' + i);
+                      hits = 2;
                     }
-                    if(symbol == newSymbol && this.array[i][j] == 1 && hits == 2 && j == 2){
-                        hits = 3;
+                    if (symbol == newSymbol && this.array[j][i] == 1 && hits == 2 && i == 2) {
+                      hits = 3;
                     }
-                    if (symbol == newSymbol && this.array[i][j] == 1 && hits == 3 && j == 3) {
-                        hits = 4;
+                    if (symbol == newSymbol && this.array[j][i] == 1 && hits == 3 && i == 3) {
+                      hits = 4;
                     }
-                    if (symbol == newSymbol && this.array[i][j] == 1 && hits == 4 && j == 4) {
-                        hits = 5;
+                    if (symbol == newSymbol && this.array[j][i] == 1 && hits == 4 && i == 4) {
+                      hits = 5;
                     }
-                    if(symbol != newSymbol && this.array[i][j] == 1 && j == 0){
-                          //console.log(symbol + ' on line on reel ' + j);
-                          newSymbol = selectedGroup[i][j];
-                      } else {
-                        this.win = false;
-                        this.iconWinnerId = false;
-                      }
-                      //console.log(`J iteration ${j}`);
+                    if (symbol != newSymbol && this.array[j][i] == 1 && i == 0) {
+                      //  console.log(iconNameReturn(symbol) + ' is first symbol on line ' + i);
+                      newSymbol = selectedGroup[j][i];
+                    } else {
+                      this.win = false;
+                      this.iconWinnerId = false;
                     }
-                    //console.log(`I iteration ${i}`);
+                    // console.log(`J iteration ${j} ` + this.array[j][i] + iconNameReturn(symbol));
                   }
+                  // console.log(`I iteration ${i}`);
+                }
                 //console.log("matching symbol " + symbol + " New symbol " + newSymbol);
                 //console.log(selectedGroup);
                 if(hits > 2 && this.active == true){
                   this.iconWinnerId = newSymbol;
-                  winList.push([this.iconWinnerId, this.lineId, hits])
+                  winList.push([this.iconWinnerId, this.lineId, hits]);
                   console.log(newSymbol + ' on ' + this.lineId + 'is the winning icon');
                   console.log(selectedGroup);
                 }
                 matches = hits;
                 return matches;
                 },
-}
+};
 const payline5 = {
     array: [
            [0,0,1,0,0],
@@ -250,45 +252,45 @@ const payline5 = {
                 let hits = 0;
                 let symbol = 99;
                 let newSymbol = 98;
-                for(let i = 0; i < 3; i++){
-                  for(let j = 0; j < 5; j++){
-                    symbol = selectedGroup[i][j];
-                    if(symbol == newSymbol && this.array[i][j] == 1 && j == 1){
-                          //console.log(symbol + ' match on line on reel' + j);
-                        hits = 2;
+                for (let i = 0; i < 5; i++) {
+                  for (let j = 0; j < 3; j++) {
+                    symbol = selectedGroup[j][i];
+                    if (symbol == newSymbol && this.array[j][i] == 1 && i == 1) {
+                      // console.log(iconNameReturn(symbol) + ' is 2nd match line on reel ' + i);
+                      hits = 2;
                     }
-                    if(symbol == newSymbol && this.array[i][j] == 1 && hits == 2 && j == 2){
-                        hits = 3;
+                    if (symbol == newSymbol && this.array[j][i] == 1 && hits == 2 && i == 2) {
+                      hits = 3;
                     }
-                    if (symbol == newSymbol && this.array[i][j] == 1 && hits == 3 && j == 3) {
-                        hits = 4;
+                    if (symbol == newSymbol && this.array[j][i] == 1 && hits == 3 && i == 3) {
+                      hits = 4;
                     }
-                    if (symbol == newSymbol && this.array[i][j] == 1 && hits == 4 && j == 4) {
-                        hits = 5;
+                    if (symbol == newSymbol && this.array[j][i] == 1 && hits == 4 && i == 4) {
+                      hits = 5;
                     }
-                    if(symbol != newSymbol && this.array[i][j] == 1 && j == 0){
-                          //console.log(symbol + ' on line on reel ' + j);
-                          newSymbol = selectedGroup[i][j];
-                      } else {
-                        this.win = false;
-                        this.iconWinnerId = false;
-                      }
-                      //console.log(`J iteration ${j}`);
+                    if (symbol != newSymbol && this.array[j][i] == 1 && i == 0) {
+                      //  console.log(iconNameReturn(symbol) + ' is first symbol on line ' + i);
+                      newSymbol = selectedGroup[j][i];
+                    } else {
+                      this.win = false;
+                      this.iconWinnerId = false;
                     }
-                    //console.log(`I iteration ${i}`);
+                    // console.log(`J iteration ${j} ` + this.array[j][i] + iconNameReturn(symbol));
                   }
+                  // console.log(`I iteration ${i}`);
+                }
                 //console.log("matching symbol " + symbol + " New symbol " + newSymbol);
                 //console.log(selectedGroup);
                 if(hits > 2 && this.active == true){
                   this.iconWinnerId = newSymbol;
-                  winList.push([this.iconWinnerId, this.lineId, hits])
+                  winList.push([this.iconWinnerId, this.lineId, hits]);
                   console.log(newSymbol + ' on ' + this.lineId + 'is the winning icon');
                   console.log(selectedGroup);
                 }
                 matches = hits;
                 return matches;
                 },
-}
+};
 const payline6 = {
     array: [
            [0,1,1,1,0],
@@ -303,45 +305,45 @@ const payline6 = {
                 let hits = 0;
                 let symbol = 99;
                 let newSymbol = 98;
-                for(let i = 0; i < 3; i++){
-                  for(let j = 0; j < 5; j++){
-                    symbol = selectedGroup[i][j];
-                    if(symbol == newSymbol && this.array[i][j] == 1 && j == 1){
-                          //console.log(symbol + ' match on line on reel' + j);
+                for(let i = 0; i < 5; i++){
+                  for(let j = 0; j < 3; j++){
+                    symbol = selectedGroup[j][i];
+                    if(symbol == newSymbol && this.array[j][i] == 1 && i == 1){
+                        // console.log(iconNameReturn(symbol) + ' is 2nd match line on reel ' + i);
                         hits = 2;
                     }
-                    if(symbol == newSymbol && this.array[i][j] == 1 && hits == 2 && j == 2){
+                    if(symbol == newSymbol && this.array[j][i] == 1 && hits == 2 && i == 2){
                         hits = 3;
                     }
-                    if (symbol == newSymbol && this.array[i][j] == 1 && hits == 3 && j == 3) {
+                    if (symbol == newSymbol && this.array[j][i] == 1 && hits == 3 && i == 3) {
                         hits = 4;
                     }
-                    if (symbol == newSymbol && this.array[i][j] == 1 && hits == 4 && j == 4) {
+                    if (symbol == newSymbol && this.array[j][i] == 1 && hits == 4 && i == 4) {
                         hits = 5;
                     }
-                    if(symbol != newSymbol && this.array[i][j] == 1 && j == 0){
-                          //console.log(symbol + ' on line on reel ' + j);
-                          newSymbol = selectedGroup[i][j];
+                    if(symbol != newSymbol && this.array[j][i] == 1 && i == 0){
+                        //  console.log(iconNameReturn(symbol) + ' is first symbol on line ' + i);
+                          newSymbol = selectedGroup[j][i];
                       } else {
                         this.win = false;
                         this.iconWinnerId = false;
                       }
-                      //console.log(`J iteration ${j}`);
+                     // console.log(`J iteration ${j} ` + this.array[j][i] + iconNameReturn(symbol));
                     }
-                    //console.log(`I iteration ${i}`);
+                   // console.log(`I iteration ${i}`);
                   }
-                //console.log("matching symbol " + symbol + " New symbol " + newSymbol);
-                //console.log(selectedGroup);
+                //console.log("last symbol " + iconNameReturn(symbol) + " New symbol " + iconNameReturn(newSymbol));
+               // console.log(selectedGroup);
                 if(hits > 2 && this.active == true){
                   this.iconWinnerId = newSymbol;
-                  winList.push([this.iconWinnerId, this.lineId, hits])
-                  console.log(newSymbol + ' on ' + this.lineId + 'is the winning icon');
-                  console.log(selectedGroup);
+                  winList.push([this.iconWinnerId, this.lineId, hits]);
+                //  console.log(newSymbol + ' on ' + this.lineId + 'is the winning icon');
+                //  console.log(selectedGroup);
                 }
                 matches = hits;
                 return matches;
                 },
-}
+};
 const payline7 = {
     array: [
            [0,0,0,0,0],
@@ -356,45 +358,45 @@ const payline7 = {
                 let hits = 0;
                 let symbol = 99;
                 let newSymbol = 98;
-                for(let i = 0; i < 3; i++){
-                  for(let j = 0; j < 5; j++){
-                    symbol = selectedGroup[i][j];
-                    if(symbol == newSymbol && this.array[i][j] == 1 && j == 1){
-                          //console.log(symbol + ' match on line on reel' + j);
-                        hits = 2;
+                for (let i = 0; i < 5; i++) {
+                  for (let j = 0; j < 3; j++) {
+                    symbol = selectedGroup[j][i];
+                    if (symbol == newSymbol && this.array[j][i] == 1 && i == 1) {
+                      console.log(iconNameReturn(symbol) + ' is 2nd match line on reel ' + i);
+                      hits = 2;
                     }
-                    if(symbol == newSymbol && this.array[i][j] == 1 && hits == 2 && j == 2){
-                        hits = 3;
+                    if (symbol == newSymbol && this.array[j][i] == 1 && hits == 2 && i == 2) {
+                      hits = 3;
                     }
-                    if (symbol == newSymbol && this.array[i][j] == 1 && hits == 3 && j == 3) {
-                        hits = 4;
+                    if (symbol == newSymbol && this.array[j][i] == 1 && hits == 3 && i == 3) {
+                      hits = 4;
                     }
-                    if (symbol == newSymbol && this.array[i][j] == 1 && hits == 4 && j == 4) {
-                        hits = 5;
+                    if (symbol == newSymbol && this.array[j][i] == 1 && hits == 4 && i == 4) {
+                      hits = 5;
                     }
-                    if(symbol != newSymbol && this.array[i][j] == 1 && j == 0){
-                          //console.log(symbol + ' on line on reel ' + j);
-                          newSymbol = selectedGroup[i][j];
-                      } else {
-                        this.win = false;
-                        this.iconWinnerId = false;
-                      }
-                      //console.log(`J iteration ${j}`);
+                    if (symbol != newSymbol && this.array[j][i] == 1 && i == 0) {
+                      //console.log(iconNameReturn(symbol) + ' is first symbol on line ' + i);
+                      newSymbol = selectedGroup[j][i];
+                    } else {
+                      this.win = false;
+                      this.iconWinnerId = false;
                     }
-                    //console.log(`I iteration ${i}`);
+                    //console.log(`J iteration ${j} ` + this.array[j][i] + iconNameReturn(symbol));
                   }
+                  //console.log(`I iteration ${i}`);
+                }
                 //console.log("matching symbol " + symbol + " New symbol " + newSymbol);
                 //console.log(selectedGroup);
                 if(hits > 2 && this.active == true){
                   this.iconWinnerId = newSymbol;
-                  winList.push([this.iconWinnerId, this.lineId, hits])
+                  winList.push([this.iconWinnerId, this.lineId, hits]);
                   console.log(newSymbol + ' on ' + this.lineId + 'is the winning icon');
                   console.log(selectedGroup);
                 }
                 matches = hits;
                 return matches;
                 },
-}
+};
 const payline8 = {
     array: [
            [1,1,0,1,1],
@@ -409,45 +411,45 @@ const payline8 = {
                 let hits = 0;
                 let symbol = 99;
                 let newSymbol = 98;
-                for(let i = 0; i < 3; i++){
-                  for(let j = 0; j < 5; j++){
-                    symbol = selectedGroup[i][j];
-                    if(symbol == newSymbol && this.array[i][j] == 1 && j == 1){
-                          //console.log(symbol + ' match on line on reel' + j);
-                        hits = 2;
+                for (let i = 0; i < 5; i++) {
+                  for (let j = 0; j < 3; j++) {
+                    symbol = selectedGroup[j][i];
+                    if (symbol == newSymbol && this.array[j][i] == 1 && i == 1) {
+                      // console.log(iconNameReturn(symbol) + ' is 2nd match line on reel ' + i);
+                      hits = 2;
                     }
-                    if(symbol == newSymbol && this.array[i][j] == 1 && hits == 2 && j == 2){
-                        hits = 3;
+                    if (symbol == newSymbol && this.array[j][i] == 1 && hits == 2 && i == 2) {
+                      hits = 3;
                     }
-                    if (symbol == newSymbol && this.array[i][j] == 1 && hits == 3 && j == 3) {
-                        hits = 4;
+                    if (symbol == newSymbol && this.array[j][i] == 1 && hits == 3 && i == 3) {
+                      hits = 4;
                     }
-                    if (symbol == newSymbol && this.array[i][j] == 1 && hits == 4 && j == 4) {
-                        hits = 5;
+                    if (symbol == newSymbol && this.array[j][i] == 1 && hits == 4 && i == 4) {
+                      hits = 5;
                     }
-                    if(symbol != newSymbol && this.array[i][j] == 1 && j == 0){
-                          //console.log(symbol + ' on line on reel ' + j);
-                          newSymbol = selectedGroup[i][j];
-                      } else {
-                        this.win = false;
-                        this.iconWinnerId = false;
-                      }
-                      //console.log(`J iteration ${j}`);
+                    if (symbol != newSymbol && this.array[j][i] == 1 && i == 0) {
+                      //  console.log(iconNameReturn(symbol) + ' is first symbol on line ' + i);
+                      newSymbol = selectedGroup[j][i];
+                    } else {
+                      this.win = false;
+                      this.iconWinnerId = false;
                     }
-                    //console.log(`I iteration ${i}`);
+                    // console.log(`J iteration ${j} ` + this.array[j][i] + iconNameReturn(symbol));
                   }
+                  // console.log(`I iteration ${i}`);
+                }
                 //console.log("matching symbol " + symbol + " New symbol " + newSymbol);
                 //console.log(selectedGroup);
                 if(hits > 2 && this.active == true){
                   this.iconWinnerId = newSymbol;
-                  winList.push([this.iconWinnerId, this.lineId, hits])
+                  winList.push([this.iconWinnerId, this.lineId, hits]);
                   console.log(newSymbol + ' on ' + this.lineId + 'is the winning icon');
                   console.log(selectedGroup);
                 }
                 matches = hits;
                 return matches;
                 },
-}
+};
 const payline9 = {
     array: [
            [0,0,0,0,0],
@@ -462,45 +464,45 @@ const payline9 = {
                 let hits = 0;
                 let symbol = 99;
                 let newSymbol = 98;
-                for(let i = 0; i < 3; i++){
-                  for(let j = 0; j < 5; j++){
-                    symbol = selectedGroup[i][j];
-                    if(symbol == newSymbol && this.array[i][j] == 1 && j == 1){
-                          //console.log(symbol + ' match on line on reel' + j);
-                        hits = 2;
+                for (let i = 0; i < 5; i++) {
+                  for (let j = 0; j < 3; j++) {
+                    symbol = selectedGroup[j][i];
+                    if (symbol == newSymbol && this.array[j][i] == 1 && i == 1) {
+                      // console.log(iconNameReturn(symbol) + ' is 2nd match line on reel ' + i);
+                      hits = 2;
                     }
-                    if(symbol == newSymbol && this.array[i][j] == 1 && hits == 2 && j == 2){
-                        hits = 3;
+                    if (symbol == newSymbol && this.array[j][i] == 1 && hits == 2 && i == 2) {
+                      hits = 3;
                     }
-                    if (symbol == newSymbol && this.array[i][j] == 1 && hits == 3 && j == 3) {
-                        hits = 4;
+                    if (symbol == newSymbol && this.array[j][i] == 1 && hits == 3 && i == 3) {
+                      hits = 4;
                     }
-                    if (symbol == newSymbol && this.array[i][j] == 1 && hits == 4 && j == 4) {
-                        hits = 5;
+                    if (symbol == newSymbol && this.array[j][i] == 1 && hits == 4 && i == 4) {
+                      hits = 5;
                     }
-                    if(symbol != newSymbol && this.array[i][j] == 1 && j == 0){
-                          //console.log(symbol + ' on line on reel ' + j);
-                          newSymbol = selectedGroup[i][j];
-                      } else {
-                        this.win = false;
-                        this.iconWinnerId = false;
-                      }
-                      //console.log(`J iteration ${j}`);
+                    if (symbol != newSymbol && this.array[j][i] == 1 && i == 0) {
+                      //  console.log(iconNameReturn(symbol) + ' is first symbol on line ' + i);
+                      newSymbol = selectedGroup[j][i];
+                    } else {
+                      this.win = false;
+                      this.iconWinnerId = false;
                     }
-                    //console.log(`I iteration ${i}`);
+                    // console.log(`J iteration ${j} ` + this.array[j][i] + iconNameReturn(symbol));
                   }
+                  // console.log(`I iteration ${i}`);
+                }
                 //console.log("matching symbol " + symbol + " New symbol " + newSymbol);
                 //console.log(selectedGroup);
                 if(hits > 2 && this.active == true){
                   this.iconWinnerId = newSymbol;
-                  winList.push([this.iconWinnerId, this.lineId, hits])
+                  winList.push([this.iconWinnerId, this.lineId, hits]);
                   console.log(newSymbol + ' on ' + this.lineId + 'is the winning icon');
                   console.log(selectedGroup);
                 }
                 matches = hits;
                 return matches;
                 },
-}
+};
 const payline10 = {
     array: [
            [0,0,0,1,1],
@@ -515,45 +517,45 @@ const payline10 = {
                 let hits = 0;
                 let symbol = 99;
                 let newSymbol = 98;
-                for(let i = 0; i < 3; i++){
-                  for(let j = 0; j < 5; j++){
-                    symbol = selectedGroup[i][j];
-                    if(symbol == newSymbol && this.array[i][j] == 1 && j == 1){
-                          //console.log(symbol + ' match on line on reel' + j);
-                        hits = 2;
+                for (let i = 0; i < 5; i++) {
+                  for (let j = 0; j < 3; j++) {
+                    symbol = selectedGroup[j][i];
+                    if (symbol == newSymbol && this.array[j][i] == 1 && i == 1) {
+                      // console.log(iconNameReturn(symbol) + ' is 2nd match line on reel ' + i);
+                      hits = 2;
                     }
-                    if(symbol == newSymbol && this.array[i][j] == 1 && hits == 2 && j == 2){
-                        hits = 3;
+                    if (symbol == newSymbol && this.array[j][i] == 1 && hits == 2 && i == 2) {
+                      hits = 3;
                     }
-                    if (symbol == newSymbol && this.array[i][j] == 1 && hits == 3 && j == 3) {
-                        hits = 4;
+                    if (symbol == newSymbol && this.array[j][i] == 1 && hits == 3 && i == 3) {
+                      hits = 4;
                     }
-                    if (symbol == newSymbol && this.array[i][j] == 1 && hits == 4 && j == 4) {
-                        hits = 5;
+                    if (symbol == newSymbol && this.array[j][i] == 1 && hits == 4 && i == 4) {
+                      hits = 5;
                     }
-                    if(symbol != newSymbol && this.array[i][j] == 1 && j == 0){
-                          //console.log(symbol + ' on line on reel ' + j);
-                          newSymbol = selectedGroup[i][j];
-                      } else {
-                        this.win = false;
-                        this.iconWinnerId = false;
-                      }
-                      //console.log(`J iteration ${j}`);
+                    if (symbol != newSymbol && this.array[j][i] == 1 && i == 0) {
+                      //  console.log(iconNameReturn(symbol) + ' is first symbol on line ' + i);
+                      newSymbol = selectedGroup[j][i];
+                    } else {
+                      this.win = false;
+                      this.iconWinnerId = false;
                     }
-                    //console.log(`I iteration ${i}`);
+                    // console.log(`J iteration ${j} ` + this.array[j][i] + iconNameReturn(symbol));
                   }
+                  // console.log(`I iteration ${i}`);
+                }
                 //console.log("matching symbol " + symbol + " New symbol " + newSymbol);
                 //console.log(selectedGroup);
                 if(hits > 2 && this.active == true){
                   this.iconWinnerId = newSymbol;
-                  winList.push([this.iconWinnerId, this.lineId, hits])
+                  winList.push([this.iconWinnerId, this.lineId, hits]);
                   console.log(newSymbol + ' on ' + this.lineId + 'is the winning icon');
                   console.log(selectedGroup);
                 }
                 matches = hits;
                 return matches;
                 },
-}
+};
 const payline11 = {
     array: [
            [1,1,0,0,0],
@@ -568,45 +570,45 @@ const payline11 = {
                 let hits = 0;
                 let symbol = 99;
                 let newSymbol = 98;
-                for(let i = 0; i < 3; i++){
-                  for(let j = 0; j < 5; j++){
-                    symbol = selectedGroup[i][j];
-                    if(symbol == newSymbol && this.array[i][j] == 1 && j == 1){
-                          //console.log(symbol + ' match on line on reel' + j);
-                        hits = 2;
+                for (let i = 0; i < 5; i++) {
+                  for (let j = 0; j < 3; j++) {
+                    symbol = selectedGroup[j][i];
+                    if (symbol == newSymbol && this.array[j][i] == 1 && i == 1) {
+                      // console.log(iconNameReturn(symbol) + ' is 2nd match line on reel ' + i);
+                      hits = 2;
                     }
-                    if(symbol == newSymbol && this.array[i][j] == 1 && hits == 2 && j == 2){
-                        hits = 3;
+                    if (symbol == newSymbol && this.array[j][i] == 1 && hits == 2 && i == 2) {
+                      hits = 3;
                     }
-                    if (symbol == newSymbol && this.array[i][j] == 1 && hits == 3 && j == 3) {
-                        hits = 4;
+                    if (symbol == newSymbol && this.array[j][i] == 1 && hits == 3 && i == 3) {
+                      hits = 4;
                     }
-                    if (symbol == newSymbol && this.array[i][j] == 1 && hits == 4 && j == 4) {
-                        hits = 5;
+                    if (symbol == newSymbol && this.array[j][i] == 1 && hits == 4 && i == 4) {
+                      hits = 5;
                     }
-                    if(symbol != newSymbol && this.array[i][j] == 1 && j == 0){
-                          //console.log(symbol + ' on line on reel ' + j);
-                          newSymbol = selectedGroup[i][j];
-                      } else {
-                        this.win = false;
-                        this.iconWinnerId = false;
-                      }
-                      //console.log(`J iteration ${j}`);
+                    if (symbol != newSymbol && this.array[j][i] == 1 && i == 0) {
+                      //  console.log(iconNameReturn(symbol) + ' is first symbol on line ' + i);
+                      newSymbol = selectedGroup[j][i];
+                    } else {
+                      this.win = false;
+                      this.iconWinnerId = false;
                     }
-                    //console.log(`I iteration ${i}`);
+                    // console.log(`J iteration ${j} ` + this.array[j][i] + iconNameReturn(symbol));
                   }
+                  // console.log(`I iteration ${i}`);
+                }
                 //console.log("matching symbol " + symbol + " New symbol " + newSymbol);
                 //console.log(selectedGroup);
                 if(hits > 2 && this.active == true){
                   this.iconWinnerId = newSymbol;
-                  winList.push([this.iconWinnerId, this.lineId, hits])
+                  winList.push([this.iconWinnerId, this.lineId, hits]);
                   console.log(newSymbol + ' on ' + this.lineId + 'is the winning icon');
                   console.log(selectedGroup);
                 }
                 matches = hits;
                 return matches;
                 },
-}
+};
 const payline12 = {
     array: [
            [0,1,0,0,0],
@@ -621,45 +623,45 @@ const payline12 = {
                 let hits = 0;
                 let symbol = 99;
                 let newSymbol = 98;
-                for(let i = 0; i < 3; i++){
-                  for(let j = 0; j < 5; j++){
-                    symbol = selectedGroup[i][j];
-                    if(symbol == newSymbol && this.array[i][j] == 1 && j == 1){
-                          //console.log(symbol + ' match on line on reel' + j);
-                        hits = 2;
+                for (let i = 0; i < 5; i++) {
+                  for (let j = 0; j < 3; j++) {
+                    symbol = selectedGroup[j][i];
+                    if (symbol == newSymbol && this.array[j][i] == 1 && i == 1) {
+                      // console.log(iconNameReturn(symbol) + ' is 2nd match line on reel ' + i);
+                      hits = 2;
                     }
-                    if(symbol == newSymbol && this.array[i][j] == 1 && hits == 2 && j == 2){
-                        hits = 3;
+                    if (symbol == newSymbol && this.array[j][i] == 1 && hits == 2 && i == 2) {
+                      hits = 3;
                     }
-                    if (symbol == newSymbol && this.array[i][j] == 1 && hits == 3 && j == 3) {
-                        hits = 4;
+                    if (symbol == newSymbol && this.array[j][i] == 1 && hits == 3 && i == 3) {
+                      hits = 4;
                     }
-                    if (symbol == newSymbol && this.array[i][j] == 1 && hits == 4 && j == 4) {
-                        hits = 5;
+                    if (symbol == newSymbol && this.array[j][i] == 1 && hits == 4 && i == 4) {
+                      hits = 5;
                     }
-                    if(symbol != newSymbol && this.array[i][j] == 1 && j == 0){
-                          //console.log(symbol + ' on line on reel ' + j);
-                          newSymbol = selectedGroup[i][j];
-                      } else {
-                        this.win = false;
-                        this.iconWinnerId = false;
-                      }
-                      //console.log(`J iteration ${j}`);
+                    if (symbol != newSymbol && this.array[j][i] == 1 && i == 0) {
+                      //  console.log(iconNameReturn(symbol) + ' is first symbol on line ' + i);
+                      newSymbol = selectedGroup[j][i];
+                    } else {
+                      this.win = false;
+                      this.iconWinnerId = false;
                     }
-                    //console.log(`I iteration ${i}`);
+                    // console.log(`J iteration ${j} ` + this.array[j][i] + iconNameReturn(symbol));
                   }
+                  // console.log(`I iteration ${i}`);
+                }
                 //console.log("matching symbol " + symbol + " New symbol " + newSymbol);
                 //console.log(selectedGroup);
                 if(hits > 2 && this.active == true){
                   this.iconWinnerId = newSymbol;
-                  winList.push([this.iconWinnerId, this.lineId, hits])
+                  winList.push([this.iconWinnerId, this.lineId, hits]);
                   console.log(newSymbol + ' on ' + this.lineId + 'is the winning icon');
                   console.log(selectedGroup);
                 }
                 matches = hits;
                 return matches;
                 },
-}
+};
 const payline13 = {
     array: [
            [0,0,0,1,0],
@@ -674,45 +676,45 @@ const payline13 = {
                 let hits = 0;
                 let symbol = 99;
                 let newSymbol = 98;
-                for(let i = 0; i < 3; i++){
-                  for(let j = 0; j < 5; j++){
-                    symbol = selectedGroup[i][j];
-                    if(symbol == newSymbol && this.array[i][j] == 1 && j == 1){
-                          //console.log(symbol + ' match on line on reel' + j);
-                        hits = 2;
+                for (let i = 0; i < 5; i++) {
+                  for (let j = 0; j < 3; j++) {
+                    symbol = selectedGroup[j][i];
+                    if (symbol == newSymbol && this.array[j][i] == 1 && i == 1) {
+                      // console.log(iconNameReturn(symbol) + ' is 2nd match line on reel ' + i);
+                      hits = 2;
                     }
-                    if(symbol == newSymbol && this.array[i][j] == 1 && hits == 2 && j == 2){
-                        hits = 3;
+                    if (symbol == newSymbol && this.array[j][i] == 1 && hits == 2 && i == 2) {
+                      hits = 3;
                     }
-                    if (symbol == newSymbol && this.array[i][j] == 1 && hits == 3 && j == 3) {
-                        hits = 4;
+                    if (symbol == newSymbol && this.array[j][i] == 1 && hits == 3 && i == 3) {
+                      hits = 4;
                     }
-                    if (symbol == newSymbol && this.array[i][j] == 1 && hits == 4 && j == 4) {
-                        hits = 5;
+                    if (symbol == newSymbol && this.array[j][i] == 1 && hits == 4 && i == 4) {
+                      hits = 5;
                     }
-                    if(symbol != newSymbol && this.array[i][j] == 1 && j == 0){
-                          //console.log(symbol + ' on line on reel ' + j);
-                          newSymbol = selectedGroup[i][j];
-                      } else {
-                        this.win = false;
-                        this.iconWinnerId = false;
-                      }
-                      //console.log(`J iteration ${j}`);
+                    if (symbol != newSymbol && this.array[j][i] == 1 && i == 0) {
+                      //  console.log(iconNameReturn(symbol) + ' is first symbol on line ' + i);
+                      newSymbol = selectedGroup[j][i];
+                    } else {
+                      this.win = false;
+                      this.iconWinnerId = false;
                     }
-                    //console.log(`I iteration ${i}`);
+                    // console.log(`J iteration ${j} ` + this.array[j][i] + iconNameReturn(symbol));
                   }
+                  // console.log(`I iteration ${i}`);
+                }
                 //console.log("matching symbol " + symbol + " New symbol " + newSymbol);
                 //console.log(selectedGroup);
                 if(hits > 2 && this.active == true){
                   this.iconWinnerId = newSymbol;
-                  winList.push([this.iconWinnerId, this.lineId, hits])
+                  winList.push([this.iconWinnerId, this.lineId, hits]);
                   console.log(newSymbol + ' on ' + this.lineId + 'is the winning icon');
                   console.log(selectedGroup);
                 }
                 matches = hits;
                 return matches;
                 },
-}
+};
 const payline14 = {
     array: [
            [0,1,0,0,0],
@@ -727,45 +729,45 @@ const payline14 = {
                 let hits = 0;
                 let symbol = 99;
                 let newSymbol = 98;
-                for(let i = 0; i < 3; i++){
-                  for(let j = 0; j < 5; j++){
-                    symbol = selectedGroup[i][j];
-                    if(symbol == newSymbol && this.array[i][j] == 1 && j == 1){
-                          //console.log(symbol + ' match on line on reel' + j);
-                        hits = 2;
+                for (let i = 0; i < 5; i++) {
+                  for (let j = 0; j < 3; j++) {
+                    symbol = selectedGroup[j][i];
+                    if (symbol == newSymbol && this.array[j][i] == 1 && i == 1) {
+                      // console.log(iconNameReturn(symbol) + ' is 2nd match line on reel ' + i);
+                      hits = 2;
                     }
-                    if(symbol == newSymbol && this.array[i][j] == 1 && hits == 2 && j == 2){
-                        hits = 3;
+                    if (symbol == newSymbol && this.array[j][i] == 1 && hits == 2 && i == 2) {
+                      hits = 3;
                     }
-                    if (symbol == newSymbol && this.array[i][j] == 1 && hits == 3 && j == 3) {
-                        hits = 4;
+                    if (symbol == newSymbol && this.array[j][i] == 1 && hits == 3 && i == 3) {
+                      hits = 4;
                     }
-                    if (symbol == newSymbol && this.array[i][j] == 1 && hits == 4 && j == 4) {
-                        hits = 5;
+                    if (symbol == newSymbol && this.array[j][i] == 1 && hits == 4 && i == 4) {
+                      hits = 5;
                     }
-                    if(symbol != newSymbol && this.array[i][j] == 1 && j == 0){
-                          //console.log(symbol + ' on line on reel ' + j);
-                          newSymbol = selectedGroup[i][j];
-                      } else {
-                        this.win = false;
-                        this.iconWinnerId = false;
-                      }
-                      //console.log(`J iteration ${j}`);
+                    if (symbol != newSymbol && this.array[j][i] == 1 && i == 0) {
+                      //  console.log(iconNameReturn(symbol) + ' is first symbol on line ' + i);
+                      newSymbol = selectedGroup[j][i];
+                    } else {
+                      this.win = false;
+                      this.iconWinnerId = false;
                     }
-                    //console.log(`I iteration ${i}`);
+                    // console.log(`J iteration ${j} ` + this.array[j][i] + iconNameReturn(symbol));
                   }
+                  // console.log(`I iteration ${i}`);
+                }
                 //console.log("matching symbol " + symbol + " New symbol " + newSymbol);
                 //console.log(selectedGroup);
                 if(hits > 2 && this.active == true){
                   this.iconWinnerId = newSymbol;
-                  winList.push([this.iconWinnerId, this.lineId, hits])
+                  winList.push([this.iconWinnerId, this.lineId, hits]);
                   console.log(newSymbol + ' on ' + this.lineId + 'is the winning icon');
                   console.log(selectedGroup);
                 }
                 matches = hits;
                 return matches;
                 },
-}
+};
 const payline15 = {
     array: [
            [0,0,0,1,1],
@@ -780,45 +782,45 @@ const payline15 = {
                 let hits = 0;
                 let symbol = 99;
                 let newSymbol = 98;
-                for(let i = 0; i < 3; i++){
-                  for(let j = 0; j < 5; j++){
-                    symbol = selectedGroup[i][j];
-                    if(symbol == newSymbol && this.array[i][j] == 1 && j == 1){
-                          //console.log(symbol + ' match on line on reel' + j);
-                        hits = 2;
+                for (let i = 0; i < 5; i++) {
+                  for (let j = 0; j < 3; j++) {
+                    symbol = selectedGroup[j][i];
+                    if (symbol == newSymbol && this.array[j][i] == 1 && i == 1) {
+                      // console.log(iconNameReturn(symbol) + ' is 2nd match line on reel ' + i);
+                      hits = 2;
                     }
-                    if(symbol == newSymbol && this.array[i][j] == 1 && hits == 2 && j == 2){
-                        hits = 3;
+                    if (symbol == newSymbol && this.array[j][i] == 1 && hits == 2 && i == 2) {
+                      hits = 3;
                     }
-                    if (symbol == newSymbol && this.array[i][j] == 1 && hits == 3 && j == 3) {
-                        hits = 4;
+                    if (symbol == newSymbol && this.array[j][i] == 1 && hits == 3 && i == 3) {
+                      hits = 4;
                     }
-                    if (symbol == newSymbol && this.array[i][j] == 1 && hits == 4 && j == 4) {
-                        hits = 5;
+                    if (symbol == newSymbol && this.array[j][i] == 1 && hits == 4 && i == 4) {
+                      hits = 5;
                     }
-                    if(symbol != newSymbol && this.array[i][j] == 1 && j == 0){
-                          //console.log(symbol + ' on line on reel ' + j);
-                          newSymbol = selectedGroup[i][j];
-                      } else {
-                        this.win = false;
-                        this.iconWinnerId = false;
-                      }
-                      //console.log(`J iteration ${j}`);
+                    if (symbol != newSymbol && this.array[j][i] == 1 && i == 0) {
+                      //  console.log(iconNameReturn(symbol) + ' is first symbol on line ' + i);
+                      newSymbol = selectedGroup[j][i];
+                    } else {
+                      this.win = false;
+                      this.iconWinnerId = false;
                     }
-                    //console.log(`I iteration ${i}`);
+                    // console.log(`J iteration ${j} ` + this.array[j][i] + iconNameReturn(symbol));
                   }
+                  // console.log(`I iteration ${i}`);
+                }
                 //console.log("matching symbol " + symbol + " New symbol " + newSymbol);
                 //console.log(selectedGroup);
                 if(hits > 2 && this.active == true){
                   this.iconWinnerId = newSymbol;
-                  winList.push([this.iconWinnerId, this.lineId, hits])
+                  winList.push([this.iconWinnerId, this.lineId, hits]);
                   console.log(newSymbol + ' on ' + this.lineId + 'is the winning icon');
                   console.log(selectedGroup);
                 }
                 matches = hits;
                 return matches;
                 },
-}
+};
 const payline16 = {
     array: [
            [1,0,0,0,0],
@@ -833,45 +835,45 @@ const payline16 = {
                 let hits = 0;
                 let symbol = 99;
                 let newSymbol = 98;
-                for(let i = 0; i < 3; i++){
-                  for(let j = 0; j < 5; j++){
-                    symbol = selectedGroup[i][j];
-                    if(symbol == newSymbol && this.array[i][j] == 1 && j == 1){
-                          //console.log(symbol + ' match on line on reel' + j);
-                        hits = 2;
+                for (let i = 0; i < 5; i++) {
+                  for (let j = 0; j < 3; j++) {
+                    symbol = selectedGroup[j][i];
+                    if (symbol == newSymbol && this.array[j][i] == 1 && i == 1) {
+                      // console.log(iconNameReturn(symbol) + ' is 2nd match line on reel ' + i);
+                      hits = 2;
                     }
-                    if(symbol == newSymbol && this.array[i][j] == 1 && hits == 2 && j == 2){
-                        hits = 3;
+                    if (symbol == newSymbol && this.array[j][i] == 1 && hits == 2 && i == 2) {
+                      hits = 3;
                     }
-                    if (symbol == newSymbol && this.array[i][j] == 1 && hits == 3 && j == 3) {
-                        hits = 4;
+                    if (symbol == newSymbol && this.array[j][i] == 1 && hits == 3 && i == 3) {
+                      hits = 4;
                     }
-                    if (symbol == newSymbol && this.array[i][j] == 1 && hits == 4 && j == 4) {
-                        hits = 5;
+                    if (symbol == newSymbol && this.array[j][i] == 1 && hits == 4 && i == 4) {
+                      hits = 5;
                     }
-                    if(symbol != newSymbol && this.array[i][j] == 1 && j == 0){
-                          //console.log(symbol + ' on line on reel ' + j);
-                          newSymbol = selectedGroup[i][j];
-                      } else {
-                        this.win = false;
-                        this.iconWinnerId = false;
-                      }
-                      //console.log(`J iteration ${j}`);
+                    if (symbol != newSymbol && this.array[j][i] == 1 && i == 0) {
+                      //  console.log(iconNameReturn(symbol) + ' is first symbol on line ' + i);
+                      newSymbol = selectedGroup[j][i];
+                    } else {
+                      this.win = false;
+                      this.iconWinnerId = false;
                     }
-                    //console.log(`I iteration ${i}`);
+                    // console.log(`J iteration ${j} ` + this.array[j][i] + iconNameReturn(symbol));
                   }
+                  // console.log(`I iteration ${i}`);
+                }
                 //console.log("matching symbol " + symbol + " New symbol " + newSymbol);
                 //console.log(selectedGroup);
                 if(hits > 2 && this.active == true){
                   this.iconWinnerId = newSymbol;
-                  winList.push([this.iconWinnerId, this.lineId, hits])
+                  winList.push([this.iconWinnerId, this.lineId, hits]);
                   console.log(newSymbol + ' on ' + this.lineId + 'is the winning icon');
                   console.log(selectedGroup);
                 }
                 matches = hits;
                 return matches;
                 },
-}
+};
 const payline17 = {
     array: [
            [0,0,0,0,1],
@@ -886,45 +888,45 @@ const payline17 = {
                 let hits = 0;
                 let symbol = 99;
                 let newSymbol = 98;
-                for(let i = 0; i < 3; i++){
-                  for(let j = 0; j < 5; j++){
-                    symbol = selectedGroup[i][j];
-                    if(symbol == newSymbol && this.array[i][j] == 1 && j == 1){
-                          //console.log(symbol + ' match on line on reel' + j);
-                        hits = 2;
+                for (let i = 0; i < 5; i++) {
+                  for (let j = 0; j < 3; j++) {
+                    symbol = selectedGroup[j][i];
+                    if (symbol == newSymbol && this.array[j][i] == 1 && i == 1) {
+                      // console.log(iconNameReturn(symbol) + ' is 2nd match line on reel ' + i);
+                      hits = 2;
                     }
-                    if(symbol == newSymbol && this.array[i][j] == 1 && hits == 2 && j == 2){
-                        hits = 3;
+                    if (symbol == newSymbol && this.array[j][i] == 1 && hits == 2 && i == 2) {
+                      hits = 3;
                     }
-                    if (symbol == newSymbol && this.array[i][j] == 1 && hits == 3 && j == 3) {
-                        hits = 4;
+                    if (symbol == newSymbol && this.array[j][i] == 1 && hits == 3 && i == 3) {
+                      hits = 4;
                     }
-                    if (symbol == newSymbol && this.array[i][j] == 1 && hits == 4 && j == 4) {
-                        hits = 5;
+                    if (symbol == newSymbol && this.array[j][i] == 1 && hits == 4 && i == 4) {
+                      hits = 5;
                     }
-                    if(symbol != newSymbol && this.array[i][j] == 1 && j == 0){
-                          //console.log(symbol + ' on line on reel ' + j);
-                          newSymbol = selectedGroup[i][j];
-                      } else {
-                        this.win = false;
-                        this.iconWinnerId = false;
-                      }
-                      //console.log(`J iteration ${j}`);
+                    if (symbol != newSymbol && this.array[j][i] == 1 && i == 0) {
+                      //  console.log(iconNameReturn(symbol) + ' is first symbol on line ' + i);
+                      newSymbol = selectedGroup[j][i];
+                    } else {
+                      this.win = false;
+                      this.iconWinnerId = false;
                     }
-                    //console.log(`I iteration ${i}`);
+                    // console.log(`J iteration ${j} ` + this.array[j][i] + iconNameReturn(symbol));
                   }
+                  // console.log(`I iteration ${i}`);
+                }
                 //console.log("matching symbol " + symbol + " New symbol " + newSymbol);
                 //console.log(selectedGroup);
                 if(hits > 2 && this.active == true){
                   this.iconWinnerId = newSymbol;
-                  winList.push([this.iconWinnerId, this.lineId, hits])
+                  winList.push([this.iconWinnerId, this.lineId, hits]);
                   console.log(newSymbol + ' on ' + this.lineId + 'is the winning icon');
                   console.log(selectedGroup);
                 }
                 matches = hits;
                 return matches;
                 },
-}
+};
 const payline18 = {
     array: [
            [0,0,1,0,0],
@@ -939,33 +941,33 @@ const payline18 = {
                 let hits = 0;
                 let symbol = 99;
                 let newSymbol = 98;
-                for(let i = 0; i < 3; i++){
-                  for(let j = 0; j < 5; j++){
-                    symbol = selectedGroup[i][j];
-                    if(symbol == newSymbol && this.array[i][j] == 1 && j == 1){
-                          //console.log(symbol + ' match on line on reel' + j);
-                        hits = 2;
+                for (let i = 0; i < 5; i++) {
+                  for (let j = 0; j < 3; j++) {
+                    symbol = selectedGroup[j][i];
+                    if (symbol == newSymbol && this.array[j][i] == 1 && i == 1) {
+                      // console.log(iconNameReturn(symbol) + ' is 2nd match line on reel ' + i);
+                      hits = 2;
                     }
-                    if(symbol == newSymbol && this.array[i][j] == 1 && hits == 2 && j == 2){
-                        hits = 3;
+                    if (symbol == newSymbol && this.array[j][i] == 1 && hits == 2 && i == 2) {
+                      hits = 3;
                     }
-                    if (symbol == newSymbol && this.array[i][j] == 1 && hits == 3 && j == 3) {
-                        hits = 4;
+                    if (symbol == newSymbol && this.array[j][i] == 1 && hits == 3 && i == 3) {
+                      hits = 4;
                     }
-                    if (symbol == newSymbol && this.array[i][j] == 1 && hits == 4 && j == 4) {
-                        hits = 5;
+                    if (symbol == newSymbol && this.array[j][i] == 1 && hits == 4 && i == 4) {
+                      hits = 5;
                     }
-                    if(symbol != newSymbol && this.array[i][j] == 1 && j == 0){
-                          //console.log(symbol + ' on line on reel ' + j);
-                          newSymbol = selectedGroup[i][j];
-                      } else {
-                        this.win = false;
-                        this.iconWinnerId = false;
-                      }
-                      //console.log(`J iteration ${j}`);
+                    if (symbol != newSymbol && this.array[j][i] == 1 && i == 0) {
+                      //  console.log(iconNameReturn(symbol) + ' is first symbol on line ' + i);
+                      newSymbol = selectedGroup[j][i];
+                    } else {
+                      this.win = false;
+                      this.iconWinnerId = false;
                     }
-                    //console.log(`I iteration ${i}`);
+                    // console.log(`J iteration ${j} ` + this.array[j][i] + iconNameReturn(symbol));
                   }
+                  // console.log(`I iteration ${i}`);
+                }
                 //console.log("matching symbol " + symbol + " New symbol " + newSymbol);
                 //console.log(selectedGroup);
                 if(hits > 2 && this.active == true){
@@ -992,33 +994,33 @@ const payline19 = {
                 let hits = 0;
                 let symbol = 99;
                 let newSymbol = 98;
-                for(let i = 0; i < 3; i++){
-                  for(let j = 0; j < 5; j++){
-                    symbol = selectedGroup[i][j];
-                    if(symbol == newSymbol && this.array[i][j] == 1 && j == 1){
-                          //console.log(symbol + ' match on line on reel' + j);
-                        hits = 2;
+                for (let i = 0; i < 5; i++) {
+                  for (let j = 0; j < 3; j++) {
+                    symbol = selectedGroup[j][i];
+                    if (symbol == newSymbol && this.array[j][i] == 1 && i == 1) {
+                      // console.log(iconNameReturn(symbol) + ' is 2nd match line on reel ' + i);
+                      hits = 2;
                     }
-                    if(symbol == newSymbol && this.array[i][j] == 1 && hits == 2 && j == 2){
-                        hits = 3;
+                    if (symbol == newSymbol && this.array[j][i] == 1 && hits == 2 && i == 2) {
+                      hits = 3;
                     }
-                    if (symbol == newSymbol && this.array[i][j] == 1 && hits == 3 && j == 3) {
-                        hits = 4;
+                    if (symbol == newSymbol && this.array[j][i] == 1 && hits == 3 && i == 3) {
+                      hits = 4;
                     }
-                    if (symbol == newSymbol && this.array[i][j] == 1 && hits == 4 && j == 4) {
-                        hits = 5;
+                    if (symbol == newSymbol && this.array[j][i] == 1 && hits == 4 && i == 4) {
+                      hits = 5;
                     }
-                    if(symbol != newSymbol && this.array[i][j] == 1 && j == 0){
-                          //console.log(symbol + ' on line on reel ' + j);
-                          newSymbol = selectedGroup[i][j];
-                      } else {
-                        this.win = false;
-                        this.iconWinnerId = false;
-                      }
-                      //console.log(`J iteration ${j}`);
+                    if (symbol != newSymbol && this.array[j][i] == 1 && i == 0) {
+                      //  console.log(iconNameReturn(symbol) + ' is first symbol on line ' + i);
+                      newSymbol = selectedGroup[j][i];
+                    } else {
+                      this.win = false;
+                      this.iconWinnerId = false;
                     }
-                    //console.log(`I iteration ${i}`);
+                    // console.log(`J iteration ${j} ` + this.array[j][i] + iconNameReturn(symbol));
                   }
+                  // console.log(`I iteration ${i}`);
+                }
                 //console.log("matching symbol " + symbol + " New symbol " + newSymbol);
                 //console.log(selectedGroup);
                 if(hits > 2 && this.active == true){
@@ -1045,33 +1047,33 @@ const payline20 = {
                 let hits = 0;
                 let symbol = 99;
                 let newSymbol = 98;
-                for(let i = 0; i < 3; i++){
-                  for(let j = 0; j < 5; j++){
-                    symbol = selectedGroup[i][j];
-                    if(symbol == newSymbol && this.array[i][j] == 1 && j == 1){
-                          //console.log(symbol + ' match on line on reel' + j);
-                        hits = 2;
+                for (let i = 0; i < 5; i++) {
+                  for (let j = 0; j < 3; j++) {
+                    symbol = selectedGroup[j][i];
+                    if (symbol == newSymbol && this.array[j][i] == 1 && i == 1) {
+                      // console.log(iconNameReturn(symbol) + ' is 2nd match line on reel ' + i);
+                      hits = 2;
                     }
-                    if(symbol == newSymbol && this.array[i][j] == 1 && hits == 2 && j == 2){
-                        hits = 3;
+                    if (symbol == newSymbol && this.array[j][i] == 1 && hits == 2 && i == 2) {
+                      hits = 3;
                     }
-                    if (symbol == newSymbol && this.array[i][j] == 1 && hits == 3 && j == 3) {
-                        hits = 4;
+                    if (symbol == newSymbol && this.array[j][i] == 1 && hits == 3 && i == 3) {
+                      hits = 4;
                     }
-                    if (symbol == newSymbol && this.array[i][j] == 1 && hits == 4 && j == 4) {
-                        hits = 5;
+                    if (symbol == newSymbol && this.array[j][i] == 1 && hits == 4 && i == 4) {
+                      hits = 5;
                     }
-                    if(symbol != newSymbol && this.array[i][j] == 1 && j == 0){
-                          //console.log(symbol + ' on line on reel ' + j);
-                          newSymbol = selectedGroup[i][j];
-                      } else {
-                        this.win = false;
-                        this.iconWinnerId = false;
-                      }
-                      //console.log(`J iteration ${j}`);
+                    if (symbol != newSymbol && this.array[j][i] == 1 && i == 0) {
+                      //  console.log(iconNameReturn(symbol) + ' is first symbol on line ' + i);
+                      newSymbol = selectedGroup[j][i];
+                    } else {
+                      this.win = false;
+                      this.iconWinnerId = false;
                     }
-                    //console.log(`I iteration ${i}`);
+                    // console.log(`J iteration ${j} ` + this.array[j][i] + iconNameReturn(symbol));
                   }
+                  // console.log(`I iteration ${i}`);
+                }
                 //console.log("matching symbol " + symbol + " New symbol " + newSymbol);
                 //console.log(selectedGroup);
                 if(hits > 2 && this.active == true){
@@ -1098,33 +1100,33 @@ const payline21 = {
                 let hits = 0;
                 let symbol = 99;
                 let newSymbol = 98;
-                for(let i = 0; i < 3; i++){
-                  for(let j = 0; j < 5; j++){
-                    symbol = selectedGroup[i][j];
-                    if(symbol == newSymbol && this.array[i][j] == 1 && j == 1){
-                          //console.log(symbol + ' match on line on reel' + j);
-                        hits = 2;
+                for (let i = 0; i < 5; i++) {
+                  for (let j = 0; j < 3; j++) {
+                    symbol = selectedGroup[j][i];
+                    if (symbol == newSymbol && this.array[j][i] == 1 && i == 1) {
+                      // console.log(iconNameReturn(symbol) + ' is 2nd match line on reel ' + i);
+                      hits = 2;
                     }
-                    if(symbol == newSymbol && this.array[i][j] == 1 && hits == 2 && j == 2){
-                        hits = 3;
+                    if (symbol == newSymbol && this.array[j][i] == 1 && hits == 2 && i == 2) {
+                      hits = 3;
                     }
-                    if (symbol == newSymbol && this.array[i][j] == 1 && hits == 3 && j == 3) {
-                        hits = 4;
+                    if (symbol == newSymbol && this.array[j][i] == 1 && hits == 3 && i == 3) {
+                      hits = 4;
                     }
-                    if (symbol == newSymbol && this.array[i][j] == 1 && hits == 4 && j == 4) {
-                        hits = 5;
+                    if (symbol == newSymbol && this.array[j][i] == 1 && hits == 4 && i == 4) {
+                      hits = 5;
                     }
-                    if(symbol != newSymbol && this.array[i][j] == 1 && j == 0){
-                          //console.log(symbol + ' on line on reel ' + j);
-                          newSymbol = selectedGroup[i][j];
-                      } else {
-                        this.win = false;
-                        this.iconWinnerId = false;
-                      }
-                      //console.log(`J iteration ${j}`);
+                    if (symbol != newSymbol && this.array[j][i] == 1 && i == 0) {
+                      //  console.log(iconNameReturn(symbol) + ' is first symbol on line ' + i);
+                      newSymbol = selectedGroup[j][i];
+                    } else {
+                      this.win = false;
+                      this.iconWinnerId = false;
                     }
-                    //console.log(`I iteration ${i}`);
+                    // console.log(`J iteration ${j} ` + this.array[j][i] + iconNameReturn(symbol));
                   }
+                  // console.log(`I iteration ${i}`);
+                }
                 //console.log("matching symbol " + symbol + " New symbol " + newSymbol);
                 //console.log(selectedGroup);
                 if(hits > 2 && this.active == true){
@@ -1151,33 +1153,33 @@ const payline22 = {
                 let hits = 0;
                 let symbol = 99;
                 let newSymbol = 98;
-                for(let i = 0; i < 3; i++){
-                  for(let j = 0; j < 5; j++){
-                    symbol = selectedGroup[i][j];
-                    if(symbol == newSymbol && this.array[i][j] == 1 && j == 1){
-                          //console.log(symbol + ' match on line on reel' + j);
-                        hits = 2;
+                for (let i = 0; i < 5; i++) {
+                  for (let j = 0; j < 3; j++) {
+                    symbol = selectedGroup[j][i];
+                    if (symbol == newSymbol && this.array[j][i] == 1 && i == 1) {
+                      // console.log(iconNameReturn(symbol) + ' is 2nd match line on reel ' + i);
+                      hits = 2;
                     }
-                    if(symbol == newSymbol && this.array[i][j] == 1 && hits == 2 && j == 2){
-                        hits = 3;
+                    if (symbol == newSymbol && this.array[j][i] == 1 && hits == 2 && i == 2) {
+                      hits = 3;
                     }
-                    if (symbol == newSymbol && this.array[i][j] == 1 && hits == 3 && j == 3) {
-                        hits = 4;
+                    if (symbol == newSymbol && this.array[j][i] == 1 && hits == 3 && i == 3) {
+                      hits = 4;
                     }
-                    if (symbol == newSymbol && this.array[i][j] == 1 && hits == 4 && j == 4) {
-                        hits = 5;
+                    if (symbol == newSymbol && this.array[j][i] == 1 && hits == 4 && i == 4) {
+                      hits = 5;
                     }
-                    if(symbol != newSymbol && this.array[i][j] == 1 && j == 0){
-                          //console.log(symbol + ' on line on reel ' + j);
-                          newSymbol = selectedGroup[i][j];
-                      } else {
-                        this.win = false;
-                        this.iconWinnerId = false;
-                      }
-                      //console.log(`J iteration ${j}`);
+                    if (symbol != newSymbol && this.array[j][i] == 1 && i == 0) {
+                      //  console.log(iconNameReturn(symbol) + ' is first symbol on line ' + i);
+                      newSymbol = selectedGroup[j][i];
+                    } else {
+                      this.win = false;
+                      this.iconWinnerId = false;
                     }
-                    //console.log(`I iteration ${i}`);
+                    // console.log(`J iteration ${j} ` + this.array[j][i] + iconNameReturn(symbol));
                   }
+                  // console.log(`I iteration ${i}`);
+                }
                 //console.log("matching symbol " + symbol + " New symbol " + newSymbol);
                 //console.log(selectedGroup);
                 if(hits > 2 && this.active == true){
@@ -1204,33 +1206,33 @@ const payline23 = {
                 let hits = 0;
                 let symbol = 99;
                 let newSymbol = 98;
-                for(let i = 0; i < 3; i++){
-                  for(let j = 0; j < 5; j++){
-                    symbol = selectedGroup[i][j];
-                    if(symbol == newSymbol && this.array[i][j] == 1 && j == 1){
-                          //console.log(symbol + ' match on line on reel' + j);
-                        hits = 2;
+                for (let i = 0; i < 5; i++) {
+                  for (let j = 0; j < 3; j++) {
+                    symbol = selectedGroup[j][i];
+                    if (symbol == newSymbol && this.array[j][i] == 1 && i == 1) {
+                      // console.log(iconNameReturn(symbol) + ' is 2nd match line on reel ' + i);
+                      hits = 2;
                     }
-                    if(symbol == newSymbol && this.array[i][j] == 1 && hits == 2 && j == 2){
-                        hits = 3;
+                    if (symbol == newSymbol && this.array[j][i] == 1 && hits == 2 && i == 2) {
+                      hits = 3;
                     }
-                    if (symbol == newSymbol && this.array[i][j] == 1 && hits == 3 && j == 3) {
-                        hits = 4;
+                    if (symbol == newSymbol && this.array[j][i] == 1 && hits == 3 && i == 3) {
+                      hits = 4;
                     }
-                    if (symbol == newSymbol && this.array[i][j] == 1 && hits == 4 && j == 4) {
-                        hits = 5;
+                    if (symbol == newSymbol && this.array[j][i] == 1 && hits == 4 && i == 4) {
+                      hits = 5;
                     }
-                    if(symbol != newSymbol && this.array[i][j] == 1 && j == 0){
-                          //console.log(symbol + ' on line on reel ' + j);
-                          newSymbol = selectedGroup[i][j];
-                      } else {
-                        this.win = false;
-                        this.iconWinnerId = false;
-                      }
-                      //console.log(`J iteration ${j}`);
+                    if (symbol != newSymbol && this.array[j][i] == 1 && i == 0) {
+                      //  console.log(iconNameReturn(symbol) + ' is first symbol on line ' + i);
+                      newSymbol = selectedGroup[j][i];
+                    } else {
+                      this.win = false;
+                      this.iconWinnerId = false;
                     }
-                    //console.log(`I iteration ${i}`);
+                    // console.log(`J iteration ${j} ` + this.array[j][i] + iconNameReturn(symbol));
                   }
+                  // console.log(`I iteration ${i}`);
+                }
                 //console.log("matching symbol " + symbol + " New symbol " + newSymbol);
                 //console.log(selectedGroup);
                 if(hits > 2 && this.active == true){
@@ -1257,33 +1259,33 @@ const payline24 = {
                 let hits = 0;
                 let symbol = 99;
                 let newSymbol = 98;
-                for(let i = 0; i < 3; i++){
-                  for(let j = 0; j < 5; j++){
-                    symbol = selectedGroup[i][j];
-                    if(symbol == newSymbol && this.array[i][j] == 1 && j == 1){
-                          //console.log(symbol + ' match on line on reel' + j);
-                        hits = 2;
+                for (let i = 0; i < 5; i++) {
+                  for (let j = 0; j < 3; j++) {
+                    symbol = selectedGroup[j][i];
+                    if (symbol == newSymbol && this.array[j][i] == 1 && i == 1) {
+                      // console.log(iconNameReturn(symbol) + ' is 2nd match line on reel ' + i);
+                      hits = 2;
                     }
-                    if(symbol == newSymbol && this.array[i][j] == 1 && hits == 2 && j == 2){
-                        hits = 3;
+                    if (symbol == newSymbol && this.array[j][i] == 1 && hits == 2 && i == 2) {
+                      hits = 3;
                     }
-                    if (symbol == newSymbol && this.array[i][j] == 1 && hits == 3 && j == 3) {
-                        hits = 4;
+                    if (symbol == newSymbol && this.array[j][i] == 1 && hits == 3 && i == 3) {
+                      hits = 4;
                     }
-                    if (symbol == newSymbol && this.array[i][j] == 1 && hits == 4 && j == 4) {
-                        hits = 5;
+                    if (symbol == newSymbol && this.array[j][i] == 1 && hits == 4 && i == 4) {
+                      hits = 5;
                     }
-                    if(symbol != newSymbol && this.array[i][j] == 1 && j == 0){
-                          //console.log(symbol + ' on line on reel ' + j);
-                          newSymbol = selectedGroup[i][j];
-                      } else {
-                        this.win = false;
-                        this.iconWinnerId = false;
-                      }
-                      //console.log(`J iteration ${j}`);
+                    if (symbol != newSymbol && this.array[j][i] == 1 && i == 0) {
+                      //  console.log(iconNameReturn(symbol) + ' is first symbol on line ' + i);
+                      newSymbol = selectedGroup[j][i];
+                    } else {
+                      this.win = false;
+                      this.iconWinnerId = false;
                     }
-                    //console.log(`I iteration ${i}`);
+                    // console.log(`J iteration ${j} ` + this.array[j][i] + iconNameReturn(symbol));
                   }
+                  // console.log(`I iteration ${i}`);
+                }
                 //console.log("matching symbol " + symbol + " New symbol " + newSymbol);
                 //console.log(selectedGroup);
                 if(hits > 2 && this.active == true){
@@ -1310,33 +1312,33 @@ const payline25 = {
                 let hits = 0;
                 let symbol = 99;
                 let newSymbol = 98;
-                for(let i = 0; i < 3; i++){
-                  for(let j = 0; j < 5; j++){
-                    symbol = selectedGroup[i][j];
-                    if(symbol == newSymbol && this.array[i][j] == 1 && j == 1){
-                          //console.log(symbol + ' match on line on reel' + j);
-                        hits = 2;
+                for (let i = 0; i < 5; i++) {
+                  for (let j = 0; j < 3; j++) {
+                    symbol = selectedGroup[j][i];
+                    if (symbol == newSymbol && this.array[j][i] == 1 && i == 1) {
+                      // console.log(iconNameReturn(symbol) + ' is 2nd match line on reel ' + i);
+                      hits = 2;
                     }
-                    if(symbol == newSymbol && this.array[i][j] == 1 && hits == 2 && j == 2){
-                        hits = 3;
+                    if (symbol == newSymbol && this.array[j][i] == 1 && hits == 2 && i == 2) {
+                      hits = 3;
                     }
-                    if (symbol == newSymbol && this.array[i][j] == 1 && hits == 3 && j == 3) {
-                        hits = 4;
+                    if (symbol == newSymbol && this.array[j][i] == 1 && hits == 3 && i == 3) {
+                      hits = 4;
                     }
-                    if (symbol == newSymbol && this.array[i][j] == 1 && hits == 4 && j == 4) {
-                        hits = 5;
+                    if (symbol == newSymbol && this.array[j][i] == 1 && hits == 4 && i == 4) {
+                      hits = 5;
                     }
-                    if(symbol != newSymbol && this.array[i][j] == 1 && j == 0){
-                          //console.log(symbol + ' on line on reel ' + j);
-                          newSymbol = selectedGroup[i][j];
-                      } else {
-                        this.win = false;
-                        this.iconWinnerId = false;
-                      }
-                      //console.log(`J iteration ${j}`);
+                    if (symbol != newSymbol && this.array[j][i] == 1 && i == 0) {
+                      //  console.log(iconNameReturn(symbol) + ' is first symbol on line ' + i);
+                      newSymbol = selectedGroup[j][i];
+                    } else {
+                      this.win = false;
+                      this.iconWinnerId = false;
                     }
-                    //console.log(`I iteration ${i}`);
+                    // console.log(`J iteration ${j} ` + this.array[j][i] + iconNameReturn(symbol));
                   }
+                  // console.log(`I iteration ${i}`);
+                }
                 //console.log("matching symbol " + symbol + " New symbol " + newSymbol);
                 //console.log(selectedGroup);
                 if(hits > 2 && this.active == true){

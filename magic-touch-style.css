@@ -2,10 +2,21 @@ canvas{
   max-height: 100vh;
   width: 100% !important;
   height: 100% !important;
+  max-width: 1024px;
+  
 }
 
 #game-container{
   display: flex;
+  width: 100%;
+  height: 100%;
+ 
+  
+ }
+
+ .widescreen{
+   padding-left: 12.5%;
+   padding-right: 12.5%;
  }
 
 /* img{
@@ -17,6 +28,11 @@ footer{
 }
 
 body{
-
-
+justify-content: center;
+display: flex;
+background-image: url(/assets/background.jpg);
+background-position: center;
+/* background-attachment: fixed; */
+background-repeat: no-repeat;
+background-size: cover;
 }

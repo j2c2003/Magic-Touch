@@ -39,15 +39,15 @@ get payouts(){
 
                     if(this.matches == 3){
                       this.payout = this.hit3Pay * denom
-                      payoutArray.push([this.payout, lineNum, this.id]);
+                      payoutArray.push([this.payout, lineNum, this.id, this.matches]);
 
                       } else if (this.matches == 4) {
                         this.payout = this.hit4Pay * denom;
-                        payoutArray.push([this.payout, lineNum, this.id]);
+                        payoutArray.push([this.payout, lineNum, this.id, this.matches]);
 
                       } else {
                         this.payout = this.hit5Pay * denom;
-                        payoutArray.push([this.payout, lineNum, this.id]);
+                        payoutArray.push([this.payout, lineNum, this.id, this.matches]);
                       }
 
                     }
@@ -80,15 +80,15 @@ get payouts(){
 
                     if(this.matches == 3){
                       this.payout = this.hit3Pay * denom
-                      payoutArray.push([this.payout, lineNum, this.id]);
+                      payoutArray.push([this.payout, lineNum, this.id, this.matches]);
 
                       } else if (this.matches == 4) {
                         this.payout = this.hit4Pay * denom;
-                        payoutArray.push([this.payout, lineNum, this.id]);
+                        payoutArray.push([this.payout, lineNum, this.id, this.matches]);
 
                       } else {
                         this.payout = this.hit5Pay * denom;
-                        payoutArray.push([this.payout, lineNum, this.id]);
+                        payoutArray.push([this.payout, lineNum, this.id, this.matches]);
                       }
 
                     }
@@ -121,15 +121,15 @@ get payouts(){
 
                     if(this.matches == 3){
                       this.payout = this.hit3Pay * denom
-                      payoutArray.push([this.payout, lineNum, this.id]);
+                      payoutArray.push([this.payout, lineNum, this.id, this.matches]);
 
                       } else if (this.matches == 4) {
                         this.payout = this.hit4Pay * denom;
-                        payoutArray.push([this.payout, lineNum, this.id]);
+                        payoutArray.push([this.payout, lineNum, this.id, this.matches]);
 
                       } else {
                         this.payout = this.hit5Pay * denom;
-                        payoutArray.push([this.payout, lineNum, this.id]);
+                        payoutArray.push([this.payout, lineNum, this.id, this.matches]);
                       }
 
                     }
@@ -162,15 +162,15 @@ get payouts(){
 
                     if(this.matches == 3){
                       this.payout = this.hit3Pay * denom
-                      payoutArray.push([this.payout, lineNum, this.id]);
+                      payoutArray.push([this.payout, lineNum, this.id, this.matches]);
 
                       } else if (this.matches == 4) {
                         this.payout = this.hit4Pay * denom;
-                        payoutArray.push([this.payout, lineNum, this.id]);
+                        payoutArray.push([this.payout, lineNum, this.id, this.matches]);
 
                       } else {
                         this.payout = this.hit5Pay * denom;
-                        payoutArray.push([this.payout, lineNum, this.id]);
+                        payoutArray.push([this.payout, lineNum, this.id, this.matches]);
                       }
 
                     }
@@ -203,15 +203,15 @@ get payouts(){
 
                     if(this.matches == 3){
                       this.payout = this.hit3Pay * denom
-                      payoutArray.push([this.payout, lineNum, this.id]);
+                      payoutArray.push([this.payout, lineNum, this.id, this.matches]);
 
                       } else if (this.matches == 4) {
                         this.payout = this.hit4Pay * denom;
-                        payoutArray.push([this.payout, lineNum, this.id]);
+                        payoutArray.push([this.payout, lineNum, this.id, this.matches]);
 
                       } else {
                         this.payout = this.hit5Pay * denom;
-                        payoutArray.push([this.payout, lineNum, this.id]);
+                        payoutArray.push([this.payout, lineNum, this.id, this.matches]);
                       }
 
                     }
@@ -244,15 +244,15 @@ get payouts(){
 
                     if(this.matches == 3){
                       this.payout = this.hit3Pay * denom
-                      payoutArray.push([this.payout, lineNum, this.id]);
+                      payoutArray.push([this.payout, lineNum, this.id, this.matches]);
 
                       } else if (this.matches == 4) {
                         this.payout = this.hit4Pay * denom;
-                        payoutArray.push([this.payout, lineNum, this.id]);
+                        payoutArray.push([this.payout, lineNum, this.id, this.matches]);
 
                       } else {
                         this.payout = this.hit5Pay * denom;
-                        payoutArray.push([this.payout, lineNum, this.id]);
+                        payoutArray.push([this.payout, lineNum, this.id, this.matches]);
                       }
 
                     }
@@ -285,15 +285,15 @@ get payouts(){
 
                     if(this.matches == 3){
                       this.payout = this.hit3Pay * denom
-                      payoutArray.push([this.payout, lineNum, this.id]);
+                      payoutArray.push([this.payout, lineNum, this.id, this.matches]);
 
                       } else if (this.matches == 4) {
                         this.payout = this.hit4Pay * denom;
-                        payoutArray.push([this.payout, lineNum, this.id]);
+                        payoutArray.push([this.payout, lineNum, this.id, this.matches]);
 
                       } else {
                         this.payout = this.hit5Pay * denom;
-                        payoutArray.push([this.payout, lineNum, this.id]);
+                        payoutArray.push([this.payout, lineNum, this.id, this.matches]);
                       }
 
                     }
@@ -326,15 +326,15 @@ get payouts(){
 
                     if(this.matches == 3){
                       this.payout = this.hit3Pay * denom
-                      payoutArray.push([this.payout, lineNum, this.id]);
+                      payoutArray.push([this.payout, lineNum, this.id, this.matches]);
 
                       } else if (this.matches == 4) {
                         this.payout = this.hit4Pay * denom;
-                        payoutArray.push([this.payout, lineNum, this.id]);
+                        payoutArray.push([this.payout, lineNum, this.id, this.matches]);
 
                       } else {
                         this.payout = this.hit5Pay * denom;
-                        payoutArray.push([this.payout, lineNum, this.id]);
+                        payoutArray.push([this.payout, lineNum, this.id, this.matches]);
                       }
 
                     }
@@ -367,15 +367,15 @@ get payouts(){
 
                     if(this.matches == 3){
                       this.payout = this.hit3Pay * denom
-                      payoutArray.push([this.payout, lineNum, this.id]);
+                      payoutArray.push([this.payout, lineNum, this.id, this.matches]);
 
                       } else if (this.matches == 4) {
                         this.payout = this.hit4Pay * denom;
-                        payoutArray.push([this.payout, lineNum, this.id]);
+                        payoutArray.push([this.payout, lineNum, this.id, this.matches]);
 
                       } else {
                         this.payout = this.hit5Pay * denom;
-                        payoutArray.push([this.payout, lineNum, this.id]);
+                        payoutArray.push([this.payout, lineNum, this.id, this.matches]);
                       }
 
                     }
@@ -408,15 +408,15 @@ get payouts(){
 
                     if(this.matches == 3){
                       this.payout = this.hit3Pay * denom
-                      payoutArray.push([this.payout, lineNum, this.id]);
+                      payoutArray.push([this.payout, lineNum, this.id, this.matches]);
 
                       } else if (this.matches == 4) {
                         this.payout = this.hit4Pay * denom;
-                        payoutArray.push([this.payout, lineNum, this.id]);
+                        payoutArray.push([this.payout, lineNum, this.id, this.matches]);
 
                       } else {
                         this.payout = this.hit5Pay * denom;
-                        payoutArray.push([this.payout, lineNum, this.id]);
+                        payoutArray.push([this.payout, lineNum, this.id, this.matches]);
                       }
 
                     }
@@ -449,15 +449,15 @@ get payouts(){
 
                     if(this.matches == 3){
                       this.payout = this.hit3Pay * denom
-                      payoutArray.push([this.payout, lineNum, this.id]);
+                      payoutArray.push([this.payout, lineNum, this.id, this.matches]);
 
                       } else if (this.matches == 4) {
                         this.payout = this.hit4Pay * denom;
-                        payoutArray.push([this.payout, lineNum, this.id]);
+                        payoutArray.push([this.payout, lineNum, this.id, this.matches]);
 
                       } else {
                         this.payout = this.hit5Pay * denom;
-                        payoutArray.push([this.payout, lineNum, this.id]);
+                        payoutArray.push([this.payout, lineNum, this.id, this.matches]);
                       }
 
                     }
